@@ -2,6 +2,9 @@ var express = require('express');
 var router = express.Router();
 GLOBAL_api_key = 'f2bebbda9a39f53c8a9f92b232ee3238f32b164c';
 
+
+timeBefore = new Date().getTime();
+
 function APICallTest1() {
     var AlchemyLanguageV1 = require('watson-developer-cloud/alchemy-language/v1');
 
@@ -45,38 +48,62 @@ function APICallTest2(){
 //APICallTest1();
 //APICallTest2();
 
-amountofCalls = 0;
+
+
 function LoadTextFromUrl() {
     var http = require('http');
 
-    var options = {
-        host: 'stackoverflow.com',
-        path: '/questions/6287297/reading-content-from-url-with-node-js'
-    }
-    var request = http.request(options, function (res) {
-        var data = '';
-        res.on('data', function (chunk) {
-            data += chunk;
-        });
-        res.on('end', function () {
-            SplitData(data);
+    // only 3 demo texts right now
+    for(i = 1; i<4;i++){
+        var options = {
+            host: 'myown-it.de',
+            path: '/sptr/test_urteil_'+i+'.txt'
+        }
+        var request = http.request(options, function (res) {
+            var data = '';
+            res.on('data', function (chunk) {
+                data += chunk;
+            });
+            res.on('end', function () {
+                SplitData(data);
 
+            });
         });
-    });
-    request.on('error', function (e) {
-        console.log(e.message);
-    });
-    request.end();
+        request.on('error', function (e) {
+            console.log(e.message);
+        });
+        request.end();
+    }
+
+
 }
 
 function SplitData(data){
-    //console.log(data);
-    amountofCalls += 1;
-   // console.log(amountofCalls);
+    var timeAfter = new Date().getTime();
+    var timeNeededtoDownload = timeAfter-timeBefore;
+    timeBefore = timeAfter;
+
+    console.log(timeNeededtoDownload+"ms needed to download text")
+
+    //create an array of all words or signs (everything divided by a SPACE)
     var res = data.split(" ");
-    console.log(JSON.stringify(res, null, 2));
+    var anzahlGerichte = 0;
+    for(i = 0; i <res.length; i++){
+
+        //check if the actual word contains Gericht to Upper case to ignore if the first letter is large or not
+        if(res[i].toUpperCase().includes("gericht".toUpperCase())){
+            anzahlGerichte += 1;
+        }
+    }
+    console.log(anzahlGerichte+"mal gericht");
+
+    timeAfter = new Date().getTime();
+    timeNeeded = timeAfter-timeBefore;
+    console.log(timeNeeded+"ms needed to split")
 }
+
 LoadTextFromUrl();
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
