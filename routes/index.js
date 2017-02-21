@@ -43,7 +43,41 @@ function APICallTest2(){
     });
 }
 //APICallTest1();
-APICallTest2();
+//APICallTest2();
+
+amountofCalls = 0;
+function LoadTextFromUrl() {
+    var http = require('http');
+
+    var options = {
+        host: 'stackoverflow.com',
+        path: '/questions/6287297/reading-content-from-url-with-node-js'
+    }
+    var request = http.request(options, function (res) {
+        var data = '';
+        res.on('data', function (chunk) {
+            data += chunk;
+        });
+        res.on('end', function () {
+            SplitData(data);
+
+        });
+    });
+    request.on('error', function (e) {
+        console.log(e.message);
+    });
+    request.end();
+}
+
+function SplitData(data){
+    //console.log(data);
+    amountofCalls += 1;
+   // console.log(amountofCalls);
+    var res = data.split(" ");
+    console.log(JSON.stringify(res, null, 2));
+}
+LoadTextFromUrl();
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
