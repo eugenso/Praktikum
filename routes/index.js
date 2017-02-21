@@ -49,58 +49,56 @@ function APICallTest2(){
 //APICallTest2();
 
 
+//Load Tests from URL and Split the Data
+    function LoadTextFromUrl() {
+        var http = require('http');
 
-function LoadTextFromUrl() {
-    var http = require('http');
+        // only 3 demo texts right now
+        for(i = 1; i<4;i++){
+            var options = {
+                host: 'myown-it.de',
+                path: '/sptr/test_urteil_'+i+'.txt'
+            }
+            var request = http.request(options, function (res) {
+                var data = '';
+                res.on('data', function (chunk) {
+                    data += chunk;
+                });
+                res.on('end', function () {
+                    SplitData(data);
 
-    // only 3 demo texts right now
-    for(i = 1; i<4;i++){
-        var options = {
-            host: 'myown-it.de',
-            path: '/sptr/test_urteil_'+i+'.txt'
-        }
-        var request = http.request(options, function (res) {
-            var data = '';
-            res.on('data', function (chunk) {
-                data += chunk;
+                });
             });
-            res.on('end', function () {
-                SplitData(data);
-
+            request.on('error', function (e) {
+                console.log(e.message);
             });
-        });
-        request.on('error', function (e) {
-            console.log(e.message);
-        });
-        request.end();
-    }
-
-
-}
-
-function SplitData(data){
-    var timeAfter = new Date().getTime();
-    var timeNeededtoDownload = timeAfter-timeBefore;
-    timeBefore = timeAfter;
-
-    console.log(timeNeededtoDownload+"ms needed to download text")
-
-    //create an array of all words or signs (everything divided by a SPACE)
-    var res = data.split(" ");
-    var anzahlGerichte = 0;
-    for(i = 0; i <res.length; i++){
-
-        //check if the actual word contains Gericht to Upper case to ignore if the first letter is large or not
-        if(res[i].toUpperCase().includes("gericht".toUpperCase())){
-            anzahlGerichte += 1;
+            request.end();
         }
     }
-    console.log(anzahlGerichte+"mal gericht");
 
-    timeAfter = new Date().getTime();
-    timeNeeded = timeAfter-timeBefore;
-    console.log(timeNeeded+"ms needed to split")
-}
+    function SplitData(data){
+        var timeAfter = new Date().getTime();
+        var timeNeededtoDownload = timeAfter-timeBefore;
+        timeBefore = timeAfter;
+
+        console.log(timeNeededtoDownload+"ms needed to download text")
+
+        //create an array of all words or signs (everything divided by a SPACE)
+        var res = data.split(" ");
+        var anzahlGerichte = 0;
+        for(i = 0; i <res.length; i++){
+
+            //check if the actual word contains Gericht to Upper case to ignore if the first letter is large or not
+            if(res[i].toUpperCase().includes("gericht".toUpperCase())){
+                anzahlGerichte += 1;
+            }
+        }
+        console.log(anzahlGerichte+"mal gericht");
+
+        timeAfter = new Date().getTime();
+        timeNeeded = timeAfter-timeBefore;
+        console.log(timeNeeded+"ms needed to split")
+    }
 
 LoadTextFromUrl();
 
