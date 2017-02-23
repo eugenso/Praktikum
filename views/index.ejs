@@ -38,7 +38,11 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Hyperspace</h1>
-							<p><%= content %></p>
+							<p><% file = files%>
+								<% for(i=0; i< files.length; i++){%>
+								<%= file[i].filename %><br>
+								<% } %>
+							</p>
 						</div>
 					</section>
 

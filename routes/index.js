@@ -1,10 +1,15 @@
 var express = require('express');
 var router = express.Router();
+
+TestEvents ={};
+
+
+//test = "test2233";
 GLOBAL_api_key = 'f2bebbda9a39f53c8a9f92b232ee3238f32b164c';
 var solar_requests = require('../js/solr_requests');
+events = require('events');
 
-solar_requests.testfunction();
-solar_requests.solrQuery();
+solr_events = new events.EventEmitter();
 
 timeBefore = new Date().getTime();
 
@@ -102,13 +107,28 @@ function APICallTest2(){
         timeNeeded = timeAfter-timeBefore;
         console.log(timeNeeded+"ms needed to split")
     }
+Ergebnis = "223";
 
-//LoadTextFromUrl();
-
-
+//emitiere();
 /* GET home page. */
+
 router.get('/', function(req, res, next) {
-  res.render('index', { content: 'Test Content' });
+
+
+    solr_events.on('testEmission',render);
+
+    solar_requests.testfunction();
+    solar_requests.solrQuery(solr_events);
+
+
+    //is render is triggert when event is finished
+    function render(){
+        //console.log();
+        res.render('index', { files: solar_requests.logErgebnis().file  });
+    }
+
 });
 
 module.exports = router;
+
+
