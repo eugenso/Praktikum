@@ -4,7 +4,7 @@ GLOBAL_api_key = 'f2bebbda9a39f53c8a9f92b232ee3238f32b164c';
 var solar_requests = require('../js/solr_requests');
 
 solar_requests.testfunction();
-
+solar_requests.solrQuery();
 
 timeBefore = new Date().getTime();
 
