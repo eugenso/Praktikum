@@ -3,6 +3,7 @@ var router = express.Router();
 GLOBAL_api_key = 'f2bebbda9a39f53c8a9f92b232ee3238f32b164c';
 
 
+
 timeBefore = new Date().getTime();
 
 function APICallTest1() {
@@ -29,13 +30,14 @@ function APICallTest2(){
     var watson = require('watson-developer-cloud');
     var alchemy_language = watson.alchemy_language({
         api_key: GLOBAL_api_key
-    })
+    });
 
     var parameters = {
-        extract: 'entities,keywords,relations',
+        extract: 'entities,keywords',
         sentiment: 1,
         maxRetrieve: 1,
-        url: 'https://wordpress.org/plugins/about/readme.txt'
+        url: 'https://wordpress.org/plugins/about/readme.txt',
+        //model_id: '8a152367-cea7-4745-a27a-c70d336d9a50'
     };
 
     alchemy_language.combined(parameters, function (err, response) {
@@ -58,7 +60,7 @@ function APICallTest2(){
             var options = {
                 host: 'myown-it.de',
                 path: '/sptr/test_urteil_'+i+'.txt'
-            }
+            };
             var request = http.request(options, function (res) {
                 var data = '';
                 res.on('data', function (chunk) {
@@ -81,7 +83,7 @@ function APICallTest2(){
         var timeNeededtoDownload = timeAfter-timeBefore;
         timeBefore = timeAfter;
 
-        console.log(timeNeededtoDownload+"ms needed to download text")
+        console.log(timeNeededtoDownload+"ms needed to download text");
 
         //create an array of all words or signs (everything divided by a SPACE)
         var res = data.split(" ");
@@ -100,7 +102,7 @@ function APICallTest2(){
         console.log(timeNeeded+"ms needed to split")
     }
 
-LoadTextFromUrl();
+//LoadTextFromUrl();
 
 
 /* GET home page. */
