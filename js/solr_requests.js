@@ -3,12 +3,13 @@
  */
 
 exports.testfunction = testFunction;
-exports.solrcall = solrcall;
+//exports.solrQuery = solrQuery;
 
 
 function testFunction(){
     console.log("Hallo Welt");
 }
 
-function solrcall(){
-hmfzf}
+function solrQuery(){
+
+}
