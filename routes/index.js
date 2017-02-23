@@ -1,7 +1,9 @@
 var express = require('express');
 var router = express.Router();
 GLOBAL_api_key = 'f2bebbda9a39f53c8a9f92b232ee3238f32b164c';
+var solar_requests = require('../js/solr_requests');
 
+solar_requests.testfunction();
 
 
 timeBefore = new Date().getTime();
@@ -24,7 +26,6 @@ function APICallTest1() {
             console.log(JSON.stringify(response, null, 2));
     });
 }
-
 
 function APICallTest2(){
     var watson = require('watson-developer-cloud');
