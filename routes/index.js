@@ -122,7 +122,7 @@ router.get('/', function(req, res, next) {
 
     function render(Ergebnis){
         //console.log();
-        res.render('index', { files: Ergebnis.file  });
+        res.render('index', { files: Ergebnis });
     }
 
 });
