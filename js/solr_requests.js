@@ -6,7 +6,7 @@
 
 exports.testfunction = testFunction;
 exports.solrQuery = solrQuery
-exports.logErgebnis = logErgebnis;
+//exports.logErgebnis = logErgebnis;
 exports.Ergebnis = Ergebnis;
 
 function testFunction(){
@@ -14,7 +14,7 @@ function testFunction(){
 }
 var Ergebnis = {};
 
-function solrQuery(eventEmitter){
+function solrQuery(render){
 // Require module
     var searchword = "Urteil"
     var SolrNode = require('solr-node');
@@ -61,12 +61,9 @@ function solrQuery(eventEmitter){
         }
 
 
-        eventEmitter.emit('testEmission');
+        render(Ergebnis)
     }
-  eventEmitter.on('testEmission',logErgebnis);
 
 
-}
-function logErgebnis(){
-    return Ergebnis;
+
 }

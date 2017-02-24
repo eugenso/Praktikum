@@ -107,7 +107,7 @@ function APICallTest2(){
         timeNeeded = timeAfter-timeBefore;
         console.log(timeNeeded+"ms needed to split")
     }
-Ergebnis = "223";
+
 
 //emitiere();
 /* GET home page. */
@@ -118,13 +118,11 @@ router.get('/', function(req, res, next) {
     solr_events.on('testEmission',render);
 
     solar_requests.testfunction();
-    solar_requests.solrQuery(solr_events);
+    solar_requests.solrQuery(render);
 
-
-    //is render is triggert when event is finished
-    function render(){
+    function render(Ergebnis){
         //console.log();
-        res.render('index', { files: solar_requests.logErgebnis().file  });
+        res.render('index', { files: Ergebnis.file  });
     }
 
 });
