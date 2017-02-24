@@ -1639,7 +1639,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: rgba(255, 255, 255, 0.55);/*Schriftfarbe Haupttext*/
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -1699,7 +1699,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #ffe7ff; /*schriftfarbe Überschrift*/
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -1891,7 +1891,7 @@
 		border: solid 1px !important;
 		border-color: rgba(255, 255, 255, 0.15) !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #000000 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -3253,11 +3253,11 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #990099;/*Hintergrundfarbe / background color*/
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #ff00ff;/*Leiste unten*/
 		}
 
 		.wrapper.style2 {
@@ -3534,7 +3534,7 @@
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #2f005e; /*Farbe Navigationsleiste*/
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3791,7 +3791,7 @@
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: #ffe7ff;/*Schriftfarbe Navigationsleiste*/
 			}
 
 				#sidebar nav a.active:after {
