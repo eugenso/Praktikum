@@ -16,21 +16,21 @@ var Ergebnis = [];
 
 function solrQuery(render){
 // Require module
-    var searchArray = ["Urteil"];
-
+    var searchArray = ["Urteil","der"];
+    var SearchResult = [];
     var SolrNode = require('solr-node');
 
 // Create client
     var client = new SolrNode({
         host: '127.0.0.1',
         port: '8983',
-        core: 'Paul',
+        core: 'testcore',
         protocol: 'http'
     });
     var searchWordResponses = -1;
     for(var j = 0; j < searchArray.length; j++){
 
-        var myStrQuery = "fl=*,termfreq(_text_,Urteil)&indent=on&q=*&wt=json";
+        var myStrQuery = "fl=*,termfreq(_text_,"+searchArray[j]+")&indent=on&q=*&rows=52000&wt=json";
         console.log("Query send");
         // Search documents using myStrQuery
         client.search(myStrQuery, function (err, result) {
@@ -46,34 +46,50 @@ function solrQuery(render){
     }
 
         function getResponse(result){
-            WortErgebnis = {};
-            WortErgebnis.file = [];
-            console.log(result);
+            var Files = [];
 
-            for(var i = 0; i < result.response.docs.length; i++){
+            var responseHeader = result.responseHeader;
+            if(responseHeader != undefined){
+              // console.log(result.responseHeader.params.fl);
 
-                WortErgebnis.file[i] = {};
-                WortErgebnis.file[i].filename = result.response.docs[i].stream_name[0];
-              //  WortErgebnis.file[i].amountOfWord = result.response.docs[i]["termfreq(_text_,"+searchword+")"];
+                var suchWort = returnStringBetween(responseHeader.params.fl,"_text_,",")");
+               // console.log("Suchwort "+suchWort+":");
 
-                /*console.log(result.response.docs[i].stream_name[0]);
-                console.log(result.response.docs[i]["termfreq(_text_,"+searchword+")"]);
+                for(var i = 0; i < result.response.docs.length; i++){
+                    var FileResult = {};
+                    FileResult.filename ="";
+                    FileResult.amount = 0;
+                  //console.log(result.response.docs[i]);
+                    var actualDocs = result.response.docs[i];
+                    FileResult.amount = actualDocs["termfreq(_text_,"+suchWort+")"];
+                    //console.log("Amount", FileResult.amount);
 
-                console.log("Document Name: "+result.response.docs[i].stream_name[0]+ " Anzahl von "+searchword+": "+ result.response.docs[i]["termfreq(_text_,"+searchword+")"]);
-                */
-             }
-            /*
-            Ergebnis.push(WortErgebnis);
-            searchWordResponses = searchWordResponses +1;
+                    FileResult.filename = returnStringBetween(actualDocs.resourcename[0],"data\\",".txt");
+                    //console.log("Filename "+FileResult.filename);
 
-            if(searchArray.length ==  searchWordResponses){
-                render(Ergebnis);
-                console.log(Ergebnis);
+                    Files.push(FileResult);
+                }
+
+                //console.log(Files);
+                //console.log(suchWort);
+                var Response = {}
+                Response.files = Files;
+                Response.searchString = suchWort;
+               // console.log(Response);
+                SearchResult.push(Response);
+                //console.log(SearchResult);
             }
-            */
+            if(SearchResult.length == searchArray.length){
+                render(SearchResult);
+            }
+
         }
 
 
 
 
+}
+function returnStringBetween (inputString, characterA, characterB){
+    var outputString = inputString.split(characterA).pop().split(characterB).shift();
+    return outputString;
 }

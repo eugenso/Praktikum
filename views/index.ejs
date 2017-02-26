@@ -37,12 +37,15 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Suchergebnisse</h1>
-							<p>Suchwort Urteil: <br> <% //file = files%>
-								<% //for(i=0; i< files.length; i++){%>
-								<%= //file[i].filename %>                Treffer in der Datei:
-								<%= //file[i].amountOfWord %><br>
-								<% //} %>
+							<h1>Suchergebnisse:</h1>
+
+								<% for(i=0; i< result.length; i++){ %>
+                                Suchwort: <%= result[i].searchString; %> <br>
+                                	<% for(j=0; j< result[i].files.length; j++){ %>
+										<%= result[i].files[j].filename %>                Treffer in der Datei:
+										<%= result[i].files[j].amount %><br>
+                                	<% } %><br>
+								<% } %>
 							</p>
 						</div>
 					</section>

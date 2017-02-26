@@ -121,8 +121,9 @@ router.get('/', function(req, res, next) {
     solar_requests.solrQuery(render);
 
     function render(Ergebnis){
-        //console.log();
-        res.render('index', { files: Ergebnis });
+        //console.log(Ergebnis);
+        //console.log(Ergebnis[0].files);
+        res.render('index', { result: Ergebnis });
     }
 
 });
