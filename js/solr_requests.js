@@ -27,7 +27,7 @@ function solrQuery(render){
         core: 'testcore',
         protocol: 'http'
     });
-    var searchWordResponses = -1;
+
     for(var j = 0; j < searchArray.length; j++){
 
         var myStrQuery = "fl=*,termfreq(_text_,"+searchArray[j]+")&indent=on&q=*&rows=52000&wt=json";
