@@ -7,7 +7,6 @@ searchCategoriesAndWords =  [];
 searchFiles = ["Oberlandesgerichte", "Oberverwaltungsgerichte","Arbeitsgerichte"];
 
 function readAllfiles() {
-
     for(var i = 0; i<searchFiles.length; i++){
         readfile(searchFiles[i],callBackAfterAllIsRead);
     }
@@ -15,7 +14,6 @@ function readAllfiles() {
     function callBackAfterAllIsRead(result){
         console.log(result);
     }
-
 }
 
 function readfile(txtname,callBackAfterAllIsRead) {
