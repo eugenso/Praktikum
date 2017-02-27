@@ -1,4 +1,4 @@
-Schleswig-Holsteinisches Verwaltungsgericht
+ï»¿Schleswig-Holsteinisches Verwaltungsgericht
 Verwaltungsgericht Aachen
 Verwaltungsgericht Arnsberg
 Verwaltungsgericht Ansbach
@@ -12,14 +12,14 @@ Verwaltungsgericht Darmstadt
 Verwaltungsgericht der Freien Hansestadt Bremen
 Verwaltungsgericht des Saarlandes
 Verwaltungsgericht Dresden
-Verwaltungsgericht Düsseldorf
+Verwaltungsgericht DÃ¼sseldorf
 Verwaltungsgericht Frankfurt am Main
 Verwaltungsgericht Frankfurt (Oder)
 Verwaltungsgericht Freiburg
 Verwaltungsgericht Gelsenkirchen
 Verwaltungsgericht Gera
-Verwaltungsgericht Gießen
-Verwaltungsgericht Göttingen
+Verwaltungsgericht GieÃŸen
+Verwaltungsgericht GÃ¶ttingen
 Verwaltungsgericht Greifswald
 Verwaltungsgericht Halle
 Verwaltungsgericht Hamburg
@@ -27,18 +27,18 @@ Verwaltungsgericht Hannover
 Verwaltungsgericht Karlsruhe
 Verwaltungsgericht Kassel
 Verwaltungsgericht Koblenz
-Verwaltungsgericht Köln
+Verwaltungsgericht KÃ¶ln
 Verwaltungsgericht Leipzig
-Verwaltungsgericht Lüneburg
+Verwaltungsgericht LÃ¼neburg
 Verwaltungsgericht Magdeburg
 Verwaltungsgericht Mainz
 Verwaltungsgericht Meinigen
 Verwaltungsgericht Minden
-Verwaltungsgericht München
-Verwaltungsgericht Münster
-Verwaltungsgericht Neustadt an der Weinstraße
+Verwaltungsgericht MÃ¼nchen
+Verwaltungsgericht MÃ¼nster
+Verwaltungsgericht Neustadt an der WeinstraÃŸe
 Verwaltungsgericht Oldenburg
-Verwaltungsgericht Osnabrück
+Verwaltungsgericht OsnabrÃ¼ck
 Verwaltungsgericht Potsdam
 Verwaltungsgericht Regensburg
 Verwaltungsgericht Schwerin
@@ -48,7 +48,7 @@ Verwaltungsgericht Stuttgart
 Verwaltungsgericht Trier
 Verwaltungsgericht Weimar
 Verwaltungsgericht Wiesbaden
-Verwaltungsgericht Würzburg
+Verwaltungsgericht WÃ¼rzburg
 
 
 

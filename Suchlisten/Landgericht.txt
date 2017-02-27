@@ -1,4 +1,4 @@
-Landgericht Aachen
+ï»¿Landgericht Aachen
 Landgericht Amberg
 Landgericht Arnsberg
 Landgericht Ansbach
@@ -16,17 +16,17 @@ Landgericht Bochum
 Landgericht Bonn
 Landgericht Braunschweig
 Landgericht Bremen
-Landgericht Bückeburg
+Landgericht BÃ¼ckeburg
 Landgericht Chemnitz
 Landgericht Coburg
 Landgericht Cottbus
 Landgericht Darmstadt
 Landgericht Deggendorf
-Landgericht Dessau-Roßlau
+Landgericht Dessau-RoÃŸlau
 Landgericht Detmold
 Landgericht Dortmund
 Landgericht Dresden
-Landgericht Düsseldorf
+Landgericht DÃ¼sseldorf
 Landgericht Duisburg
 Landgericht Ellwangen (Jagst)
 Landgericht Erfurt
@@ -38,9 +38,9 @@ Landgericht Frankfurt (Oder)
 Landgericht Freiburg
 Landgericht Fulda
 Landgericht Gera
-Landgericht Gießen
-Landgericht Görlitz
-Landgericht Göttingen
+Landgericht GieÃŸen
+Landgericht GÃ¶rlitz
+Landgericht GÃ¶ttingen
 Landgericht Hagen
 Landgericht Halle
 Landgericht Hamburg
@@ -60,33 +60,33 @@ Landgericht Kempten
 Landgericht Kiel
 Landgericht Kleve
 Landgericht Koblenz
-Landgericht Köln
+Landgericht KÃ¶ln
 Landgericht Konstanz
 Landgericht Krefeld
 Landgericht Landau in der Pfalz
 Landgericht Landshut
 Landgericht Leipzig
 Landgericht Limburg an der Lahn
-Landgericht Lübeck
-Landgericht Lüneburg
+Landgericht LÃ¼beck
+Landgericht LÃ¼neburg
 Landgericht Magdeburg
 Landgericht Mainz
 Landgericht Mannheim
 Landgericht Marburg
 Landgericht Meiningen
 Landgericht Memmingen
-Landgericht Mönchengladbach
+Landgericht MÃ¶nchengladbach
 Landgericht Mosbach
-Landgericht Mühlhausen
-Landgericht München I
-Landgericht München II
-Landgericht Münster
+Landgericht MÃ¼hlhausen
+Landgericht MÃ¼nchen I
+Landgericht MÃ¼nchen II
+Landgericht MÃ¼nster
 Landgericht Neubrandenburg
 Landgericht Neuruppin
-Landgericht Nürnberg-Fürth
+Landgericht NÃ¼rnberg-FÃ¼rth
 Landgericht Offenburg
 Landgericht Oldenburg
-Landgericht Osnabrück
+Landgericht OsnabrÃ¼ck
 Landgericht Paderborn
 Landgericht Passau
 Landgericht Potsdam
@@ -94,7 +94,7 @@ Landgericht Ravensburg
 Landgericht Regensburg
 Landgericht Rostock
 Landgericht Rottweil
-Landgericht Saarbrücken
+Landgericht SaarbrÃ¼cken
 Landgericht Schweinfurt
 Landgericht Schwerin
 Landgericht Siegen
@@ -104,13 +104,13 @@ Landgericht Stralsund
 Landgericht Stuttgart
 Landgericht Traunstein
 Landgericht Trier
-Landgericht Tübingen
+Landgericht TÃ¼bingen
 Landgericht Ulm
 Landgericht Verden
 Landgericht Waldshut-Tiengen
 Landgericht Weiden i.d. OPf.
 Landgericht Wiesbaden
-Landgericht Würzburg
+Landgericht WÃ¼rzburg
 Landgericht Wuppertal
-Landgericht Zweibrücken
+Landgericht ZweibrÃ¼cken
 Landgericht Zwickau

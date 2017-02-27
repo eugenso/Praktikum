@@ -40,7 +40,7 @@
 							<h1>Suchergebnisse:</h1>
 
 								<% for(i=0; i< result.length; i++){ %>
-                                    <b><span style="color:darkseagreen">Suchwort: <%= result[i].searchString; %></span></b><br>
+                                    <b style="color:darkseagreen">Suchwort: <%= result[i].searchString; %></b><br>
                                 	<% for(j=0; j< result[i].files.length; j++){ %>
 										<%= result[i].files[j].filename %> &nbsp   | &nbsp            Treffer in der Datei:
 										<%= result[i].files[j].amount %> &nbsp | &nbsp

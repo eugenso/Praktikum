@@ -1,11 +1,11 @@
-Arbeitsgericht Aachen
+ï»¿Arbeitsgericht Aachen
 Arbeitsgericht Arnsberg
 Arbeitsgericht Augsburg
 Arbeitsgericht Bad Hersfeld
 Arbeitsgericht Bamberg
 Arbeitsgericht Bamberg Kammer Coburg
 Arbeitsgericht Bautzen
-Arbeitsgericht Bautzen Außenkammer Görlitz
+Arbeitsgericht Bautzen AuÃŸenkammer GÃ¶rlitz
 Arbeitsgericht Bayreuth
 Arbeitsgericht Bayreuth Kammer Hof
 Arbeitsgericht Berlin
@@ -20,11 +20,11 @@ Arbeitsgericht Celle
 Arbeitsgericht Chemnitz
 Arbeitsgericht Cottbus
 Arbeitsgericht Darmstadt
-Arbeitsgericht Dessau-Roßlau
+Arbeitsgericht Dessau-RoÃŸlau
 Arbeitsgericht Detmold
 Arbeitsgericht Dortmund
 Arbeitsgericht Dresden
-Arbeitsgericht Düsseldorf
+Arbeitsgericht DÃ¼sseldorf
 Arbeitsgericht Duisburg
 Arbeitsgericht Eberswalde
 Arbeitsgericht Eisenach
@@ -39,8 +39,8 @@ Arbeitsgericht Freiburg
 Arbeitsgericht Fulda
 Arbeitsgericht Gera
 Arbeitsgericht Gelsenkirchen
-Arbeitsgericht Gießen
-Arbeitsgericht Göttingen
+Arbeitsgericht GieÃŸen
+Arbeitsgericht GÃ¶ttingen
 Arbeitsgericht Hagen
 Arbeitsgericht Halle
 Arbeitsgericht Hamburg
@@ -60,34 +60,34 @@ Arbeitsgericht Kassel
 Arbeitsgericht Kempten
 Arbeitsgericht Kiel
 Arbeitsgericht Koblenz
-Arbeitsgericht Köln
+Arbeitsgericht KÃ¶ln
 Arbeitsgericht Krefeld
 Arbeitsgericht Leipzig
 Arbeitsgericht Limburg
 Arbeitsgericht Lingen
-Arbeitsgericht Lörrach
+Arbeitsgericht LÃ¶rrach
 Arbeitsgericht Ludwigshafen am Rhein
-Arbeitsgericht Lübeck
-Arbeitsgericht Lüneburg
+Arbeitsgericht LÃ¼beck
+Arbeitsgericht LÃ¼neburg
 Arbeitsgericht Magdeburg
 Arbeitsgericht Mainz
 Arbeitsgericht Mannheim
 Arbeitsgericht Marburg
 Arbeitsgericht Minden
-Arbeitsgericht Mönchengladbach
-Arbeitsgericht München
-Arbeitsgericht Münster
+Arbeitsgericht MÃ¶nchengladbach
+Arbeitsgericht MÃ¼nchen
+Arbeitsgericht MÃ¼nster
 Arbeitsgericht Neubrandenburg
-Arbeitsgericht Neumünster
+Arbeitsgericht NeumÃ¼nster
 Arbeitsgericht Neunkirchen
 Arbeitsgericht Neuruppin
 Arbeitsgericht Nienburg
 Arbeitsgericht Nordhausen
-Arbeitsgericht Nürnberg
+Arbeitsgericht NÃ¼rnberg
 Arbeitsgericht Oberhausen
 Arbeitsgericht Offenbach
 Arbeitsgericht Oldenburg
-Arbeitsgericht Osnabrück
+Arbeitsgericht OsnabrÃ¼ck
 Arbeitsgericht Paderborn
 Arbeitsgericht Passau
 Arbeitsgericht Pforzheim
@@ -97,7 +97,7 @@ Arbeitsgericht Reutlingen
 Arbeitsgericht Rheine
 Arbeitsgericht Rosenheim
 Arbeitsgericht Rostock
-Arbeitsgericht Saarbrücken
+Arbeitsgericht SaarbrÃ¼cken
 Arbeitsgericht Saarlouis
 Arbeitsgericht Schwerin
 Arbeitsgericht Senftenberg
@@ -118,9 +118,9 @@ Arbeitsgericht Wesel
 Arbeitsgericht Wetzlar
 Arbeitsgericht Wiesbaden
 Arbeitsgericht Wilhelmshaven
-Arbeitsgericht Würzburg
-Arbeitsgericht Würzburg Kammer Aschaffenburg
-Arbeitsgericht Würzburg Kammer Schweinfurt
+Arbeitsgericht WÃ¼rzburg
+Arbeitsgericht WÃ¼rzburg Kammer Aschaffenburg
+Arbeitsgericht WÃ¼rzburg Kammer Schweinfurt
 Arbeitsgericht Wuppertal
 Arbeitsgericht Zwickau
 

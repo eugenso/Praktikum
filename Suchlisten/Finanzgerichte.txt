@@ -1,20 +1,20 @@
-Finanzgericht Baden-Württemberg
+ï»¿Finanzgericht Baden-WÃ¼rttemberg
 Finanzgericht Berlin-Brandenburg
 Finanzgericht Bremen
 Finanzgericht des Landes Sachsen-Anhalt
 Finanzgericht des Saarlandes
-Finanzgericht Düsseldorf
+Finanzgericht DÃ¼sseldorf
 Finanzgericht Hamburg
-Finanzgericht Köln
+Finanzgericht KÃ¶ln
 Finanzgericht Mecklenburg-Vorpommern
-Finanzgericht München
-Finanzgericht München Außensenate Augsburg
-Finanzgericht Münster
-Finanzgericht Nürnberg
+Finanzgericht MÃ¼nchen
+Finanzgericht MÃ¼nchen AuÃŸensenate Augsburg
+Finanzgericht MÃ¼nster
+Finanzgericht NÃ¼rnberg
 Finanzgericht Rheinland-Pfalz
 Hessisches Finanzgericht Kassel
-Niedersächsisches Finanzgericht
-Sächsisches Finanzgericht
+NiedersÃ¤chsisches Finanzgericht
+SÃ¤chsisches Finanzgericht
 Schleswig-Holsteinisches Finanzgericht
-Thüringer Finanzgericht
+ThÃ¼ringer Finanzgericht
 

@@ -1,4 +1,4 @@
-Brandenburgisches Oberlandesgericht
+ï»¿Brandenburgisches Oberlandesgericht
 Hanseatisches Oberlandesgericht in Bremen
 Hanseatisches Oberlandesgericht Hamburg
 Kammergericht Berlin
@@ -6,19 +6,19 @@ Oberlandesgericht Bamberg
 Oberlandesgericht Braunschweig
 Oberlandesgericht Celle
 Oberlandesgericht Dresden
-Oberlandesgericht Düsseldorf
+Oberlandesgericht DÃ¼sseldorf
 Oberlandesgericht Hamm
 Oberlandesgericht Frankfurt
 Oberlandesgericht Karlsruhe
 Oberlandesgericht Koblenz
-Oberlandesgericht Köln
-Oberlandesgericht München
+Oberlandesgericht KÃ¶ln
+Oberlandesgericht MÃ¼nchen
 Oberlandesgericht Naumburg
-Oberlandesgericht Nürnberg
+Oberlandesgericht NÃ¼rnberg
 Oberlandesgericht Oldenburg
 Oberlandesgericht Rostock
 Oberlandesgericht Stuttgart
-Pfälzisches Oberlandesgericht Zweibrücken
-Saarländisches Oberlandesgericht
+PfÃ¤lzisches Oberlandesgericht ZweibrÃ¼cken
+SaarlÃ¤ndisches Oberlandesgericht
 Schleswig-Holsteinisches Oberlandesgericht
-Thüringer Oberlandesgericht
+ThÃ¼ringer Oberlandesgericht

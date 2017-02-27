@@ -1,4 +1,4 @@
-Sozialgericht Aachen
+ï»¿Sozialgericht Aachen
 Sozialgericht Altenburg
 Sozialgericht Augsburg
 Sozialgericht Aurich
@@ -9,18 +9,18 @@ Sozialgericht Bremen
 Sozialgericht Chemnitz
 Sozialgericht Cottbus
 Sozialgericht Darmstadt
-Sozialgericht Dessau-Roßlau
+Sozialgericht Dessau-RoÃŸlau
 Sozialgericht Detmold
 Sozialgericht Dortmund
 Sozialgericht Dresden
-Sozialgericht Düsseldorf
+Sozialgericht DÃ¼sseldorf
 Sozialgericht Duisburg
 Sozialgericht Frankfurt am Main
 Sozialgericht Frankfurt (Oder)
 Sozialgericht Freiburg
-Sozialgericht für das Saarland
+Sozialgericht fÃ¼r das Saarland
 Sozialgericht Fulda
-Sozialgericht Gießen
+Sozialgericht GieÃŸen
 Sozialgericht Gelsenkirchen
 Sozialgericht Gotha
 Sozialgericht Halle
@@ -33,30 +33,30 @@ Sozialgericht Karlsruhe
 Sozialgericht Kassel
 Sozialgericht Kiel
 Sozialgericht Koblenz
-Sozialgericht Köln
+Sozialgericht KÃ¶ln
 Sozialgericht Konstanz
 Sozialgericht Landshut
 Sozialgericht Leipzig
-Sozialgericht Lübeck
-Sozialgericht Lüneburg
+Sozialgericht LÃ¼beck
+Sozialgericht LÃ¼neburg
 Sozialgericht Magdeburg
 Sozialgericht Mainz
 Sozialgericht Mannheim
 Sozialgericht Marburg
 Sozialgericht Meiningen
-Sozialgericht München
-Sozialgericht Münster
+Sozialgericht MÃ¼nchen
+Sozialgericht MÃ¼nster
 Sozialgericht Neubrandenburg
 Sozialgericht Neuruppin
 Sozialgericht Nordhausen
-Sozialgericht Nürnberg
+Sozialgericht NÃ¼rnberg
 Sozialgericht Oldenburg
-Sozialgericht Osnabrück
+Sozialgericht OsnabrÃ¼ck
 Sozialgericht Potsdam
 Sozialgericht Regensburg
 Sozialgericht Reutlingen
 Sozialgericht Rostock
-Sozialgericht für das Saarland
+Sozialgericht fÃ¼r das Saarland
 Sozialgericht Schleswig
 Sozialgericht Schwerin
 Sozialgericht Speyer
@@ -67,5 +67,5 @@ Sozialgericht Stuttgart
 Sozialgericht Trier
 Sozialgericht Ulm
 Sozialgericht Wiesbaden
-Sozialgericht Würzburg
+Sozialgericht WÃ¼rzburg
 

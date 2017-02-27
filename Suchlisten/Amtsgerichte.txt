@@ -1,4 +1,4 @@
-Amtsgericht Aachen
+ï»¿Amtsgericht Aachen
 Amtsgericht Aalen
 Amtsgericht Achern
 Amtsgericht Achim
@@ -13,7 +13,7 @@ Amtsgericht Alsfeld
 Amtsgericht Altena
 Amtsgericht Altenburg
 Amtsgericht Altenkirchen
-Amtsgericht Altötting
+Amtsgericht AltÃ¶tting
 Amtsgericht Alzey
 Amtsgericht Amberg
 Amtsgericht Andernach
@@ -34,12 +34,12 @@ Amtsgericht Bad Arolsen
 Amtsgericht Bad Bergzabern
 Amtsgericht Bad Berleburg
 Amtsgericht Bad Doberan
-Amtsgericht Bad Dürkheim
+Amtsgericht Bad DÃ¼rkheim
 Amtsgericht Baden-Baden
 Amtsgericht Bad Freienwalde
 Amtsgericht Bad Gandersheim
 Amtsgericht Bad Hersfeld
-Amtsgericht Bad Homburg v.d. Höhe
+Amtsgericht Bad Homburg v.d. HÃ¶he
 Amtsgericht Bad Iburg
 Amtsgericht Bad Kissingen
 Amtsgericht Bad Kreuznach
@@ -47,7 +47,7 @@ Amtsgericht Bad Liebenwerda
 Amtsgericht Bad Mergentheim
 Amtsgericht Bad Neuenahr-Ahrweiler
 Amtsgericht Bad Oeynhausen
-Amtsgericht Bad Säckingen
+Amtsgericht Bad SÃ¤ckingen
 Amtsgericht Bad Salzungen
 Amtsgericht Bad Saulgau
 Amtsgericht Bad Schwalbach
@@ -67,7 +67,7 @@ Amtsgericht Bergisch Gladbach
 Amtsgericht Bernau
 Amtsgericht Bernburg
 Amtsgericht Bernkastel-Kues
-Amtsgericht Bersenbrück
+Amtsgericht BersenbrÃ¼ck
 Amtsgericht Besigheim
 Amtsgericht Betzdorf
 Amtsgerciht Biberach
@@ -79,7 +79,7 @@ Amtsgericht Bitterfeld-Wolfen
 Amtsgericht Blomberg
 Amtsgericht Bocholt
 Amtsgericht Bochum
-Amtsgericht Böblingen
+Amtsgericht BÃ¶blingen
 Amtsgericht Bonn
 Amtsgericht Borken
 Amtsgericht Borna
@@ -93,16 +93,16 @@ Amtsgericht Breisach
 Amtsgericht Bremen
 Amtsgericht Bremen-Blumenthal
 Amtsgericht Bremerhaven
-Amtsgericht Bremervörde
+Amtsgericht BremervÃ¶rde
 Amtsgericht Bretten
 Amtsgericht Brilon
-Amtsgericht Brühl
+Amtsgericht BrÃ¼hl
 Amtsgericht Bruchsal
 Amtsgericht Buchen
-Amtsgericht Bückeburg
-Amtsgericht Büdingen
-Amtsgericht Bühl
-Amtsgericht Bünde
+Amtsgericht BÃ¼ckeburg
+Amtsgericht BÃ¼dingen
+Amtsgericht BÃ¼hl
+Amtsgericht BÃ¼nde
 Amtsgericht Burg
 Amtsgericht Burgdorf
 Amtsgericht Burgwedel
@@ -128,10 +128,10 @@ Amtsgericht Dannenberg
 Amtsgericht Darmstadt
 Amtsgericht Daun
 Amtsgericht Deggendorf
-Amtsgericht Delbrück
+Amtsgericht DelbrÃ¼ck
 Amtsgericht Delmenhorst
 Amtsgericht Demmin
-Amtsgericht Dessau-Roßlau
+Amtsgericht Dessau-RoÃŸlau
 Amtsgericht Detmold
 Amtsgericht Dieburg
 Amtsgericht Diepholz
@@ -140,27 +140,27 @@ Amtsgericht Dillenburg
 Amtsgericht Dillingen
 Amtsgericht Dinslaken
 Amtsgericht Dippoldiswalde
-Amtsgericht Döbeln
+Amtsgericht DÃ¶beln
 Amtsgericht Donaueschingen
 Amtsgericht Dorsten
 Amtsgericht Dortmund
 Amtsgericht Dresden
 Amtsgericht Duderstadt
-Amtsgericht Dülmen
-Amtsgericht Düren
-Amtsgericht Düsseldorf
+Amtsgericht DÃ¼lmen
+Amtsgericht DÃ¼ren
+Amtsgericht DÃ¼sseldorf
 Amtsgericht Duisburg
 Amtsgericht Duisburg-Hamborn
 Amtsgericht Duisburg-Ruhrort
 Amtsgericht Ebersberg
 Amtsgericht Eberswalde
-Amtsgericht Eckernförde
+Amtsgericht EckernfÃ¶rde
 Amtsgericht Eggenfelden
 Amtsgericht Ehingen (Donau)
 Amtsgericht Eilenburg
 Amtsgericht Einbeck
 Amtsgericht Eisenach
-Amtsgericht Eisenhüttenstadt
+Amtsgericht EisenhÃ¼ttenstadt
 Amtsgericht Eisleben
 Amtsgericht Ellwangen/Jagst
 Amtsgericht Elmshorn
@@ -195,10 +195,10 @@ Amtsgericht Freudenstadt
 Amtsgericht Freyung
 Amtsgericht Friedberg (Hessen)
 Amtsgericht Fritzlar
-Amtsgericht Fürstenfeldbruck
-Amtsgericht Fürstenwalde
-Amtsgericht Fürth (Bayern)
-Amtsgericht Fürth (Hessen)
+Amtsgericht FÃ¼rstenfeldbruck
+Amtsgericht FÃ¼rstenwalde
+Amtsgericht FÃ¼rth (Bayern)
+Amtsgericht FÃ¼rth (Hessen)
 Amtsgericht Fulda
 Amtsgericht Garmisch-Partenkirchen
 Amtsgericht Gardelegen
@@ -208,30 +208,30 @@ Amtsgericht Geldern
 Amtsgericht Gelnhausen
 Amtsgericht Gelsenkirchen
 Amtsgericht Gelsenkirchen-Buer
-Amtsgericht Gemünden a. Main
+Amtsgericht GemÃ¼nden a. Main
 Amtsgericht Gengenbach
 Amtsgericht Gera
 Amtsgericht Germersheim
 Amtsgericht Gernsbach
-Amtsgericht Gießen
+Amtsgericht GieÃŸen
 Amtsgericht Gifhorn
 Amtsgericht Gladbeck
-Amtsgericht Göppingen
-Amtsgericht Görlitz
-Amtsgericht Göttingen
+Amtsgericht GÃ¶ppingen
+Amtsgericht GÃ¶rlitz
+Amtsgericht GÃ¶ttingen
 Amtsgericht Goslar
 Amtsgericht Gotha
 Amtsgericht Greifswald
 Amtsgericht Greiz
 Amtsgericht Grevenbroich
-Amtsgericht Grevesmühlen
+Amtsgericht GrevesmÃ¼hlen
 Amtsgericht Grimma
 Amtsgericht Gronau
-Amtsgericht Groß-Gerau
-Amtsgericht Grünstadt
-Amtsgericht Güstrow
-Amtsgericht Günzburg
-Amtsgericht Gütersloh
+Amtsgericht GroÃŸ-Gerau
+Amtsgericht GrÃ¼nstadt
+Amtsgericht GÃ¼strow
+Amtsgericht GÃ¼nzburg
+Amtsgericht GÃ¼tersloh
 Amtsgericht Guben
 Amtsgericht Gummersbach
 Amtsgericht Hagen
@@ -253,8 +253,8 @@ Amtsgericht Hameln
 Amtsgericht Hamm
 Amtsgericht Hanau
 Amtsgericht Hannover
-Amtsgericht Hann.Münden
-Amtsgericht Haßfurt
+Amtsgericht Hann.MÃ¼nden
+Amtsgericht HaÃŸfurt
 Amtsgericht Hattingen
 Amtsgericht Hechingen
 Amtsgericht Heidelberg
@@ -271,17 +271,17 @@ Amtsgericht Hersbruck
 Amtsgericht Herzberg
 Amtsgericht Hildburghausen
 Amtsgericht Hildesheim
-Amtsgericht Höxter
+Amtsgericht HÃ¶xter
 Amtsgericht Hof
-Amtsgericht Hohenschönhausen
+Amtsgericht HohenschÃ¶nhausen
 Amtsgericht Hohenstein-Ernstthal
 Amtsgericht Holzminden
 Amtsgericht Homburg
 Amtsgercht Horb am Neckar
 Amtsgericht Hoyerswerda
-Amtsgericht Hünfeld
+Amtsgericht HÃ¼nfeld
 Amtsgericht Husum
-Amtsgericht Ibbenbüren
+Amtsgericht IbbenbÃ¼ren
 Amtsgericht Idar-Oberstein
 Amtsgericht Idstein
 Amtsgericht Ingolstadt
@@ -289,7 +289,7 @@ Amtsgericht Iserlohn
 Amtsgericht Itzehoe
 Amtsgericht Jena
 Amtsgericht Jever
-Amtsgericht Jülich
+Amtsgericht JÃ¼lich
 Amtsgericht Kaiserslautern
 Amtsgericht Kamen
 Amtsgericht Kamenz
@@ -309,17 +309,17 @@ Amtsgericht Kirchheim unter Teck
 Amtsgericht Kitzingen
 Amtsgericht Kleve
 Amtsgericht Koblenz
-Amtsgericht Köln
-Amtsgericht Königstein i. Ts.
-Amtsgericht Königswinter
-Amtsgericht Königs Wusterhausen
-Amtsgericht Köpenick
-Amtsgericht Köthen
+Amtsgericht KÃ¶ln
+Amtsgericht KÃ¶nigstein i. Ts.
+Amtsgericht KÃ¶nigswinter
+Amtsgericht KÃ¶nigs Wusterhausen
+Amtsgericht KÃ¶penick
+Amtsgericht KÃ¶then
 Amtsgericht Konstanz
 Amtsgericht Korbach
 Amtsgericht Krefeld
 Amtsgericht Kronach
-Amtsgericht Künzelsau
+Amtsgericht KÃ¼nzelsau
 Amtsgericht Kulmbach
 Amtsgericht Kusel
  
@@ -343,7 +343,7 @@ Amtsgericht Lemgo
 Amtsgericht Lennestadt
 Amtsgericht Leipzig
 Amtsgericht Leonberg
-Amtsgericht Leutkirch im Allgäu
+Amtsgericht Leutkirch im AllgÃ¤u
 Amtsgericht Leverkusen
 Amtsgericht Lichtenberg
 Amtsgericht Lichtenfels
@@ -352,19 +352,19 @@ Amtsgericht Lindau
 Amtsgericht Lingen
 Amtsgericht Linz am Rhein
 Amtsgericht Lippstadt
-Amtsgericht Löbau
-Amtsgericht Lörrach
+Amtsgericht LÃ¶bau
+Amtsgericht LÃ¶rrach
 Amtsgericht Luckenwalde
 Amtsgericht Ludwigsburg
 Amtsgericht Ludwigshafen am Rhein
 Amtsgericht Ludwigslust
-Amtsgericht Lübben
-Amtsgericht Lübeck
-Amtsgericht Lübbecke
-Amtsgericht Lüdenscheid
-Amtsgericht Lüdinghausen
-Amtsgericht Lüneburg
-Amtsgericht Lünen
+Amtsgericht LÃ¼bben
+Amtsgericht LÃ¼beck
+Amtsgericht LÃ¼bbecke
+Amtsgericht LÃ¼denscheid
+Amtsgericht LÃ¼dinghausen
+Amtsgericht LÃ¼neburg
+Amtsgericht LÃ¼nen
 Amtsgericht Magdeburg
 Amtsgericht Mainz
 Amtsgericht Mannheim
@@ -378,7 +378,7 @@ Amtsgericht Mayen
 Amtsgericht Medebach
 Amtsgericht Meinerzhagen
 Amtsgericht Meinigen
-Amtsgericht Meißen
+Amtsgericht MeiÃŸen
 Amtsgericht Meldorf
 Amtsgericht Melsungen
 Amtsgericht Memmingen
@@ -391,19 +391,19 @@ Amtsgericht Mettmann
 Amtsgericht Michelstadt
 Amtsgericht Minden
 Amtsgericht (Berlin) Mitte
-Amtsgericht Mönchengladbach
-Amtsgericht Mönchengladbach-Rheydt
+Amtsgericht MÃ¶nchengladbach
+Amtsgericht MÃ¶nchengladbach-Rheydt
 Amtsgericht Moers
 Amtsgericht Monschau
 Amtsgericht Montabaur
 Amtsgericht Mosbach
-Amtsgericht Mühldorf a. Inn
-Amtsgericht Mühlhausen
-Amtsgericht Mülheim an der Ruhr
-Amtsgericht Müllheim
-Amtsgericht München
-Amtsgericht Münsingen
-Amtsgericht Münster
+Amtsgericht MÃ¼hldorf a. Inn
+Amtsgericht MÃ¼hlhausen
+Amtsgericht MÃ¼lheim an der Ruhr
+Amtsgericht MÃ¼llheim
+Amtsgericht MÃ¼nchen
+Amtsgericht MÃ¼nsingen
+Amtsgericht MÃ¼nster
 Amtsgericht Nagold
 Amtsgericht Nauen
 Amtsgericht Naumburg
@@ -411,34 +411,34 @@ Amtsgericht Neresheim
 Amtsgericht Nettetal
 Amtsgericht Neubrandenburg
 Amtsgericht Neuburg a.d. Donau
-Amtsgericht Neukölln
+Amtsgericht NeukÃ¶lln
 Amtsgericht Neumarkt i.d.OPf
-Amtsgericht Neumünster
+Amtsgericht NeumÃ¼nster
 Amtsgericht Neunkirchen
 Amtsgericht Neuruppin
 Amtsgericht Neuss
 Amtsgericht Neustadt a.d. Aisch
-Amtsgericht Neustadt a. d. Weinstraße
+Amtsgericht Neustadt a. d. WeinstraÃŸe
 Amtsgericht Neustadt a. Rbge
 Amtsgericht Neustrelitz
 Amtsgericht Neu-Ulm .
 Amtsgericht Neuwied
 Amtsgericht Nidda
-Amtsgericht Niebüll
+Amtsgericht NiebÃ¼ll
 Amtsgericht Nienburg
-Amtsgericht Nördlingen
+Amtsgericht NÃ¶rdlingen
 Amtsgericht Norden
 Amtsgericht Nordenham
 Amtsgericht Norderstedt
 Amtsgericht Nordhausen
 Amtsgericht Nordhorn
 Amtsgericht Northeim
-Amtsgericht Nürnberg
-Amtsgericht Nürtingen
+Amtsgericht NÃ¼rnberg
+Amtsgericht NÃ¼rtingen
 Amtsgericht Oberhausen
 Amtsgericht Oberkirch
 Amtsgericht Oberndorf am Neckar
-Amtsgericht Öhringen
+Amtsgericht Ã–hringen
 Amtsgericht Offenbach
 Amtsgericht Offenburg
 Amtsgericht Oldenburg
@@ -447,13 +447,13 @@ Amtsgericht Olpe
 Amtsgericht Oranienburg
 Amtsgericht Oschatz
 Amtsgericht Oschersleben
-Amtsgericht Osnabrück
+Amtsgericht OsnabrÃ¼ck
 Amtsgericht Osterholz-Scharmbeck
 Amtsgericht Osterode
 Amtsgericht Otterndorf
 Amtsgericht Ottweiler
 Amtsgericht Paderborn
-Amtsgericht Pankow/Weißensee
+Amtsgericht Pankow/WeiÃŸensee
 Amtsgericht Papenburg
 Amtsgericht Parchim
 Amtsgericht Pasewalk
@@ -469,11 +469,11 @@ Amtsgericht Pirmasens
 Amtsgericht Pirna
 Amtsgericht Plauen
 Amtsgericht Plettenberg
-Amtsgericht Plön
-Amtsgericht Pößneck
+Amtsgericht PlÃ¶n
+Amtsgericht PÃ¶ÃŸneck
 Amtsgericht Potsdam
 Amtsgericht Prenzlau
-Amtsgericht Prüm
+Amtsgericht PrÃ¼m
 Amtsgericht Quedlinburg
 Amtsgericht Radolfzell
 Amtsgericht Rahden
@@ -488,7 +488,7 @@ Amtsgericht Reinbek
 Amtsgericht Remscheid
 Amtsgericht Rendsburg
 Amtsgericht Reutlingen
-Amtsgericht Rheda-Wiedenbrück
+Amtsgericht Rheda-WiedenbrÃ¼ck
 Amtsgericht Rheinbach
 Amtsgericht Rheinberg
 Amtsgericht Rheine
@@ -500,13 +500,13 @@ Amtsgericht Rockenhausen
 Amtsgericht Rosenheim
 Amtsgericht Rostock
 Amtsgericht Rotenburg a.d. F.
-Amtsgericht Rotenburg (Wümme)
+Amtsgericht Rotenburg (WÃ¼mme)
 Amtsgericht Rottenburg am Neckar
 Amtsgericht Rottweil
 Amtsgericht Rudolstadt
-Amtsgericht Rüdesheim
-Amtsgericht Rüsselsheim
-Amtsgericht Saarbrücken
+Amtsgericht RÃ¼desheim
+Amtsgericht RÃ¼sselsheim
+Amtsgericht SaarbrÃ¼cken
 Amtsgericht Saarlouis
 Amtsgericht Salzgitter
 Amtsgericht Saarburg
@@ -514,17 +514,17 @@ Amtsgericht Salzwedel
 Amtsgericht Sangerhausen
 Amtsgericht Schleiden
 Amtsgericht Schleswig
-Amtsgericht Schlüchtern
+Amtsgericht SchlÃ¼chtern
 Amtsgericht Schmallenberg
-Amtsgericht Schönau
-Amtsgericht Schönebeck
-Amtsgericht Schöneberg
+Amtsgericht SchÃ¶nau
+Amtsgericht SchÃ¶nebeck
+Amtsgericht SchÃ¶neberg
 Amtsgericht Schopfheim
 Amtsgericht Schorndorf
 Amtsgericht Schwabach
-Amtsgericht Schwabmünchen
-Amtsgericht Schwäbisch Gmünd
-Amtsgericht Schwäbisch Hall
+Amtsgericht SchwabmÃ¼nchen
+Amtsgericht SchwÃ¤bisch GmÃ¼nd
+Amtsgericht SchwÃ¤bisch Hall
 Amtsgericht Schwalmstadt
 Amtsgericht Schwarzenbek
 Amtsgericht Schwedt
@@ -539,11 +539,11 @@ Amtsgericht Senftenberg
 Amtsgericht Siegburg
 Amtsgericht Siegen
 Amtsgericht Sigmaringen
-Amtsgericht Simmern (Hunsrück)
+Amtsgericht Simmern (HunsrÃ¼ck)
 Amtsgericht Singen
 Amtsgericht Sinsheim
 Amtsgericht Sinzig
-Amtsgericht Sömmerda
+Amtsgericht SÃ¶mmerda
 Amtsgericht Soest
 Amtsgericht Solingen
 Amtsgericht Soltau
@@ -586,10 +586,10 @@ Amtsgericht Tostedt
 Amtsgericht Tirschenreuth
 Amtsgericht Traunstein
 Amtsgericht Trier
-Amtsgericht Tübingen
+Amtsgericht TÃ¼bingen
 Amtsgericht Tuttlingen
-Amtsgericht Überlingen
-Amtsgericht Ueckermünde
+Amtsgericht Ãœberlingen
+Amtsgericht UeckermÃ¼nde
 Amtsgericht Uelzen
 Amtsgericht Ulm
 Amtsgericht Unna
@@ -602,14 +602,14 @@ Amtsgericht Verden
 Amtsgericht Viersen
 Amtsgericht Viechtach
 Amtsgericht Villingen-Schwenningen
-Amtsgericht Völklingen
-Amtsgericht Vohenstrauß
+Amtsgericht VÃ¶lklingen
+Amtsgericht VohenstrauÃŸ
 Amtsgericht Waiblingen
-Amtsgericht Waldbröl
+Amtsgericht WaldbrÃ¶l
 Amtsgericht Waldkirch
 Amtsgericht Waldshut-Tiengen
 Amtsgericht Walsrode
-Amtsgericht Wangen im Allgäu
+Amtsgericht Wangen im AllgÃ¤u
 Amtsgericht Warburg
 Amtsgericht Waren
 Amtsgericht Warendorf
@@ -621,9 +621,9 @@ Amtsgericht Weilburg
 Amtsgericht Weilheim i. OB
 Amtsgericht Weimar
 Amtsgericht Weinheim
-Amtsgericht Weißenburg i. Bay.
-Amtsgericht Weißenfels
-Amtsgericht Weißwasser
+Amtsgericht WeiÃŸenburg i. Bay.
+Amtsgericht WeiÃŸenfels
+Amtsgericht WeiÃŸwasser
 Amtsgericht Wennigsen
 Amtsgericht Werl
 Amtsgericht Wermelskirchen
@@ -639,18 +639,18 @@ Amtsgericht Wiesloch
 Amtsgericht Wildeshausen
 Amtsgericht Wilhelmshaven
 Amtsgericht Winsen (Luhe)
-Amtsgericht Wipperfürth
+Amtsgericht WipperfÃ¼rth
 Amtsgericht Wismar
 Amtsgericht Witten
 Amtsgericht Wittenberg
 Amtsgericht Wittlich
 Amtsgericht Wittmund
 Amtsgericht Wolfach
-Amtsgericht Wolfenbüttel
+Amtsgericht WolfenbÃ¼ttel
 Amtsgericht Wolfsburg
 Amtsgericht Wolgast
 Amtsgericht Worms
-Amtsgericht Würzburg
+Amtsgericht WÃ¼rzburg
 Amtsgericht Wunsiedel
 Amtsgericht Wuppertal
 Amtsgericht Zehdenick
@@ -659,5 +659,5 @@ Amtsgericht Zerbst
 Amtsgericht Zeven
 Amtsgericht Zittau
 Amtsgericht Zossen
-Amtsgericht Zweibrücken
+Amtsgericht ZweibrÃ¼cken
 Amtsgericht Zwickau

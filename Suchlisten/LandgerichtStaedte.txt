@@ -1,4 +1,4 @@
-Aachen
+ï»¿Aachen
 Amberg
 Arnsberg
 Aachen
@@ -19,17 +19,17 @@ Bochum
 Bonn
 Braunschweig
 Bremen
-Bückeburg
+BÃ¼ckeburg
 Chemnitz
 Coburg
 Cottbus
 Darmstadt
 Deggendorf
-Dessau-Roßlau
+Dessau-RoÃŸlau
 Detmold
 Dortmund
 Dresden
-Düsseldorf
+DÃ¼sseldorf
 Duisburg
 Ellwangen (Jagst)
 Erfurt
@@ -41,9 +41,9 @@ Frankfurt (Oder)
 Freiburg
 Fulda
 Gera
-Gießen
-Görlitz
-Göttingen
+GieÃŸen
+GÃ¶rlitz
+GÃ¶ttingen
 Hagen
 Halle
 Hamburg
@@ -63,33 +63,33 @@ Kempten
 Kiel
 Kleve
 Koblenz
-Köln
+KÃ¶ln
 Konstanz
 Krefeld
 Landau in der Pfalz
 Landshut
 Leipzig
 Limburg an der Lahn
-Lübeck
-Lüneburg
+LÃ¼beck
+LÃ¼neburg
 Magdeburg
 Mainz
 Mannheim
 Marburg
 Meiningen
 Memmingen
-Mönchengladbach
+MÃ¶nchengladbach
 Mosbach
-Mühlhausen
-München I
-München II
-Münster
+MÃ¼hlhausen
+MÃ¼nchen I
+MÃ¼nchen II
+MÃ¼nster
 Neubrandenburg
 Neuruppin
-Nürnberg-Fürth
+NÃ¼rnberg-FÃ¼rth
 Offenburg
 Oldenburg
-Osnabrück
+OsnabrÃ¼ck
 Paderborn
 Passau
 Potsdam
@@ -97,7 +97,7 @@ Ravensburg
 Regensburg
 Rostock
 Rottweil
-Saarbrücken
+SaarbrÃ¼cken
 Schweinfurt
 Schwerin
 Siegen
@@ -107,13 +107,13 @@ Stralsund
 Stuttgart
 Traunstein
 Trier
-Tübingen
+TÃ¼bingen
 Ulm
 Verden
 Waldshut-Tiengen
 Weiden i.d. OPf.
 Wiesbaden
-Würzburg
+WÃ¼rzburg
 Wuppertal
-Zweibrücken
+ZweibrÃ¼cken
 ZwickauAnsbach
