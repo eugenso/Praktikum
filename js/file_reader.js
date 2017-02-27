@@ -11,6 +11,7 @@ function readAllfiles() {
     for(var i = 0; i<searchFiles.length; i++){
         readfile(searchFiles[i],callBackAfterAllIsRead);
     }
+    //Callback after all Files are read
     function callBackAfterAllIsRead(result){
         console.log(result);
     }
