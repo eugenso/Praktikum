@@ -43,7 +43,9 @@
                                 Suchwort: <%= result[i].searchString; %> <br>
                                 	<% for(j=0; j< result[i].files.length; j++){ %>
 										<%= result[i].files[j].filename %>                Treffer in der Datei:
-										<%= result[i].files[j].amount %><br>
+										<%= result[i].files[j].amount %>
+                           <%= result[i].files[j].filename %>
+								<br>
                                 	<% } %><br>
 								<% } %>
 							</p>
