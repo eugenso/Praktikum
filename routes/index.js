@@ -7,11 +7,14 @@ TestEvents ={};
 //test = "test2233";
 GLOBAL_api_key = 'f2bebbda9a39f53c8a9f92b232ee3238f32b164c';
 var solar_requests = require('../js/solr_requests');
+var file_reader = require('../js/file_reader');
 events = require('events');
 
 solr_events = new events.EventEmitter();
 
 timeBefore = new Date().getTime();
+
+file_reader.readfile();
 
 function APICallTest1() {
     var AlchemyLanguageV1 = require('watson-developer-cloud/alchemy-language/v1');
