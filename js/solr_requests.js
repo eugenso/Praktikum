@@ -44,7 +44,7 @@ function solrQuery(render){
 
         });
     }
-
+    //asynchrone function get called when answer from http reader is received
         function getResponse(result){
             var Files = [];
 
