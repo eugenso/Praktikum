@@ -1,0 +1,116 @@
+Landgericht Aachen
+Landgericht Amberg
+Landgericht Arnsberg
+Landgericht Ansbach
+Landgericht Aschaffenburg
+Landgericht Augsburg
+Landgericht Aurich
+Landgericht Baden.Baden
+Landgericht Bad Kreuznach
+Landgericht Bamberg
+Landgericht Bautzen
+Landgericht Bayreuth
+Landgericht Berlin
+Landgericht Bielefeld
+Landgericht Bochum
+Landgericht Bonn
+Landgericht Braunschweig
+Landgericht Bremen
+Landgericht Bückeburg
+Landgericht Chemnitz
+Landgericht Coburg
+Landgericht Cottbus
+Landgericht Darmstadt
+Landgericht Deggendorf
+Landgericht Dessau-Roßlau
+Landgericht Detmold
+Landgericht Dortmund
+Landgericht Dresden
+Landgericht Düsseldorf
+Landgericht Duisburg
+Landgericht Ellwangen (Jagst)
+Landgericht Erfurt
+Landgericht Essen
+Landgericht Flensburg
+Landgericht Frankenthal (Pfalz)
+Landgericht Frankfurt am Main
+Landgericht Frankfurt (Oder)
+Landgericht Freiburg
+Landgericht Fulda
+Landgericht Gera
+Landgericht Gießen
+Landgericht Görlitz
+Landgericht Göttingen
+Landgericht Hagen
+Landgericht Halle
+Landgericht Hamburg
+Landgericht Hanau
+Landgericht Hannover
+Landgericht Hechingen
+Landgericht Heidelberg
+Landgericht Heilbronn
+Landgericht Hildesheim
+Landgericht Hof
+Landgericht Ingolstadt
+Landgericht Itzehoe
+Landgericht Kaiserslautern
+Landgericht Karlsruhe
+Landgericht Kassel
+Landgericht Kempten
+Landgericht Kiel
+Landgericht Kleve
+Landgericht Koblenz
+Landgericht Köln
+Landgericht Konstanz
+Landgericht Krefeld
+Landgericht Landau in der Pfalz
+Landgericht Landshut
+Landgericht Leipzig
+Landgericht Limburg an der Lahn
+Landgericht Lübeck
+Landgericht Lüneburg
+Landgericht Magdeburg
+Landgericht Mainz
+Landgericht Mannheim
+Landgericht Marburg
+Landgericht Meiningen
+Landgericht Memmingen
+Landgericht Mönchengladbach
+Landgericht Mosbach
+Landgericht Mühlhausen
+Landgericht München I
+Landgericht München II
+Landgericht Münster
+Landgericht Neubrandenburg
+Landgericht Neuruppin
+Landgericht Nürnberg-Fürth
+Landgericht Offenburg
+Landgericht Oldenburg
+Landgericht Osnabrück
+Landgericht Paderborn
+Landgericht Passau
+Landgericht Potsdam
+Landgericht Ravensburg
+Landgericht Regensburg
+Landgericht Rostock
+Landgericht Rottweil
+Landgericht Saarbrücken
+Landgericht Schweinfurt
+Landgericht Schwerin
+Landgericht Siegen
+Landgericht Stade
+Landgericht Stendal
+Landgericht Stralsund
+Landgericht Stuttgart
+Landgericht Traunstein
+Landgericht Trier
+Landgericht Tübingen
+Landgericht Ulm
+Landgericht Verden
+Landgericht Waldshut-Tiengen
+Landgericht Weiden i.d. OPf.
+Landgericht Wiesbaden
+Landgericht Würzburg
+Landgericht Wuppertal
+Landgericht Zweibrücken
+Landgericht Zwickau

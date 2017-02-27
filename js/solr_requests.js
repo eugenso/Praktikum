@@ -16,7 +16,7 @@ var Ergebnis = [];
 
 function solrQuery(render){
 // Require module
-    var searchArray = ["Urteil","der"];
+    var searchArray = ["Urteil","der","Richter"];
     var SearchResult = [];
     var SolrNode = require('solr-node');
 

@@ -1,0 +1,663 @@
+Amtsgericht Aachen
+Amtsgericht Aalen
+Amtsgericht Achern
+Amtsgericht Achim
+Amtsgericht Adelsheim
+Amtsgericht Ahaus
+Amtsgericht Ahlen
+Amtsgericht Ahrensburg
+Amtsgericht Aichach
+Amtsgericht Albstadt
+Amtsgericht Alfeld
+Amtsgericht Alsfeld
+Amtsgericht Altena
+Amtsgericht Altenburg
+Amtsgericht Altenkirchen
+Amtsgericht Altötting
+Amtsgericht Alzey
+Amtsgericht Amberg
+Amtsgericht Andernach
+Amtsgericht Anklam
+Amtsgericht Annaberg
+Amtsgericht Ansbach
+Amtsgericht Apolda
+Amtsgericht Arnsberg
+Amtsgericht Arnstadt
+Amtsgericht Aschersleben
+Amtsgericht Aue
+Amtsgericht Auerbach
+Amtsgericht Augsburg
+Amtsgericht Aurich
+Amtsgericht Backnang
+Amtsgericht Bad Aibling
+Amtsgericht Bad Arolsen
+Amtsgericht Bad Bergzabern
+Amtsgericht Bad Berleburg
+Amtsgericht Bad Doberan
+Amtsgericht Bad Dürkheim
+Amtsgericht Baden-Baden
+Amtsgericht Bad Freienwalde
+Amtsgericht Bad Gandersheim
+Amtsgericht Bad Hersfeld
+Amtsgericht Bad Homburg v.d. Höhe
+Amtsgericht Bad Iburg
+Amtsgericht Bad Kissingen
+Amtsgericht Bad Kreuznach
+Amtsgericht Bad Liebenwerda
+Amtsgericht Bad Mergentheim
+Amtsgericht Bad Neuenahr-Ahrweiler
+Amtsgericht Bad Oeynhausen
+Amtsgericht Bad Säckingen
+Amtsgericht Bad Salzungen
+Amtsgericht Bad Saulgau
+Amtsgericht Bad Schwalbach
+Amtsgericht Bad Segeberg
+Amtsgericht Bad Sobernheim
+Amtsgericht Bad Urach
+Amtsgericht Bad Waldsee
+Amtsgericht Balingen
+Amtsgericht Bamberg
+Amtsgericht Bautzen
+Amtsgericht Bayreuth
+Amtsgericht Beckum
+Amtsgericht Bensheim
+Amtsgericht Bergen
+Amtsgericht Bergheim
+Amtsgericht Bergisch Gladbach
+Amtsgericht Bernau
+Amtsgericht Bernburg
+Amtsgericht Bernkastel-Kues
+Amtsgericht Bersenbrück
+Amtsgericht Besigheim
+Amtsgericht Betzdorf
+Amtsgerciht Biberach
+Amtsgericht Biedenkopf
+Amtsgericht Bielefeld
+Amtsgericht Bingen am Rhein
+Amtsgericht Bitburg
+Amtsgericht Bitterfeld-Wolfen
+Amtsgericht Blomberg
+Amtsgericht Bocholt
+Amtsgericht Bochum
+Amtsgericht Böblingen
+Amtsgericht Bonn
+Amtsgericht Borken
+Amtsgericht Borna
+Amtsgericht Bottrop
+Amtsgericht Brackenheim
+Amtsgericht Brake
+Amtsgericht Brakel
+Amtsgericht Brandenburg an der Havel
+Amtsgericht Braunschweig
+Amtsgericht Breisach
+Amtsgericht Bremen
+Amtsgericht Bremen-Blumenthal
+Amtsgericht Bremerhaven
+Amtsgericht Bremervörde
+Amtsgericht Bretten
+Amtsgericht Brilon
+Amtsgericht Brühl
+Amtsgericht Bruchsal
+Amtsgericht Buchen
+Amtsgericht Bückeburg
+Amtsgericht Büdingen
+Amtsgericht Bühl
+Amtsgericht Bünde
+Amtsgericht Burg
+Amtsgericht Burgdorf
+Amtsgericht Burgwedel
+Amtsgericht Buxtehude
+Amtsgericht Calw
+Amtsgericht Castop-Rauxel
+Amtsgericht Celle
+Amtsgericht Cham
+Amtsgericht Charlottenburg
+Amtsgericht Chemnitz
+Amtsgericht Clausthal-Zellerfeld
+Amtsgericht Cloppenburg
+Amtsgericht Coburg
+Amtsgericht Coburg (Zentrales 
+Mahngericht)
+Amtsgericht Cochem
+Amtsgericht Coesfeld
+Amtsgericht Cottbus
+Amtsgericht Crailsheim
+Amtsgericht Cuxhaven
+Amtsgericht Dachau
+Amtsgericht Dannenberg
+Amtsgericht Darmstadt
+Amtsgericht Daun
+Amtsgericht Deggendorf
+Amtsgericht Delbrück
+Amtsgericht Delmenhorst
+Amtsgericht Demmin
+Amtsgericht Dessau-Roßlau
+Amtsgericht Detmold
+Amtsgericht Dieburg
+Amtsgericht Diepholz
+Amtsgericht Diez
+Amtsgericht Dillenburg
+Amtsgericht Dillingen
+Amtsgericht Dinslaken
+Amtsgericht Dippoldiswalde
+Amtsgericht Döbeln
+Amtsgericht Donaueschingen
+Amtsgericht Dorsten
+Amtsgericht Dortmund
+Amtsgericht Dresden
+Amtsgericht Duderstadt
+Amtsgericht Dülmen
+Amtsgericht Düren
+Amtsgericht Düsseldorf
+Amtsgericht Duisburg
+Amtsgericht Duisburg-Hamborn
+Amtsgericht Duisburg-Ruhrort
+Amtsgericht Ebersberg
+Amtsgericht Eberswalde
+Amtsgericht Eckernförde
+Amtsgericht Eggenfelden
+Amtsgericht Ehingen (Donau)
+Amtsgericht Eilenburg
+Amtsgericht Einbeck
+Amtsgericht Eisenach
+Amtsgericht Eisenhüttenstadt
+Amtsgericht Eisleben
+Amtsgericht Ellwangen/Jagst
+Amtsgericht Elmshorn
+Amtsgericht Elze
+Amtsgericht Emden
+Amtsgericht Emmendingen
+Amtsgericht Emmerich
+Amtsgericht Erding
+Amtsgericht Erfurt
+Amtsgericht Erkelenz
+Amtsgericht Erlangen
+Amtsgericht Eschwege
+Amtsgericht Eschweiler
+Amtsgericht Essen
+Amtsgericht Essen-Borbeck
+Amtsgericht Essen-Steele
+Amtsgericht Esslingen am Neckar
+Amtsgericht Ettenheim
+Amtsgericht Ettlingen
+Amtsgericht Euskirchen
+Amtsgericht Eutin
+Amtsgericht Flensburg
+Amtsgericht Forchheim
+Amtsgericht Frankenberg (Eder)
+Amtsgericht Frankenthal (Pfalz)
+Amtsgericht Frankfurt am Main
+Amtsgericht Frankfurt (Oder)
+Amtsgericht Freiberg
+Amtsgericht Freiburg
+Amtsgericht Freising
+Amtsgericht Freudenstadt
+Amtsgericht Freyung
+Amtsgericht Friedberg (Hessen)
+Amtsgericht Fritzlar
+Amtsgericht Fürstenfeldbruck
+Amtsgericht Fürstenwalde
+Amtsgericht Fürth (Bayern)
+Amtsgericht Fürth (Hessen)
+Amtsgericht Fulda
+Amtsgericht Garmisch-Partenkirchen
+Amtsgericht Gardelegen
+Amtsgericht Geilenkirchen
+Amtsgericht Geislingen
+Amtsgericht Geldern
+Amtsgericht Gelnhausen
+Amtsgericht Gelsenkirchen
+Amtsgericht Gelsenkirchen-Buer
+Amtsgericht Gemünden a. Main
+Amtsgericht Gengenbach
+Amtsgericht Gera
+Amtsgericht Germersheim
+Amtsgericht Gernsbach
+Amtsgericht Gießen
+Amtsgericht Gifhorn
+Amtsgericht Gladbeck
+Amtsgericht Göppingen
+Amtsgericht Görlitz
+Amtsgericht Göttingen
+Amtsgericht Goslar
+Amtsgericht Gotha
+Amtsgericht Greifswald
+Amtsgericht Greiz
+Amtsgericht Grevenbroich
+Amtsgericht Grevesmühlen
+Amtsgericht Grimma
+Amtsgericht Gronau
+Amtsgericht Groß-Gerau
+Amtsgericht Grünstadt
+Amtsgericht Güstrow
+Amtsgericht Günzburg
+Amtsgericht Gütersloh
+Amtsgericht Guben
+Amtsgericht Gummersbach
+Amtsgericht Hagen
+Amtsgericht Hagenow
+Amtsgericht Hainichen
+Amtsgericht Halberstadt
+Amtsgericht Haldensleben
+Amtsgericht Halle (Saale)
+Amtsgericht Halle (Westf.)
+Amtsgericht Hamburg
+Amtsgericht Hamburg-Altona
+Amtsgericht Hamburg-Barmbek
+Amtsgericht Hamburg-Bergedorf
+Amtsgericht Hamburg-Blankenese
+Amtsgericht Hamburg-Harburg
+Amtsgericht Hamburg-St. Georg
+Amtsgericht Hamburg-Wandsbek
+Amtsgericht Hameln
+Amtsgericht Hamm
+Amtsgericht Hanau
+Amtsgericht Hannover
+Amtsgericht Hann.Münden
+Amtsgericht Haßfurt
+Amtsgericht Hattingen
+Amtsgericht Hechingen
+Amtsgericht Heidelberg
+Amtsgericht Heidenheim a.d. Brenz
+Amtsgericht Heilbronn
+Amtsgericht Heiligenstadt
+Amtsgericht Heinsberg
+Amtsgericht Helmstedt
+Amtsgericht Herford
+Amtsgericht Hermeskeil
+Amtsgericht Herne
+Amtsgericht Herne-Wanne
+Amtsgericht Hersbruck
+Amtsgericht Herzberg
+Amtsgericht Hildburghausen
+Amtsgericht Hildesheim
+Amtsgericht Höxter
+Amtsgericht Hof
+Amtsgericht Hohenschönhausen
+Amtsgericht Hohenstein-Ernstthal
+Amtsgericht Holzminden
+Amtsgericht Homburg
+Amtsgercht Horb am Neckar
+Amtsgericht Hoyerswerda
+Amtsgericht Hünfeld
+Amtsgericht Husum
+Amtsgericht Ibbenbüren
+Amtsgericht Idar-Oberstein
+Amtsgericht Idstein
+Amtsgericht Ingolstadt
+Amtsgericht Iserlohn
+Amtsgericht Itzehoe
+Amtsgericht Jena
+Amtsgericht Jever
+Amtsgericht Jülich
+Amtsgericht Kaiserslautern
+Amtsgericht Kamen
+Amtsgericht Kamenz
+Amtsgericht Kandel
+Amtsgericht Karlsruhe
+Amtsgericht Karlsruhe-Durlach
+Amtsgericht Kassel
+Amtsgericht Kehl
+Amtsgericht Kelheim
+Amtsgericht Kempen
+Amtsgericht Kempten
+Amtsgericht Kenzingen
+Amtsgericht Kerpen
+Amtsgericht Kiel
+Amtsgericht Kirchhain
+Amtsgericht Kirchheim unter Teck
+Amtsgericht Kitzingen
+Amtsgericht Kleve
+Amtsgericht Koblenz
+Amtsgericht Köln
+Amtsgericht Königstein i. Ts.
+Amtsgericht Königswinter
+Amtsgericht Königs Wusterhausen
+Amtsgericht Köpenick
+Amtsgericht Köthen
+Amtsgericht Konstanz
+Amtsgericht Korbach
+Amtsgericht Krefeld
+Amtsgericht Kronach
+Amtsgericht Künzelsau
+Amtsgericht Kulmbach
+Amtsgericht Kusel
+ 
+ 
+Amtsgericht Lampertheim
+Amtsgericht Landau in der Pfalz
+Amtsgericht Landsberg am Lech
+Amtsgericht Landshut
+Amtsgericht Landstuhl
+Amtsgericht Langen (Hessen)
+Amtsgericht Langen (Niedersachsen)
+Amtsgericht Langenburg
+Amtsgericht Langenfeld
+Amtsgericht Lahnstein
+Amtsgericht Lahr
+Amtsgericht Laufen
+Amtsgericht Lebach
+Amtsgericht Leer
+Amtsgericht Lehrte
+Amtsgericht Lemgo
+Amtsgericht Lennestadt
+Amtsgericht Leipzig
+Amtsgericht Leonberg
+Amtsgericht Leutkirch im Allgäu
+Amtsgericht Leverkusen
+Amtsgericht Lichtenberg
+Amtsgericht Lichtenfels
+Amtsgericht Limburg a.d. Lahn
+Amtsgericht Lindau
+Amtsgericht Lingen
+Amtsgericht Linz am Rhein
+Amtsgericht Lippstadt
+Amtsgericht Löbau
+Amtsgericht Lörrach
+Amtsgericht Luckenwalde
+Amtsgericht Ludwigsburg
+Amtsgericht Ludwigshafen am Rhein
+Amtsgericht Ludwigslust
+Amtsgericht Lübben
+Amtsgericht Lübeck
+Amtsgericht Lübbecke
+Amtsgericht Lüdenscheid
+Amtsgericht Lüdinghausen
+Amtsgericht Lüneburg
+Amtsgericht Lünen
+Amtsgericht Magdeburg
+Amtsgericht Mainz
+Amtsgericht Mannheim
+Amtsgericht Marbach am Neckar
+Amtsgericht Marburg
+Amtsgericht Marienberg
+Amtsgericht Marl
+Amtsgericht Marsberg
+Amtsgericht Maulbronn
+Amtsgericht Mayen
+Amtsgericht Medebach
+Amtsgericht Meinerzhagen
+Amtsgericht Meinigen
+Amtsgericht Meißen
+Amtsgericht Meldorf
+Amtsgericht Melsungen
+Amtsgericht Memmingen
+Amtsgericht Menden (Sauerland)
+Amtsgericht Meppen
+Amtsgericht Merseburg
+Amtsgericht Merzig
+Amtsgericht Meschede
+Amtsgericht Mettmann
+Amtsgericht Michelstadt
+Amtsgericht Minden
+Amtsgericht (Berlin) Mitte
+Amtsgericht Mönchengladbach
+Amtsgericht Mönchengladbach-Rheydt
+Amtsgericht Moers
+Amtsgericht Monschau
+Amtsgericht Montabaur
+Amtsgericht Mosbach
+Amtsgericht Mühldorf a. Inn
+Amtsgericht Mühlhausen
+Amtsgericht Mülheim an der Ruhr
+Amtsgericht Müllheim
+Amtsgericht München
+Amtsgericht Münsingen
+Amtsgericht Münster
+Amtsgericht Nagold
+Amtsgericht Nauen
+Amtsgericht Naumburg
+Amtsgericht Neresheim
+Amtsgericht Nettetal
+Amtsgericht Neubrandenburg
+Amtsgericht Neuburg a.d. Donau
+Amtsgericht Neukölln
+Amtsgericht Neumarkt i.d.OPf
+Amtsgericht Neumünster
+Amtsgericht Neunkirchen
+Amtsgericht Neuruppin
+Amtsgericht Neuss
+Amtsgericht Neustadt a.d. Aisch
+Amtsgericht Neustadt a. d. Weinstraße
+Amtsgericht Neustadt a. Rbge
+Amtsgericht Neustrelitz
+Amtsgericht Neu-Ulm .
+Amtsgericht Neuwied
+Amtsgericht Nidda
+Amtsgericht Niebüll
+Amtsgericht Nienburg
+Amtsgericht Nördlingen
+Amtsgericht Norden
+Amtsgericht Nordenham
+Amtsgericht Norderstedt
+Amtsgericht Nordhausen
+Amtsgericht Nordhorn
+Amtsgericht Northeim
+Amtsgericht Nürnberg
+Amtsgericht Nürtingen
+Amtsgericht Oberhausen
+Amtsgericht Oberkirch
+Amtsgericht Oberndorf am Neckar
+Amtsgericht Öhringen
+Amtsgericht Offenbach
+Amtsgericht Offenburg
+Amtsgericht Oldenburg
+Amtsgericht Oldenburg in Holstein
+Amtsgericht Olpe
+Amtsgericht Oranienburg
+Amtsgericht Oschatz
+Amtsgericht Oschersleben
+Amtsgericht Osnabrück
+Amtsgericht Osterholz-Scharmbeck
+Amtsgericht Osterode
+Amtsgericht Otterndorf
+Amtsgericht Ottweiler
+Amtsgericht Paderborn
+Amtsgericht Pankow/Weißensee
+Amtsgericht Papenburg
+Amtsgericht Parchim
+Amtsgericht Pasewalk
+Amtsgericht Passau
+Amtsgericht Pegnitz
+Amtsgericht Peine
+Amtsgericht Perleberg
+Amtsgericht Pfaffenhofen a.d. Ilm
+Amtsgericht Pforzheim
+Amtsgericht Philippsburg
+Amtsgericht Pinneberg
+Amtsgericht Pirmasens
+Amtsgericht Pirna
+Amtsgericht Plauen
+Amtsgericht Plettenberg
+Amtsgericht Plön
+Amtsgericht Pößneck
+Amtsgericht Potsdam
+Amtsgericht Prenzlau
+Amtsgericht Prüm
+Amtsgericht Quedlinburg
+Amtsgericht Radolfzell
+Amtsgericht Rahden
+Amtsgericht Rastatt
+Amtsgericht Rathenow
+Amtsgericht Ratingen
+Amtsgericht Ratzeburg
+Amtsgericht Ravensburg
+Amtsgericht Recklinghausen
+Amtsgericht Regensburg
+Amtsgericht Reinbek
+Amtsgericht Remscheid
+Amtsgericht Rendsburg
+Amtsgericht Reutlingen
+Amtsgericht Rheda-Wiedenbrück
+Amtsgericht Rheinbach
+Amtsgericht Rheinberg
+Amtsgericht Rheine
+Amtsgericht Ribnitz-Damgarten
+Amtsgericht Riedlingen
+Amtsgericht Riesa
+Amtsgericht Rinteln
+Amtsgericht Rockenhausen
+Amtsgericht Rosenheim
+Amtsgericht Rostock
+Amtsgericht Rotenburg a.d. F.
+Amtsgericht Rotenburg (Wümme)
+Amtsgericht Rottenburg am Neckar
+Amtsgericht Rottweil
+Amtsgericht Rudolstadt
+Amtsgericht Rüdesheim
+Amtsgericht Rüsselsheim
+Amtsgericht Saarbrücken
+Amtsgericht Saarlouis
+Amtsgericht Salzgitter
+Amtsgericht Saarburg
+Amtsgericht Salzwedel
+Amtsgericht Sangerhausen
+Amtsgericht Schleiden
+Amtsgericht Schleswig
+Amtsgericht Schlüchtern
+Amtsgericht Schmallenberg
+Amtsgericht Schönau
+Amtsgericht Schönebeck
+Amtsgericht Schöneberg
+Amtsgericht Schopfheim
+Amtsgericht Schorndorf
+Amtsgericht Schwabach
+Amtsgericht Schwabmünchen
+Amtsgericht Schwäbisch Gmünd
+Amtsgericht Schwäbisch Hall
+Amtsgericht Schwalmstadt
+Amtsgericht Schwarzenbek
+Amtsgericht Schwedt
+Amtsgericht Schweinfurt
+Amtsgericht Schwelm
+Amtsgericht Schwerin
+Amtsgericht Schwerte
+Amtsgericht Schwetzingen
+Amtsgericht Seesen
+Amtsgericht Seligenstadt
+Amtsgericht Senftenberg
+Amtsgericht Siegburg
+Amtsgericht Siegen
+Amtsgericht Sigmaringen
+Amtsgericht Simmern (Hunsrück)
+Amtsgericht Singen
+Amtsgericht Sinsheim
+Amtsgericht Sinzig
+Amtsgericht Sömmerda
+Amtsgericht Soest
+Amtsgericht Solingen
+Amtsgericht Soltau
+Amtsgericht Sondershausen
+Amtsgericht Sonneberg
+Amtsgericht Sonthofen
+Amtsgericht Spaichingen
+Amtsgericht Spandau
+Amtsgericht Speyer
+Amtsgericht Springe
+Amtsgericht Stade
+Amtsgericht Stadthagen
+Amtsgericht Stadtroda
+Amtsgericht Starnberg
+Amtsgericht Staufen
+Amtsgericht Steinfurt
+Amtsgericht St. Blasien
+Amtsgericht Stendal
+Amtsgericht St. Goar
+Amtsgericht St. Ingbert
+Amtsgericht St. Wendel
+Amtsgericht Stockach
+Amtsgericht Stollberg
+Amtsgericht Stolzenau
+Amtsgericht Stralsund
+Amtsgericht Strausberg
+Amtsgericht Stuttgart
+Amtsgericht Stuttgart-Bad Cannstatt
+Amtsgericht Suhl
+Amtsgericht Sulingen
+Amtsgericht Syke
+Amtsgericht Tauberbischofsheim
+Amtsgericht Tecklenburg
+Amtsgericht Tempelhof-Kreuzberg
+Amtsgericht Tettnang
+Amtsgericht Tiergarten
+Amtsgericht Titisee-Neustadt
+Amtsgericht Torgau
+Amtsgericht Tostedt
+Amtsgericht Tirschenreuth
+Amtsgericht Traunstein
+Amtsgericht Trier
+Amtsgericht Tübingen
+Amtsgericht Tuttlingen
+Amtsgericht Überlingen
+Amtsgericht Ueckermünde
+Amtsgericht Uelzen
+Amtsgericht Ulm
+Amtsgericht Unna
+Amtsgericht Usingen
+Amtsgericht Vaihingen a.d. Enz
+Amtsgericht Varel
+Amtsgericht Vechta
+Amtsgericht Velbert
+Amtsgericht Verden
+Amtsgericht Viersen
+Amtsgericht Viechtach
+Amtsgericht Villingen-Schwenningen
+Amtsgericht Völklingen
+Amtsgericht Vohenstrauß
+Amtsgericht Waiblingen
+Amtsgericht Waldbröl
+Amtsgericht Waldkirch
+Amtsgericht Waldshut-Tiengen
+Amtsgericht Walsrode
+Amtsgericht Wangen im Allgäu
+Amtsgericht Warburg
+Amtsgericht Waren
+Amtsgericht Warendorf
+Amtsgericht Warstein
+Amtsgericht Wasserburg a. Inn
+Amtsgericht Wedding
+Amtsgericht Weiden i.d.OPf.
+Amtsgericht Weilburg
+Amtsgericht Weilheim i. OB
+Amtsgericht Weimar
+Amtsgericht Weinheim
+Amtsgericht Weißenburg i. Bay.
+Amtsgericht Weißenfels
+Amtsgericht Weißwasser
+Amtsgericht Wennigsen
+Amtsgericht Werl
+Amtsgericht Wermelskirchen
+Amtsgericht Wernigerode
+Amtsgericht Wertheim
+Amtsgericht Wesel
+Amtsgericht Westerburg
+Amtsgericht Westerstede
+Amtsgericht Wetter
+Amtsgericht Wetzlar
+Amtsgericht Wiesbaden
+Amtsgericht Wiesloch
+Amtsgericht Wildeshausen
+Amtsgericht Wilhelmshaven
+Amtsgericht Winsen (Luhe)
+Amtsgericht Wipperfürth
+Amtsgericht Wismar
+Amtsgericht Witten
+Amtsgericht Wittenberg
+Amtsgericht Wittlich
+Amtsgericht Wittmund
+Amtsgericht Wolfach
+Amtsgericht Wolfenbüttel
+Amtsgericht Wolfsburg
+Amtsgericht Wolgast
+Amtsgericht Worms
+Amtsgericht Würzburg
+Amtsgericht Wunsiedel
+Amtsgericht Wuppertal
+Amtsgericht Zehdenick
+Amtsgericht Zeitz
+Amtsgericht Zerbst
+Amtsgericht Zeven
+Amtsgericht Zittau
+Amtsgericht Zossen
+Amtsgericht Zweibrücken
+Amtsgericht Zwickau
