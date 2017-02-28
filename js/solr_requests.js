@@ -2,7 +2,6 @@
  * Created by Hauke on 2/23/2017.
  */
 
-
 exports.solrQuery = solrQuery;
 exports.queryByFiles = queryByFiles;
 //exports.logErgebnis = logErgebnis;
@@ -12,12 +11,11 @@ var Ergebnis = [];
 
 function queryByFiles(render,searchwordJSON){
     function CallbackFunction(searchresults) {
-        console.log(searchresults)
-
+        console.log(searchresults);
     }
     var calls = 0;
-    startQuery();
 
+    startQuery();
     function startQuery(){
         if(calls<searchwordJSON.length){
             solrQuery(searchwordJSON[calls].linearray,CallbackFunction);
@@ -42,25 +40,29 @@ function solrQuery(searchArray,Callback){
             protocol: 'http'
     });
     var amountOfErrors = 0;
-    for(var j = 0; j < searchArray.length; j++){
-        var myStrQuery = 'fl=*,termfreq(_text_,"'+searchArray[j]+'")&indent=on&q=*&rows=52000&wt=json';
 
-        //console.log("Query send");
-        // Search documents using myStrQuery
-        client.search(myStrQuery, function (err, result) {
+
+    startQuery(SearchResult);
+    var queryRuns = 0;
+    function startQuery(SearchResult){
+
+        var myStrQuery = 'fl=*,termfreq(_text_,"'+searchArray[queryRuns]+'")&indent=on&q=*&rows=52000&wt=json';
+
+        client.search(myStrQuery, function (err, result, startQuery) {
 
             if (err) {
-
                 console.log("Error="+err +myStrQuery);
                 amountOfErrors++;
                 return;
             }
-            //console.log("Response Follow");
-            getResponse(result,Callback);
-            //console.log('Response:', result.response);
-        });
+            getResponse(result,startQuery);
 
+        });
+        if(queryRuns==searchArray.length){
+            Callback(SearchResult);
+        }
     }
+
     //asynchrone function get called when answer from http reader is received
         function getResponse(result,Callback){
             var Files = [];
@@ -98,7 +100,7 @@ function solrQuery(searchArray,Callback){
                 //console.log(SearchResult);
             }
 
-            Callback(SearchResult);
+            startQuery(SearchResult);
 
         }
 
