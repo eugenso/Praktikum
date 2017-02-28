@@ -6,15 +6,19 @@ TestEvents ={};
 
 //test = "test2233";
 GLOBAL_api_key = 'f2bebbda9a39f53c8a9f92b232ee3238f32b164c';
+GLOBAL_model_id: 'rb:a267d1b0-0fb2-490a-8a30-8c11277be192'
 var solar_requests = require('../js/solr_requests');
 var file_reader = require('../js/file_reader');
+var alchemy_request = require('../js/alchemy_request');
 events = require('events');
+
+alchemy_request.AlchemyOutput();
 
 solr_events = new events.EventEmitter();
 
 timeBefore = new Date().getTime();
 
-file_reader.readfile();
+
 
 function APICallTest1() {
     var AlchemyLanguageV1 = require('watson-developer-cloud/alchemy-language/v1');
@@ -42,11 +46,11 @@ function APICallTest2(){
     });
 
     var parameters = {
-        extract: 'entities,keywords',
+        extract: 'entities, keywords',
         sentiment: 1,
         maxRetrieve: 1,
         url: 'https://wordpress.org/plugins/about/readme.txt',
-        //model_id: '8a152367-cea7-4745-a27a-c70d336d9a50'
+        model_id: 'rb:a267d1b0-0fb2-490a-8a30-8c11277be192'
     };
 
     alchemy_language.combined(parameters, function (err, response) {
@@ -58,6 +62,10 @@ function APICallTest2(){
 }
 //APICallTest1();
 //APICallTest2();
+
+
+
+//testPrinter();
 
 
 //Load Tests from URL and Split the Data
@@ -117,17 +125,23 @@ function APICallTest2(){
 
 router.get('/', function(req, res, next) {
 
+    file_reader.readfile(callBackToIndex);
 
-    solr_events.on('testEmission',render);
 
-    solar_requests.testfunction();
-    solar_requests.solrQuery(render);
 
+    function callBackToIndex(fileresult){
+        console.log(fileresult);
+        solar_requests.testfunction();
+        solar_requests.solrQuery(render,searchwordJSON);
+
+    }
     function render(Ergebnis){
         //console.log(Ergebnis);
         //console.log(Ergebnis[0].files);
         res.render('index', { result: Ergebnis });
     }
+
+
 
 });
 
