@@ -127,16 +127,13 @@ router.get('/', function(req, res, next) {
 
     file_reader.readfile(callBackToIndex);
 
-
-
     function callBackToIndex(fileresult){
-        console.log(fileresult);
-        solar_requests.testfunction();
-        solar_requests.solrQuery(render,searchwordJSON);
-
+        //console.log(fileresult);
+       solar_requests.queryByFiles(render,fileresult);
     }
+
     function render(Ergebnis){
-        //console.log(Ergebnis);
+        console.log(Ergebnis);
         //console.log(Ergebnis[0].files);
         res.render('index', { result: Ergebnis });
     }

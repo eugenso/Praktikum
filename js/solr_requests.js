@@ -3,18 +3,35 @@
  */
 
 
-
-
 exports.solrQuery = solrQuery;
+exports.queryByFiles = queryByFiles;
 //exports.logErgebnis = logErgebnis;
 exports.Ergebnis = Ergebnis;
 
 var Ergebnis = [];
 
-function solrQuery(render,searchwordJSON){
-// Require module
-    var searchArray = ["Urteil","der","Richter"];
+function queryByFiles(render,searchwordJSON){
+    function CallbackFunction(searchresults) {
+        console.log(searchresults)
+
+    }
+    var calls = 0;
+    startQuery();
+
+    function startQuery(){
+        if(calls<searchwordJSON.length){
+            solrQuery(searchwordJSON[calls].linearray,CallbackFunction);
+            calls = calls +1;
+            //console.log(searchArray);
+        }
+
+    }
+}
+function solrQuery(searchArray,Callback){
+    console.log("Test");
+    //console.log(searchwordJSON);
     var SearchResult = [];
+    // Require module
     var SolrNode = require('solr-node');
 
 // Create client
@@ -24,33 +41,37 @@ function solrQuery(render,searchwordJSON){
         core: 'testcore',
         protocol: 'http'
     });
-
+    var amountOfErrors = 0;
     for(var j = 0; j < searchArray.length; j++){
+        var myStrQuery = 'fl=*,termfreq(_text_,"'+searchArray[j]+'")&indent=on&q=*&rows=52000&wt=json';
 
-        var myStrQuery = "fl=*,termfreq(_text_,"+searchArray[j]+")&indent=on&q=*&rows=52000&wt=json";
-        console.log("Query send");
+        //console.log("Query send");
         // Search documents using myStrQuery
         client.search(myStrQuery, function (err, result) {
+
             if (err) {
-                console.log(err);
+
+                console.log("Error="+err +myStrQuery);
+                amountOfErrors++;
                 return;
             }
-            console.log("Response Follow");
-            getResponse(result);
+            //console.log("Response Follow");
+            getResponse(result,Callback);
             //console.log('Response:', result.response);
-
         });
+
     }
     //asynchrone function get called when answer from http reader is received
-        function getResponse(result){
+        function getResponse(result,Callback){
             var Files = [];
 
             var responseHeader = result.responseHeader;
+
             if(responseHeader != undefined){
-              // console.log(result.responseHeader.params.fl);
+              //console.log(result.responseHeader.params.fl);
 
                 var suchWort = returnStringBetween(responseHeader.params.fl,"_text_,",")");
-               // console.log("Suchwort "+suchWort+":");
+                 //console.log("Suchwort "+suchWort+":");
 
                 for(var i = 0; i < result.response.docs.length; i++){
                     var FileResult = {};
@@ -76,9 +97,8 @@ function solrQuery(render,searchwordJSON){
                 SearchResult.push(Response);
                 //console.log(SearchResult);
             }
-            if(SearchResult.length == searchArray.length){
-                render(SearchResult);
-            }
+
+            Callback(SearchResult);
 
         }
 
