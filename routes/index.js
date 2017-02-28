@@ -18,7 +18,7 @@ solr_events = new events.EventEmitter();
 
 timeBefore = new Date().getTime();
 
-file_reader.readfile();
+
 
 function APICallTest1() {
     var AlchemyLanguageV1 = require('watson-developer-cloud/alchemy-language/v1');
@@ -125,17 +125,23 @@ function APICallTest2(){
 
 router.get('/', function(req, res, next) {
 
+    file_reader.readfile(callBackToIndex);
 
-    solr_events.on('testEmission',render);
 
-    solar_requests.testfunction();
-    solar_requests.solrQuery(render);
 
+    function callBackToIndex(fileresult){
+        console.log(fileresult);
+        solar_requests.testfunction();
+        solar_requests.solrQuery(render);
+
+    }
     function render(Ergebnis){
         //console.log(Ergebnis);
         //console.log(Ergebnis[0].files);
         res.render('index', { result: Ergebnis });
     }
+
+
 
 });
 
