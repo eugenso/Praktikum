@@ -3,8 +3,6 @@
  */
 
 
-
-
 exports.solrQuery = solrQuery;
 //exports.logErgebnis = logErgebnis;
 exports.Ergebnis = Ergebnis;
