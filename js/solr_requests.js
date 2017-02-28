@@ -5,7 +5,7 @@
 
 
 exports.testfunction = testFunction;
-exports.solrQuery = solrQuery
+exports.solrQuery = solrQuery;
 //exports.logErgebnis = logErgebnis;
 exports.Ergebnis = Ergebnis;
 
