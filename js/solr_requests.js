@@ -36,10 +36,10 @@ function solrQuery(searchArray,Callback){
 
 // Create client
     var client = new SolrNode({
-        host: '127.0.0.1',
-        port: '8983',
-        core: 'testcore',
-        protocol: 'http'
+            host: '127.0.0.1',
+            port: '8983',
+            core: 'testcore',
+            protocol: 'http'
     });
     var amountOfErrors = 0;
     for(var j = 0; j < searchArray.length; j++){
