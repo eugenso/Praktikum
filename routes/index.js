@@ -132,7 +132,7 @@ router.get('/', function(req, res, next) {
     function callBackToIndex(fileresult){
         console.log(fileresult);
         solar_requests.testfunction();
-        solar_requests.solrQuery(render);
+        solar_requests.solrQuery(render,searchwordJSON);
 
     }
     function render(Ergebnis){
