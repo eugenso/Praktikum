@@ -2,6 +2,7 @@
 Hanseatisches Oberlandesgericht in Bremen
 Hanseatisches Oberlandesgericht Hamburg
 Kammergericht Berlin
+Thüringer Oberlandesgericht
 Oberlandesgericht Bamberg
 Oberlandesgericht Braunschweig
 Oberlandesgericht Celle
@@ -21,4 +22,4 @@ Oberlandesgericht Stuttgart
 Pfälzisches Oberlandesgericht Zweibrücken
 Saarländisches Oberlandesgericht
 Schleswig-Holsteinisches Oberlandesgericht
-Thüringer Oberlandesgericht
+

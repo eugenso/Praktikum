@@ -14,7 +14,6 @@ function queryByFiles(render,searchwordJSON){
         console.log(searchresults);
     }
     var calls = 0;
-
     startQuery();
     function startQuery(){
         if(calls<searchwordJSON.length){

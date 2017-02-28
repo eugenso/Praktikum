@@ -1,5 +1,7 @@
 ﻿Bayerischer Verwaltungsgerichtshof
+Verwaltungsgerichtshof Baden-Württemberg
 Hamburgisches Oberverwaltungsgericht
+Thüringer Oberverwaltungsgericht
 Hessischer Verwaltungsgerichtshof
 Niedersächsisches Oberverwaltungsgericht
 Oberverwaltungsgericht Berlin-Brandenburg
@@ -11,8 +13,7 @@ Oberverwaltungsgericht Rheinland-Pfalz
 Oberverwaltungsgericht des Saarlandes
 Sächsisches Oberverwaltungsgericht
 Schleswig-Holsteinisches Oberverwaltungsgericht
-Thüringer Oberverwaltungsgericht
-Verwaltungsgerichtshof Baden-Württemberg
+
 
 
 

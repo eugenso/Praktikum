@@ -7,12 +7,13 @@ TestEvents ={};
 //test = "test2233";
 GLOBAL_api_key = 'f2bebbda9a39f53c8a9f92b232ee3238f32b164c';
 GLOBAL_model_id: 'rb:a267d1b0-0fb2-490a-8a30-8c11277be192'
-var solar_requests = require('../js/solr_requests');
+
 var file_reader = require('../js/file_reader');
 var alchemy_request = require('../js/alchemy_request');
+var solar_requests = require('../js/solr_requests');
 events = require('events');
 
-alchemy_request.AlchemyOutput();
+//alchemy_request.AlchemyOutput();
 
 solr_events = new events.EventEmitter();
 
@@ -129,7 +130,9 @@ router.get('/', function(req, res, next) {
 
     function callBackToIndex(fileresult){
         //console.log(fileresult);
-       solar_requests.queryByFiles(render,fileresult);
+     // solar_requests.queryByFiles(render,fileresult);
+      var solar_requestNeu = require('../js/solrRequestNeu');
+        solar_requestNeu.solrSearchWords(fileresult)
     }
 
     function render(Ergebnis){
