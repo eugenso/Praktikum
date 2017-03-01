@@ -53,10 +53,9 @@ function AlchemyOutput() {
         var  Geldliste = [];
         var  Verweisliste = [];
         var  Gerichtliste = [];
+        var  Dateiname = returnStringBetween(response.url, "/", ".txt");
+        console.log(Dateiname);
 
-
-        var dateiname = returnStringBetween(response.url, "/", ".txt");
-        console.log(dateiname);
 
         for (var i = 0; i < response.entities.length; i++) {
 
@@ -111,14 +110,14 @@ function AlchemyOutput() {
             }
         }
 
-        var highestDate = Dates[0];
+        var HighestDate = Dates[0];
         for( var i = 1; i<Dates.length; i++){
-            if(Dates[i] > highestDate){
-                highestDate = Dates[i];
+            if(Dates[i] > HighestDate){
+                HighestDate = Dates[i];
             }
 
-            docobj.dateiname = dateiname;
-            docobj.highestdate = highestDate.format('YYYY MM DD');
+            docobj.Dateiname = Dateiname;
+            docobj.Highestdate = highestDate.format('YYYY MM DD');
             docobj.Normlist = Normlist;
             docobj.Richterliste = Richterliste;
             docobj.BGHAktenzeichenliste = BGHAktenzeichenliste;
