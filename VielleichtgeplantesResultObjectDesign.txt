@@ -1,0 +1,13 @@
+Kategorien={}
+ name = ""
+ W�rter = []
+	W�rter ={}
+	  wortString = ""
+	  GesamtInAllenFiles = int;
+	  Files = [];
+	 	File = {}
+		 name =""
+		 amountDesWortes = int
+
+		 	
+Problem hier ist es wird zu riesig besser wäre zwischendurch die Ergebnisse zu verarbeiten.

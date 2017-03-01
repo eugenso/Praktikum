@@ -3,23 +3,85 @@
  */
 exports.solrSearchWords = solrSearchWords;
 
+var http = require("http");
+
+var resultDataSet = {};
 
 function solrSearchWords(searchCategorys){
-    var http = require("http");
-    var options = {
-        hostname: 'localhost',
-        port: 8983,
-        path: '/solr/testcore/select?fl='+encodeURIComponent('*,termfreq(_text_,"Amtsgericht Bersenbrück")')+'&indent=on&q=*:*&wt=json',
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
+
+
+    actualLineNumber = 0;
+    responseCounter();
+
+
+    function responseCounter(){
+
+        if(searchCategorys[0].linearray.length == actualLineNumber){
+            console.log("finished");
         }
-    };
-    http.get(options, function (response) {
-        response.setEncoding('utf8')
-        response.on('data', console.log)
-        response.on('error', console.error)
-    })
+        else{
+            //console.log("Wort: " + searchCategorys[0].linearray[actualLineNumber]);
+            requestData(searchCategorys[0].linearray[actualLineNumber]);
+            actualLineNumber++;
+        }
+    }
+
+    function requestData(searchWord) {
+
+        var options = {
+            hostname: 'localhost',
+            port: 8983,
+            path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json',
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        };
+
+        http.get(options, function (antwort) {
+            var resultString = "";
+            antwort.setEncoding('utf8')
+            antwort.on('data', function (data) {
+                resultString = resultString + data;
+            });
+            antwort.on('end', function () {
+                createWortListe(JSON.parse(resultString));
+                //console.log(resultString);
+            });
+            antwort.on('error', console.error);
+        })
+    }
+    function createWortListe(results){
+        var Wort = {};
+        //console.log(results);
+        var searchString = returnStringBetween(results.responseHeader.params.fl,',termfreq(_text_,"','")');
+        Wort.wortString = searchString;
+        Wort.files = createFileList(results).files;
+        Wort.amount = createFileList(results).amount;
+        console.log(Wort);
+
+        responseCounter();
+    }
+    function createFileList(results){
+
+       //console.log(results.response);
+       var files = [];
+       var amountSum = 0;
+       for(var i = 0; i < results.response.docs.length; i++){
+            var file = {};
+            file.id = results.response.docs[i].id;
+            var flString = returnStringBetween(results.responseHeader.params.fl,',termfreq(_text_,"','")');
+            file.amount = results.response.docs[i]['termfreq(_text_,"'+flString+'")'];
+            files.push(file);
+            amountSum = amountSum + file.amount;
+       }
+       return { files:files, amount:amountSum};
+    }
+
+}
+function returnStringBetween (inputString, characterA, characterB){
+    var outputString = inputString.split(characterA).pop().split(characterB).shift();
+    return outputString;
 }
 /*
 var SolrNode = require('solr-node');
@@ -68,7 +130,3 @@ function solrSearchWords(searchCategorys){
 
 }
 */
-function returnStringBetween (inputString, characterA, characterB){
-    var outputString = inputString.split(characterA).pop().split(characterB).shift();
-    return outputString;
-}
