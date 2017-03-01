@@ -38,62 +38,104 @@ function AlchemyOutput() {
 })
      //outputcleaner - get max date
     function outputcleaner(response) {
-        var datei = {};
-        var type = {};
-        var entitie = {};
-        var dateiname = {};
-        var wort = {};
-        var dates = [];
-        var normlist = [];
-        var richterliste = [];
 
-        var BGHAktenzeichen = [];
-        var  Aktenzeichen = [];
+        var docobj = {};
+
+        var  Dates = [];
+        var  Normlist = [];
+        var  Richterliste = [];
+        var  BGHAktenzeichenliste = [];
+        var  Aktenzeichenliste = [];
         var  Entscheidungsart = [];
         var  Nicht_Erfolgreiche_Revision = [];
         var  Erfolgreiche_Revision =[];
         var  ECLI = [];
-        var  Geld = [];
-        var  Norm = [];
-        var  Verweis = [];
-        var  Richter = [];
-        var  Gericht = [];
-        var  Datum = [];
+        var  Geldliste = [];
+        var  Verweisliste = [];
+        var  Gerichtliste = [];
 
-        dateiname = returnStringBetween(response.url, "/", ".txt");
+
+        var dateiname = returnStringBetween(response.url, "/", ".txt");
         console.log(dateiname);
 
         for (var i = 0; i < response.entities.length; i++) {
 
             if (response.entities[i].type == "Datum") {
                 var date = moment(response.entities[i].text, "DD-MM-YYYY");
-                dates.push(date);
+                Dates.push(date);
             }
             else if (response.entities[i].type == "Norm"){
                 var normen = response.entities[i].text;
-                normlist.push(normen);
+                Normlist.push(normen);
             }
             else if (response.entities[i].type == "Richter"){
                 var richter = response.entities[i].text;
-                richterliste.push(richter);
+                Richterliste.push(richter);
             }
-            else {
-                entitie.typename = response.entities[i].type;
-                entitie.count = response.entities[i].count;
-                entitie.wort = response.entities[i].text;
-                console.log(response.entities[i].type + " " + response.entities[i].text + " " + response.entities[i].count);
+            else if (response.entities[i].type == "BGHAktenzeichen"){
+                var bgh = response.entities[i].text;
+                BGHAktenzeichenliste.push(bgh);
+            }
+            else if (response.entities[i].type == "Aktenzeichen"){
+                var akz = response.entities[i].text;
+                Aktenzeichenliste.push(akz);
+            }
+            else if (response.entities[i].type == "Entscheidungsart"){
+                var ent = response.entities[i].text;
+                Entscheidungsart.push(ent);
+            }
+            else if (response.entities[i].type == "Nicht_Erfolgreiche_Revision"){
+                var ner = response.entities[i].text;
+                Nicht_Erfolgreiche_Revision.push(ner);
+            }
+            else if (response.entities[i].type == "Erfolgreiche_Revision"){
+                var erv = response.entities[i].text;
+                Erfolgreiche_Revision.push(erv);
+            }
+            else if (response.entities[i].type == "ECLI"){
+                var ecu = response.entities[i].text;
+                ECLI.push(ecu);
+            }
+            else if (response.entities[i].type == "Geld"){
+                var money = response.entities[i].text;
+                Geldliste.push(money);
+            }
+            else if (response.entities[i].type == "Verweis"){
+                var verwalt = response.entities[i].text;
+                Verweisliste.push(verwalt);
+            }
+            else if (response.entities[i].type == "Gericht")
+            {
+                var ger = response.entities[i].text;
+                Gerichtliste.push(ger);
+            }
+        }
+
+        var highestDate = Dates[0];
+        for( var i = 1; i<Dates.length; i++){
+            if(Dates[i] > highestDate){
+                highestDate = Dates[i];
             }
 
+            docobj.dateiname = dateiname;
+            docobj.highestdate = highestDate.format('YYYY MM DD');
+            docobj.Normlist = Normlist;
+            docobj.Richterliste = Richterliste;
+            docobj.BGHAktenzeichenliste = BGHAktenzeichenliste;
+            docobj.Aktenzeichenliste = Aktenzeichenliste;
+            docobj.Entscheidungsart = Entscheidungsart;
+            docobj.Nicht_Erfolgreiche_Revision = Nicht_Erfolgreiche_Revision;
+            docobj.Erfolgreiche_Revision = Erfolgreiche_Revision;
+            docobj.ECLI = ECLI;
+            docobj.Geldliste = Geldliste;
+            docobj.Verweisliste = Verweisliste;
+            docobj.Gerichtliste = Gerichtliste;
+
         }
-        var highestDate = dates[0];
-        for( var i = 1; i<dates.length; i++){
-            if(dates[i] > highestDate){
-                highestDate = dates[i];
-            }
-        }
-        console.log("highestDate",highestDate.format('YYYY MM DD'));
-        console.log("Normliste",normlist);
-        console.log("Richterliste",richterliste);
+        //console.log("highestDate",highestDate.format('YYYY MM DD'));
+        //console.log("Normliste",normlist);
+        //console.log("Richterliste",richterliste);
+        console.log(docobj);
     }
 
     function returnStringBetween(inputString, characterA, characterB) {
