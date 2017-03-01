@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Hyperspace by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]>
+    <script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="/assets/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/assets/css/ie8.css"/><![endif]-->
+</head>
+<body>
+
+<!-- Sidebar -->
+<section id="sidebar">
+    <div class="inner">
+        <nav>
+            <ul>
+                <li><a href="/index">Gericht auswählen</a></li>
+                <li><a href="/gerichte">Gericht auswählen</a></li>
+                <li><a href="/docSuche">Dokument suchen</a></li>
+
+            </ul>
+        </nav>
+    </div>
+</section>
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Intro -->
+
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+            <% if (result.length > 0){ %>
+            <table style="width:500px;" border = "1" bordercolor = "black">
+                <tr align = "center">
+                    <td ><b>Gericht</b></td>
+                    <td ><b>Anzahl Revisionen</b></td>
+                    <td ><b>erfolgreiche Revisionen</b></td>
+                </tr>
+
+            <% for(i=0; i< result.length; i++){ %>
+                    <tr align = "center" bordercolor = "black">
+                        <td >ausgabe</td>
+                        <td >ausgabe</td>
+                        <td >ausgabe</td>
+                    </tr>
+                <%}}else {%>
+                <p>keine Treffer</p>
+                <% } %>
+            </table>
+
+
+
+
+        </div>
+    </section>
+</div>
+
+
+<!-- Footer -->
+<footer id="footer" class="wrapper style1-alt">
+    <div class="inner">
+        <ul class="menu">
+            <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>

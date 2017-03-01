@@ -9,6 +9,6 @@ router.get('/', function(req, res, next) {
     res.render('gerichte', { result: dummieArray });
 });
 
-var dummieArray = []
+var dummieArray = [1,2,3,3,4]
 
 module.exports = router;

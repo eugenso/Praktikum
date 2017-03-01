@@ -3,7 +3,7 @@
  */
 var express = require('express');
 var router = express.Router();
-
+var dummieArray = [1,2,3];
 /* GET users listing. */
 router.get('/', function(req, res, next) {
     res.render('gerichte', { result: dummieArray });

@@ -24,9 +24,9 @@
     <div class="inner">
         <nav>
             <ul>
-                <li><a href="#index">Gericht auswählen</a></li>
-                <li><a href="#gerichte">Gericht auswählen</a></li>
-                <li><a href="#docSuche">Dokument suchen</a></li>
+                <li><a href="/index">Gericht auswählen</a></li>
+                <li><a href="/gerichte">Gericht auswählen</a></li>
+                <li><a href="/docSuche">Dokument suchen</a></li>
 
             </ul>
         </nav>
@@ -41,7 +41,25 @@
         <div class="inner">
             Geben Sie das Aktenzeichen des gesuchten Urteils/Beschlusses ein:
             <br>
-            <p>Dokumentname: <input type="search" name="" value=""></p>
+            <p>Dokumentname:
+
+            <form id="form1" method="post" action=
+                <% for(j=0; j< result[i].files.length; j++)%>
+                    <% result[i].files[j].filename%>
+                    <% if (result[i].files[j].filename == eingabe){%>
+                    <a href = "http://my-own-it.de/jonas/pdf/<%= result[i].files[j].filename %>.pdf" target = "_blank">Dokument ansehen</a>
+                    <% } else{ %>
+                    keine Treffer
+                    <% } %>>
+                <label>
+                    <input type="text" name="suchfeld" id="suchfeld" />
+                </label>
+                <label>
+                    <input type="submit" name="suchen" id="suchen" value="Suchen" />
+                </label>
+            </form>
+            </p>
+
 
             <% for(j=0; j< result[i].files.length; j++)%>
             <% result[i].files[j].filename%>

@@ -8,13 +8,14 @@ TestEvents ={};
 GLOBAL_api_key = 'f2bebbda9a39f53c8a9f92b232ee3238f32b164c';
 GLOBAL_model_id: 'rb:a267d1b0-0fb2-490a-8a30-8c11277be192'
 
+
 var file_reader = require('../js/file_reader');
 var alchemy_request = require('../js/alchemy_request');
 var solar_requests = require('../js/solr_requests');
 var solar_posts = require('../js/solr_post');
 events = require('events');
 
-//alchemy_request.AlchemyOutput();
+alchemy_request.AlchemyOutput();
 
 solr_events = new events.EventEmitter();
 
@@ -132,7 +133,25 @@ router.get('/', function(req, res, next) {
       var solar_requestNeu = require('../js/solrRequestNeu');
         solar_requestNeu.solrSearchWords(fileresult)
     }
+    var files = [];
 
+    var file = {};
+    file.filename = "Hallo1";
+    file.amount = 34;
+    files.push(file);
+
+    var file = {};
+    file.filename = "Hallo1";
+    file.amount = 34;
+    files.push(file);
+
+
+
+    var Ergebnis = [];
+    Ergebnis.files = files;
+
+    render(Ergebnis);
+    console.log("Files = "+files);
     function render(Ergebnis){
         console.log(Ergebnis);
         //console.log(Ergebnis[0].files);
