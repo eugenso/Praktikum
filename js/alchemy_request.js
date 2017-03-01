@@ -20,9 +20,13 @@ function AlchemyOutput() {
         extract: 'entities, keywords',
         sentiment: 1,
         maxRetrieve: 1,
-        url: 'http://my-own-it.de/test_urteile/17776_clean.txt',
+        url: '',
         model_id: 'rb:a267d1b0-0fb2-490a-8a30-8c11277be192'
     };
+
+    adressListe2.forEach(function (arrayitem)
+    {
+        parameters.url = arrayitem;
 
     alchemy_language.combined(parameters, function (err, response) {
         if (err)
@@ -31,7 +35,7 @@ function AlchemyOutput() {
             var jsonFile = JSON.stringify(response, null, 2)
         outputcleaner(response);
     });
-
+})
      //outputcleaner - get max date
     function outputcleaner(response) {
         var datei = {};
@@ -94,6 +98,12 @@ function counter()
         console.log(arrayitem);
     })
 }
+
+var adressListe2 = ['http://my-own-it.de/test_urteile/17776_clean.txt',
+    'http://my-own-it.de/test_urteile/17907_clean.txt',
+    'http://my-own-it.de/test_urteile/17917_clean.txt',
+    'http://my-own-it.de/test_urteile/17927_clean.txt',
+    'http://my-own-it.de/test_urteile/18057_clean.txt'];
 
 var adressListe = ['http://my-own-it.de/test_urteile/17776_clean.txt',
     'http://my-own-it.de/test_urteile/17907_clean.txt',
