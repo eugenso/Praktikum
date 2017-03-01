@@ -2,6 +2,8 @@
  * Created by BrOtis on 28.02.2017.
  */
 
+var moment = require('moment');
+moment().format();
 
 exports.AlchemyOutput = AlchemyOutput;
 
@@ -16,7 +18,7 @@ function AlchemyOutput() {
         extract: 'entities, keywords',
         sentiment: 1,
         maxRetrieve: 1,
-        url: 'http://my-own-it.de/test_urteile/3_str__49-16a%20(20.9.2016).txt',
+        url: 'http://my-own-it.de/test_urteile/17776_clean.txt',
         model_id: 'rb:a267d1b0-0fb2-490a-8a30-8c11277be192'
     };
 
@@ -31,17 +33,40 @@ function AlchemyOutput() {
 
     function logToConsole(response) {
         var datei = {};
-        var alledateien = [];
         var type = {};
-        var wort = {};
+        var entitie = {};
+        var dateiname = {};
+        var dates = [];
 
-        for (var i = 0; i < response.entities.length; i++)
-        {
-            /*type.typename = response.entities[i].type;
-            type.count = response.entities[i].count;*/
+        dateiname = returnStringBetween(response.url, "/", ".txt");
+        console.log(dateiname);
 
-            console.log(response.entities[i].type+" "+response.entities[i].text+" "+response.entities[i].count);
+        for (var i = 0; i < response.entities.length; i++) {
+
+            entitie.count = response.entities[i].count;
+            entitie.wort = response.entities[i].text;
+            if (response.entities[i].type == "Datum") {
+                var date = moment(response.entities[i].text, "DD-MM-YYYY");
+                dates.push(date);
+            } else {
+                entitie.typename = response.entities[i].type;
+                console.log(response.entities[i].type + " " + response.entities[i].text + " " + response.entities[i].count);
+            }
+
         }
+        var highestDate = dates[0];
+        for( var i = 1; i<dates.length; i++){
+            if(dates[i] > highestDate){
+                highestDate = dates[i];
+            }
+        }
+        console.log("highestDate",highestDate.format('YYYY MM DD'));
+
+    }
+
+    function returnStringBetween(inputString, characterA, characterB) {
+        var outputString = inputString.split(characterA).pop().split(characterB).shift();
+        return outputString;
     }
 
 }
