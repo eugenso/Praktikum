@@ -27,29 +27,41 @@ function AlchemyOutput() {
             console.log('error:', err);
         else
             var jsonFile = JSON.stringify(response, null, 2)
-        logToConsole(response);
+        outputcleaner(response);
     });
 
-
-    function logToConsole(response) {
+     //outputcleaner - get max date
+    function outputcleaner(response) {
         var datei = {};
         var type = {};
         var entitie = {};
         var dateiname = {};
+        var wort = {};
         var dates = [];
+        var normlist = [];
+        var richterliste = [];
 
         dateiname = returnStringBetween(response.url, "/", ".txt");
         console.log(dateiname);
 
         for (var i = 0; i < response.entities.length; i++) {
 
-            entitie.count = response.entities[i].count;
-            entitie.wort = response.entities[i].text;
             if (response.entities[i].type == "Datum") {
                 var date = moment(response.entities[i].text, "DD-MM-YYYY");
                 dates.push(date);
-            } else {
+            }
+            else if (response.entities[i].type == "Norm"){
+                var normen = response.entities[i].text;
+                normlist.push(normen);
+            }
+            else if (response.entities[i].type == "Richter"){
+                var richter = response.entities[i].text;
+                richterliste.push(richter);
+            }
+            else {
                 entitie.typename = response.entities[i].type;
+                entitie.count = response.entities[i].count;
+                entitie.wort = response.entities[i].text;
                 console.log(response.entities[i].type + " " + response.entities[i].text + " " + response.entities[i].count);
             }
 
@@ -61,7 +73,8 @@ function AlchemyOutput() {
             }
         }
         console.log("highestDate",highestDate.format('YYYY MM DD'));
-
+        console.log("Normliste",normlist);
+        console.log("Richterliste",richterliste);
     }
 
     function returnStringBetween(inputString, characterA, characterB) {
