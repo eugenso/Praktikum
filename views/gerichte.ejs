@@ -33,41 +33,37 @@
     </div>
 </section>
 
+
+
 <!-- Wrapper -->
-<div id="wrapper2">
+<div id="wrapper">
 
     <!-- Intro -->
+
     <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
-            Geben Sie das Aktenzeichen des gesuchten Urteils/Beschlusses ein:
-            <br>
-            <p>Dokumentname:
+            <% if (result.length > 0){ %>
+            <table style="width:500px;" border = "1" bordercolor = "black">
+                <tr align = "center">
+                    <td ><b>Gericht</b></td>
+                    <td ><b>Anzahl Revisionen</b></td>
+                    <td ><b>erfolgreiche Revisionen</b></td>
+                </tr>
 
-            <form id="form1" method="post" action=
-                <% for(j=0; j< result[i].files.length; j++)%>
-                    <% result[i].files[j].filename%>
-                    <% if (result[i].files[j].filename == eingabe){%>
-                    <a href = "http://my-own-it.de/jonas/pdf/<%= result[i].files[j].filename %>.pdf" target = "_blank">Dokument ansehen</a>
-                    <% } else{ %>
-                    keine Treffer
-                    <% } %>>
-                <label>
-                    <input type="text" name="suchfeld" id="suchfeld" />
-                </label>
-                <label>
-                    <input type="submit" name="suchen" id="suchen" value="Suchen" />
-                </label>
-            </form>
-            </p>
+            <% for(i=0; i< result.length; i++){ %>
+                    <tr align = "center" bordercolor = "black">
+                        <td >ausgabe</td>
+                        <td >ausgabe</td>
+                        <td >ausgabe</td>
+                    </tr>
+                <%}}else {%>
+                <p>keine Treffer</p>
+                <% } %>
+            </table>
 
 
-            <% for(j=0; j< result[i].files.length; j++)%>
-            <% result[i].files[j].filename%>
-            <% if (result[i].files[j].filename == eingabe){%>
-            <a href = "http://my-own-it.de/jonas/pdf/<%= result[i].files[j].filename %>.pdf" target = "_blank">Dokument ansehen</a>
-            <% } else{ %>
-            keine Treffer
-            <% } %>
+
+
         </div>
     </section>
 </div>

@@ -135,7 +135,25 @@ router.get('/', function(req, res, next) {
       var solar_requestNeu = require('../js/solrRequestNeu');
         solar_requestNeu.solrSearchWords(fileresult)
     }
+    var files = [];
 
+    var file = {};
+    file.filename = "Hallo1";
+    file.amount = 34;
+    files.push(file);
+
+    var file = {};
+    file.filename = "Hallo1";
+    file.amount = 34;
+    files.push(file);
+
+
+
+    var Ergebnis = [];
+    Ergebnis.files = files;
+
+    render(Ergebnis);
+    console.log("Files = "+files);
     function render(Ergebnis){
         console.log(Ergebnis);
         //console.log(Ergebnis[0].files);
