@@ -11,6 +11,7 @@ GLOBAL_model_id: 'rb:a267d1b0-0fb2-490a-8a30-8c11277be192'
 var file_reader = require('../js/file_reader');
 var alchemy_request = require('../js/alchemy_request');
 var solar_requests = require('../js/solr_requests');
+var solar_posts = require('../js/solr_post');
 events = require('events');
 
 //alchemy_request.AlchemyOutput();
@@ -19,7 +20,7 @@ solr_events = new events.EventEmitter();
 
 timeBefore = new Date().getTime();
 
-
+solar_posts.solrPost();
 
 function APICallTest1() {
     var AlchemyLanguageV1 = require('watson-developer-cloud/alchemy-language/v1');
@@ -63,9 +64,6 @@ function APICallTest2(){
 }
 //APICallTest1();
 //APICallTest2();
-
-
-
 //testPrinter();
 
 
