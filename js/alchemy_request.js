@@ -3,6 +3,7 @@
  */
 
 var moment = require('moment');
+var solar_posts = require('../js/solr_post');
 moment().format();
 
 
@@ -21,7 +22,7 @@ function AlchemyOutput() {
         sentiment: 1,
         maxRetrieve: 1,
         url: '',
-        model_id: 'rb:a267d1b0-0fb2-490a-8a30-8c11277be192'
+        model_id: GLOBAL_model_id
     };
 
     adressListe2.forEach(function (arrayitem)
@@ -40,7 +41,6 @@ function AlchemyOutput() {
     function outputcleaner(response) {
 
         var docobj = {};
-
         var  Dates = [];
         var  Normlist = [];
         var  Richterliste = [];
@@ -134,7 +134,9 @@ function AlchemyOutput() {
         //console.log("highestDate",highestDate.format('YYYY MM DD'));
         //console.log("Normliste",normlist);
         //console.log("Richterliste",richterliste);
-        console.log(docobj);
+        //console.log(docobj);
+        solar_posts.solrPostDataFromWatson(docobj);
+
     }
 
     function returnStringBetween(inputString, characterA, characterB) {

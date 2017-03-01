@@ -31,7 +31,7 @@ function solrSearchWords(searchCategorys){
         var options = {
             hostname: 'localhost',
             port: 8983,
-            path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json',
+            path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json&rows=52000',
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

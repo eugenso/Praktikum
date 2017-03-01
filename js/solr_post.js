@@ -2,24 +2,35 @@
  * Created by Andreas on 28.02.2017.
  */
 exports.solrPost = solrPost;
+exports.solrPostDataFromWatson = solrPostDataFromWatson;
 
 var http = require("http");
 
 var resultDataSet = {};
+function solrPostDataFromWatson(docobj){
+    console.log(docobj);
+    solrPost(docobj);
+    //console.log(idPrePath);
+}
 
-function solrPost(){
-
-
+function solrPost(docobj){
+    var idPrePath = "E:\\\\solr\\\\data\\\\"+docobj.Dateiname+".txt";
     actualLineNumber = 0;
     postData();
 
     function postData() {
 
-        var post_data = '[{ "id" : "E:\\\\solr\\\\data\\\\1_bgs__74-17 (08.02.2017).txt",';
+        var post_data = '[{ "id" : "'+idPrePath+'",';
         //var post_data = '[{ "id" : "1234", ';
-        post_data = post_data+'"tag_txt" : {"set":["bundesgericht", "landesgericht"]} ';
-        post_data = post_data+'}]';
 
+        var objectParameters = Object.getOwnPropertyNames(docobj);
+        for(var i = 0; i<objectParameters.length-1; i++){
+            post_data = post_data+'"'+objectParameters[i]+'_txt" : {"set":'+JSON.stringify(docobj[objectParameters[i]])+'}, ';
+        }
+        post_data = post_data+'"'+objectParameters[objectParameters.length-1]+'_txt" : {"set":'+JSON.stringify(docobj[objectParameters.length-1])+'} ';
+
+        post_data = post_data+'}]';
+        console.log(post_data);
         var options = {
             hostname: 'localhost',
             port: 8983,

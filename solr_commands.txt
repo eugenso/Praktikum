@@ -1,0 +1,1 @@
+java -Dc=testcore -Dauto=yes -Ddata=files -Drecursive=yes -jar example/exampledocs/post.jar data/
