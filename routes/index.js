@@ -19,7 +19,7 @@ var solar_requests = require('../js/solr_requests');
 var solar_posts = require('../js/solr_post');
 events = require('events');
 
-//alchemy_request.AlchemyOutput();
+alchemy_request.AlchemyOutput();
 
 solr_events = new events.EventEmitter();
 
