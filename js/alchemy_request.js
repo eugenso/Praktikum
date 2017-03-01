@@ -117,7 +117,7 @@ function AlchemyOutput() {
             }
 
             docobj.Dateiname = Dateiname;
-            docobj.Highestdate = highestDate.format('YYYY MM DD');
+            docobj.Highestdate = HighestDate.format('YYYY MM DD');
             docobj.Normlist = Normlist;
             docobj.Richterliste = Richterliste;
             docobj.BGHAktenzeichenliste = BGHAktenzeichenliste;
