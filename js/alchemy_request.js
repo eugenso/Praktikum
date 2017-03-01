@@ -47,6 +47,19 @@ function AlchemyOutput() {
         var normlist = [];
         var richterliste = [];
 
+        var BGHAktenzeichen = [];
+        var  Aktenzeichen = [];
+        var  Entscheidungsart = [];
+        var  Nicht_Erfolgreiche_Revision = [];
+        var  Erfolgreiche_Revision =[];
+        var  ECLI = [];
+        var  Geld = [];
+        var  Norm = [];
+        var  Verweis = [];
+        var  Richter = [];
+        var  Gericht = [];
+        var  Datum = [];
+
         dateiname = returnStringBetween(response.url, "/", ".txt");
         console.log(dateiname);
 
