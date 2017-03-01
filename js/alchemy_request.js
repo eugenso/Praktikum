@@ -156,7 +156,7 @@ function counter()
 }
 
 var adressListe2 = ['http://my-own-it.de/test_urteile/17776_clean.txt',
-    'http://my-own-it.de/test_urteile/17907_clean.txt',
+    'http://my-own-it.de/test_urteile/18181_clean.txt',
     'http://my-own-it.de/test_urteile/17917_clean.txt',
     'http://my-own-it.de/test_urteile/17927_clean.txt',
     'http://my-own-it.de/test_urteile/18057_clean.txt'];

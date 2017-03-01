@@ -155,9 +155,9 @@ router.get('/', function(req, res, next) {
     Ergebnis.files = files;
 
     render(Ergebnis);
-    console.log("Files = "+files);
+    //console.log("Files = "+files);
     function render(Ergebnis){
-        console.log(Ergebnis);
+        //console.log(Ergebnis);
         //console.log(Ergebnis[0].files);
         res.render('index', { result: Ergebnis });
     }

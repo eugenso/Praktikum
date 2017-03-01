@@ -14,7 +14,7 @@ function solrPostDataFromWatson(docobj){
 }
 
 function solrPost(docobj){
-    var idPrePath = "E:\\\\solr\\\\data\\\\"+docobj.Dateiname+".txt";
+    var idPrePath = "C:\\\\solr\\\\data\\\\"+docobj.Dateiname+".txt";
     actualLineNumber = 0;
     postData();
 

@@ -4,24 +4,42 @@
 exports.solrSearchWords = solrSearchWords;
 
 var http = require("http");
-
 var resultDataSet = {};
+var solar_posts = require('../js/solr_post');
 
 function solrSearchWords(searchCategorys){
 
-
-    actualLineNumber = 0;
+    var actualLineNumber = 0;
+    var actualSearchCatergoryNumber = 0;
+    var firstResponse = true;
     responseCounter();
+    var Documents = {};
 
-
-    function responseCounter(){
-
-        if(searchCategorys[0].linearray.length == actualLineNumber){
+    function startToReadNextCategorie(){
+        if(searchCategorys.length == actualSearchCatergoryNumber){
             console.log("finished");
+            var objectParameters = Object.getOwnPropertyNames(Documents);
+            for(var i = 0; i<objectParameters.length; i++){
+                console.log(Documents[objectParameters[i]]);
+               solar_posts.solrPost(Documents[objectParameters[i]]);
+            }
+            //console.log(Documents);
         }
         else{
-            //console.log("Wort: " + searchCategorys[0].linearray[actualLineNumber]);
-            requestData(searchCategorys[0].linearray[actualLineNumber]);
+            responseCounter();
+        }
+
+    }
+    function responseCounter(){
+
+        if(searchCategorys[actualSearchCatergoryNumber].linearray.length == actualLineNumber){
+            //console.log("finished Categorie:"+searchCategorys[actualSearchCatergoryNumber].txtname);
+            actualLineNumber= 0;
+            actualSearchCatergoryNumber++;
+            startToReadNextCategorie();
+        }
+        else{
+            requestData(searchCategorys[actualSearchCatergoryNumber].linearray[actualLineNumber]);
             actualLineNumber++;
         }
     }
@@ -31,13 +49,16 @@ function solrSearchWords(searchCategorys){
         var options = {
             hostname: 'localhost',
             port: 8983,
-            path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json&rows=52000',
+            //path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json&rows=52000',
+            path: '/solr/testcore/select?&q=_text_:'+ encodeURIComponent('"'+searchWord+'"') + '&indent=on&wt=json&rows=52000',
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
             }
         };
-
+        if(searchWord == "﻿Verurteilung zur"){
+            console.log(options.path);
+        }
         http.get(options, function (antwort) {
             var resultString = "";
             antwort.setEncoding('utf8')
@@ -48,85 +69,46 @@ function solrSearchWords(searchCategorys){
                 createWortListe(JSON.parse(resultString));
                 //console.log(resultString);
             });
-            antwort.on('error', console.error);
+            antwort.on('error', function(err){
+                console.log("Here was an Error Message:"+err);
+            });
         })
     }
     function createWortListe(results){
-        var Wort = {};
-        //console.log(results);
-        var searchString = returnStringBetween(results.responseHeader.params.fl,',termfreq(_text_,"','")');
-        Wort.wortString = searchString;
-        Wort.files = createFileList(results).files;
-        Wort.amount = createFileList(results).amount;
-        console.log(Wort);
+
+        createFileList(results);
 
         responseCounter();
     }
     function createFileList(results){
-
-       //console.log(results.response);
-       var files = [];
-       var amountSum = 0;
+        //iterate trought all files
        for(var i = 0; i < results.response.docs.length; i++){
-            var file = {};
-            file.id = results.response.docs[i].id;
-            var flString = returnStringBetween(results.responseHeader.params.fl,',termfreq(_text_,"','")');
-            file.amount = results.response.docs[i]['termfreq(_text_,"'+flString+'")'];
-            files.push(file);
-            amountSum = amountSum + file.amount;
-       }
-       return { files:files, amount:amountSum};
+
+           var id = returnStringBetween(results.response.docs[i].id,'data\\','.txt');
+
+            //console.log(results);
+           var searchWort = returnStringBetween(results.responseHeader.params.q,'_text_:"','"');
+           //console.log(searchWort);
+
+           var CategorieName = searchCategorys[actualSearchCatergoryNumber].txtname;
+
+           if(Documents[id] == undefined){
+               Documents[id] = {};
+           }
+           if(Documents[id][CategorieName] == undefined){
+               Documents[id][CategorieName] = [];
+           }
+           Documents[id].Dateiname = id;
+           Documents[id][searchCategorys[actualSearchCatergoryNumber].txtname].push(searchWort);
+     }
+        if(firstResponse){
+            firstResponse = false;
+           //console.log("Documents"+Documents);
+        }
     }
 
 }
 function returnStringBetween (inputString, characterA, characterB){
-    var outputString = inputString.split(characterA).pop().split(characterB).shift();
-    return outputString;
+        var outputString = inputString.split(characterA).pop().split(characterB).shift();
+        return outputString;
 }
-/*
-var SolrNode = require('solr-node');
-
-
-var client = new SolrNode({
-    host: '127.0.0.1',
-    port: '8983',
-    core: 'testcore',
-    protocol: 'http'
-
-});
-
-function solrSearchWords(searchCategorys){
-    var countResponses = 0;
-    var results = [];
-    for(var i = 0; i < searchCategorys[0].linearray.length; i++){
-
-        console.log(searchCategorys[0].linearray[i]);
-        var objQuery = client.query().fl('*,termfreq(_text_,"'+searchCategorys[0].linearray[i]+'")').q('*').rows("52000");
-
-        var myStrQuery = 'fl=*,termfreq(_text_,'+searchCategorys[0].linearray[i]+')&indent=on&q=*&rows=52000&wt=json';
-
-        client.search(objQuery, handelResponse);
-        console.log(encodeURIComponent('*,termfreq(_text_,"Amtsgericht%20Bersenbrück")') );
-    }
-
-
-    function handelResponse(err, result){
-
-        if (err) {
-            console.log("Error="+err.toString());
-
-            return;
-        }
-        countResponses ++;
-        results.push(result);
-
-
-            console.log(result.responseHeader.params.fl);
-
-        console.log(countResponses);
-        console.log("searchWords Länge"+searchCategorys[0].linearray.length);
-
-    }
-
-}
-*/
