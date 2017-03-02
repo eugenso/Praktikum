@@ -6,7 +6,9 @@
 -->
 <html>
 <head>
+
     <title>Hyperspace by HTML5 UP</title>
+    <script src="/assets/js/tablesort.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]>
@@ -24,7 +26,7 @@
     <div class="inner">
         <nav>
             <ul>
-                <li><a href="/index">Gericht auswählen</a></li>
+                <li><a href="/">Textsuche</a></li>
                 <li><a href="/gerichte">Gericht auswählen</a></li>
                 <li><a href="/docSuche">Dokument suchen</a></li>
 
@@ -43,24 +45,90 @@
     <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
             <% if (result.length > 0){ %>
-            <table style="width:500px;" border = "1" bordercolor = "black">
-                <tr align = "center">
-                    <td ><b>Gericht</b></td>
-                    <td ><b>Anzahl Revisionen</b></td>
-                    <td ><b>erfolgreiche Revisionen</b></td>
-                </tr>
-
-            <% for(i=0; i< result.length; i++){ %>
-                    <tr align = "center" bordercolor = "black">
-                        <td >ausgabe</td>
-                        <td >ausgabe</td>
-                        <td >ausgabe</td>
+            <table class="sortierbar" style="width:100%;" border = "1" bordercolor = "black">
+                <thead align = "center">
+                    <tr>
+                        <th class="sortierbar vorsortiert+" ><b>Gericht</b></th>
+                        <th class="sortierbar"><b>Anzahl Revisionen</b></th>
+                        <th class="sortierbar"><b>erfolgreiche Revisionen</b></th>
                     </tr>
+                </thead>
+
+                <tbody>
+                    <% for(i=0; i< result.length; i++){ %>
+                    <tr align = "center" bordercolor = "black">
+                            <td >ausgabe</td>
+                            <td >ausgabe</td>
+                           <td >ausgabe</td>
+                    </tr>
+                </tbody>
                 <%}}else {%>
                 <p>keine Treffer</p>
                 <% } %>
             </table>
 
+            <table class="sortierbar" border = "1">
+                <thead>
+                <tr>
+                    <th class="sortierbar vorsortiert+">1. Spalte</th>
+                    <th class="sortierbar">2. Spalte</th>
+                    <th class="sortierbar">3. Spalte</th>
+
+                    <!-- usw. -->
+
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <td>Fuß 1</td>
+                    <td>Fuß 2</td>
+                    <td>Fuß 3</td>
+
+                    <!-- usw. -->
+
+                </tr>
+                </tfoot>
+                <tbody>
+                <tr>
+                    <td>hallo</td>
+                    <td>manfred</td>
+                    <td>sprachtikum</td>
+
+                    <!-- usw. -->
+
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+
+                    <!-- usw. -->
+
+                </tr>
+                <!-- usw. -->
+
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>3</td>
+
+                    <!-- usw. -->
+
+                </tr>
+
+                <tr>
+                    <td>77</td>
+                    <td>28</td>
+                    <td>33</td>
+
+                    <!-- usw. -->
+
+                </tr>
+                </tbody>
+            </table>
 
 
 
@@ -69,13 +137,15 @@
 </div>
 
 
+
+
 <!-- Footer -->
 <footer id="footer" class="wrapper style1-alt">
     <div class="inner">
         <ul class="menu">
             <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
-    </div>
+</div>
 </footer>
 
 <!-- Scripts -->
@@ -87,6 +157,7 @@
 <!--[if lte IE 8]>
 <script src="/assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="/assets/js/main.js"></script>
+
 
 </body>
 </html>
