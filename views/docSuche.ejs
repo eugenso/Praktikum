@@ -45,9 +45,22 @@
             <form  id="form1" method="post" action="/docSuche">
                 <input style="width:300px;" type="text" name="suchfeld" id="suchfeld" />
                 <input type="submit" name="suchen" id="suchen"/>
-
             </form>
-             <%= result %>
+            <% if(result != undefined){ %>
+                <% if(result.message != "nix" ) { %>
+                    <%= result.message %><br>
+                <% } %>
+
+                <% if(result.message == "nix" ){ %>
+                    Suchwort: <%= result.searchword %><br><br>
+                    Gefunden in den folgenden Dokumenten: <br>
+                    <form  id="form1" method="post" action="/singleDoc">
+                    <% for(var i = 0; i< result.docs.length; i++){ %>
+                            <button style="width:200px; height:30px; line-height: normal; text-transform:none; border-radius: 0em;" name="docid" value="<%= result.docs[i].id %>" type="submit"><%= result.docs[i].name %></button>
+                    <% } %>
+                    </form>
+                <%} %>
+            <%} %>
 
         </div>
     </section>
