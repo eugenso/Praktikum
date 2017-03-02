@@ -33,43 +33,25 @@
     </div>
 </section>
 
+
+
 <!-- Wrapper -->
-<div id="wrapper2">
+<div id="wrapper">
 
     <!-- Intro -->
+
     <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
-            Geben Sie das Aktenzeichen des gesuchten Urteils/Beschlusses ein:
-            <br>
-            <p>Dokumentname:
+            <form  id="form1" method="post" action="/docSuche">
+                <input style="width:300px;" type="text" name="suchfeld" id="suchfeld" />
+                <input type="submit" name="suchen" id="suchen"/>
 
-            <form id="form1" method="post" action=
-                <% for(j=0; j< result[i].files.length; j++)%>
-                    <% result[i].files[j].filename%>
-                    <% if (result[i].files[j].filename == eingabe){%>
-                    <a href = "http://my-own-it.de/jonas/pdf/<%= result[i].files[j].filename %>.pdf" target = "_blank">Dokument ansehen</a>
-                    <% } else{ %>
-                    keine Treffer
-                    <% } %>>
-                <label>
-                    <input type="text" name="suchfeld" id="suchfeld" />
-                </label>
-                <label>
-                    <input type="submit" name="suchen" id="suchen" value="Suchen" />
-                </label>
             </form>
-            </p>
+             <%= result %>
 
-
-            <% for(j=0; j< result[i].files.length; j++)%>
-            <% result[i].files[j].filename%>
-            <% if (result[i].files[j].filename == eingabe){%>
-            <a href = "http://my-own-it.de/jonas/pdf/<%= result[i].files[j].filename %>.pdf" target = "_blank">Dokument ansehen</a>
-            <% } else{ %>
-            keine Treffer
-            <% } %>
         </div>
     </section>
+
 </div>
 
 

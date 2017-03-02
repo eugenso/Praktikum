@@ -8,7 +8,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, b,blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -38,10 +38,10 @@
 		content: none;
 	}
 
-	/*table {
+	table {
 		border-collapse: collapse;
 		border-spacing: 0;
-	}*/
+	}
 
 	body {
 		-webkit-text-size-adjust: none;
@@ -1639,7 +1639,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(0, 0, 0, 1);/*Schriftfarbe Haupttext*/
+		color: rgba(255, 255, 255, 0.55);
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -1686,7 +1686,7 @@
 		}
 
 	strong, b {
-		color: #000000;
+		color: #ffffff;
 		font-weight: bold;
 	}
 
@@ -1699,7 +1699,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #006FFF; /*schriftfarbe Überschrift*/
+		color: #ffffff;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -1891,7 +1891,7 @@
 		border: solid 1px !important;
 		border-color: rgba(255, 255, 255, 0.15) !important;
 		border-radius: 3em;
-		color: #000000 !important;
+		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -3151,10 +3151,10 @@
 		overflow-x: auto;
 	}
 
-	/*table {
+	table {
 		margin: 0 0 2em 0;
 		width: 100%;
-	}*/
+	}
 
 		table tbody tr {
 			border: solid 1px rgba(255, 255, 255, 0.15);
@@ -3253,11 +3253,11 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #ffffff;/*Hintergrundfarbe / background color*/
+			background-color: #5e42a6;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #ebebeb;/*Leiste unten*/
+			background-color: #493382;
 		}
 
 		.wrapper.style2 {
@@ -3523,7 +3523,7 @@
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(0, 0, 0, 1);/*Schriftfarbe Leiste unten*/
+		color: rgba(255, 255, 255, 0.15);
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3531,15 +3531,15 @@
 	}
 
 /* Sidebar */
-l
+
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450; /*Farbe Navigationsleiste*/
+		background: #312450;
 		cursor: default;
 		height: 100vh;
 		left: 0;
-		/*overflow-x: hidden;
-		overflow-y: auto;*/
+		overflow-x: hidden;
+		overflow-y: auto;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -3775,16 +3775,15 @@ l
 			}
 
 			#sidebar nav a:after {
-				background: #ffffff; /*farbe Navigationsleiste Unterschtreichung*/
-				/*background-image: -moz-linear-gradient(to right, #ffffff, #ffffff);
-				background-image: -webkit-linear-gradient(to right, #ffffff, #ffffff);
-				background-image: -ms-linear-gradient(to right, #ffffff, #ffffff);
-				background-image: linear-gradient(to right, #ffffff, #ffffff);
+				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: linear-gradient(to right, #5e42a6, #b74e91);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
 				transition: max-width 0.2s ease;
-				max-width: 0;*/
+				max-width: 0;
 			}
 
 			#sidebar nav a:hover {
@@ -3792,7 +3791,7 @@ l
 			}
 
 			#sidebar nav a.active {
-				color: #ffe7ff;/*Schriftfarbe Navigationsleiste*/
+				color: #ffffff;
 			}
 
 				#sidebar nav a.active:after {
@@ -3885,7 +3884,7 @@ l
 
 	#intro {
 		background-attachment: fixed;
-		/*background-image: url("images/intro.svg");*/
+		background-image: url("images/intro.svg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;

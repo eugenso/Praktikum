@@ -15,11 +15,10 @@ GLOBAL_model_id ='rb:16d8bb4f-757f-4950-8723-5a69ec98348e';
 
 var file_reader = require('../js/file_reader');
 var alchemy_request = require('../js/alchemy_request');
-var solar_requests = require('../js/solr_requests');
 var solar_posts = require('../js/solr_post');
 events = require('events');
 
-alchemy_request.AlchemyOutput();
+//alchemy_request.AlchemyOutput();
 
 solr_events = new events.EventEmitter();
 
