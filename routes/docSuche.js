@@ -17,10 +17,30 @@ router.post('/', function(req, res, next) {
     docSuche.findDoc(req.body.suchfeld,showresult);
 
     function showresult(metaDaten){
-        //console.log(metaDaten);
-        res.render('docSuche', { result: metaDaten })
+        console.log(metaDaten);
+        resultDaten = splitSearchResult(metaDaten);
+        res.render('docSuche', { result: resultDaten });
     }
 
 });
+function splitSearchResult(metaDaten){
+    result = {};
+    foundDocuments = [];
+    Document = {};
+    if(metaDaten != undefined){
+
+    }
+    else if(metaDaten.error != undefined ){
+        metaDaten.error = "no Data in searchfield or Error occured";
+    }
+    else if(metaDaten.response.docs != undefined){
+
+    }
+    else{
+        result.searchword = metaDaten.responseHeader.q;
+    }
+
+
+}
 
 module.exports = router;
