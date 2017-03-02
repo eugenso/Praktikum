@@ -30,18 +30,18 @@
 		weight-bold:		bold,
 		kerning-alt:		0.25em
 	);
-
+$buceriusColor: #a21c29;
 // Palette.
 	$palette: (
-		bg:					#ffffff,
-		bg-alt:				darken(#ffffff, 5),
+		bg:					#a21c29,
+		bg-alt:				darken(#e25c69, 5),
 		fg:					rgba(255,255,255,0.55),
 		fg-bold:			#000000,
 		fg-light:			rgba(255,255,255,0.35),
 		border:				rgba(255,255,255,0.15),
 		border-bg:			rgba(255,255,255,0.05),
-		accent1:			#a21c29,
-		accent1-alt:		darken(#a21c21, 10),
+		accent1:			#333333,
+		accent1-alt:		darken(#333333, 10),
 		accent2:			#b22d39,
 		accent2-alt:		darken(#b22c39, 10),
 		accent3:			#c23c49,
