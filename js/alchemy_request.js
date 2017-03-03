@@ -1,7 +1,7 @@
 /**
  * Created by BrOtis on 28.02.2017.
  */
-
+var fs = require('fs');
 var moment = require('moment');
 var solar_posts = require('../js/solr_post');
 moment().format();
@@ -37,8 +37,23 @@ function AlchemyOutput() {
         else
             var jsonFile = JSON.stringify(response, null, 2)
         outputcleaner(response);
+
+        //RawSavingFunction
+        var fileName = 'test_urteile\\'+arrayitem.substring(34,arrayitem.length)+'.json';
+        fileSaver(fileName,jsonFile);
+
     });
-})
+});
+
+    function fileSaver(nameString, jsonFile) {
+        fs.writeFile(nameString, jsonFile, function(err) {
+            if(err) {
+                return console.log(err);
+            }
+        });
+        console.log(nameString);
+    }
+
      //outputcleaner - get max date
     function outputcleaner(response) {
 
@@ -136,6 +151,7 @@ function AlchemyOutput() {
         //console.log("highestDate",highestDate.format('YYYY MM DD'));
         //console.log("Normliste",normlist);
         //console.log("Richterliste",richterliste);
+
         console.log(docobj);
         solar_posts.solrPostDataFromWatson(docobj);
 
