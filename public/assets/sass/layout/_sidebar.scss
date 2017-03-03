@@ -187,14 +187,14 @@
 	}
 
 #showpicture {
-	margin: 0 0 0 1.8em;
+	margin: 0 auto;
 	width: 160px;
 	height: 160px;
 	border-radius: 80px;
 	-webkit-border-radius: 80px;
 	-moz-border-radius: 80px;
 	background: url(/images/buc_logo.png) no-repeat;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 1);
 }
