@@ -18,7 +18,7 @@ function requestData(searchWord,callback) {
         hostname: 'localhost',
         port: 8983,
         //path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json&rows=52000',
-        path: '/solr/testcore/select?&q=id:"E:\\\\solr\\\\data\\\\'+ encodeURIComponent(searchWord) + '.txt"&indent=on&wt=json&rows=52000',
+        path: '/solr/testcore/select?&q=id:"C:\\\\solr\\\\data\\\\'+ encodeURIComponent(searchWord) + '.txt"&indent=on&wt=json&rows=52000',
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

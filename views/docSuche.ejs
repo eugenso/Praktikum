@@ -16,21 +16,47 @@
     <link rel="stylesheet" href="/assets/css/ie9.css"/><![endif]-->
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="/assets/css/ie8.css"/><![endif]-->
+    <script src="/assets/js/jquery.min.js"></script>
 </head>
 <body>
 
 <!-- Sidebar -->
 <section id="sidebar">
+    <div id="showpicture"></div>
     <div class="inner">
+
         <nav>
             <ul>
-                <li><a href="/index">Gericht auswählen</a></li>
-                <li><a href="/gerichte">Gericht auswählen</a></li>
-                <li><a href="/docSuche">Dokument suchen</a></li>
+                <li><a href="/">Startseite</a></li>
+                <li><a href="/gerichte">Statistiken</a></li>
+                <li><a href="/docSuche">Dokumente suchen</a></li>
 
             </ul>
         </nav>
     </div>
+    <script>
+        var windowWidth = $(window).width();
+        console.log(windowWidth);
+        if($(window).width()<1280){
+            console.log("kleiner");
+            document.getElementById("showpicture").style.display = "none";
+        }
+        else{
+            console.log("größer");
+            document.getElementById("showpicture").style.display = "flex";
+        }
+        $(window).resize(function() {
+            console.log('window was resized'+$(window).width());
+            if($(window).width()<1280){
+                console.log("kleiner");
+                document.getElementById("showpicture").style.display = "none";
+            }
+            else{
+                console.log("größer");
+                document.getElementById("showpicture").style.display = "flex";
+            }
+        });
+    </script>
 </section>
 
 
@@ -56,7 +82,7 @@
                     Gefunden in den folgenden Dokumenten: <br>
                     <form  id="form1" method="post" action="/singleDoc">
                     <% for(var i = 0; i< result.docs.length; i++){ %>
-                            <button style="width:200px; height:30px; line-height: normal; text-transform:none; border-radius: 0em;" name="docid" value="<%= result.docs[i].names %>" type="submit"><%= result.docs[i].name %></button>
+                            <button style="width:200px; height:30px; line-height: normal; text-transform:none; border-radius: 0em;" name="docid" value="<%= result.docs[i].name %>" type="submit"><%= result.docs[i].name %></button>
                     <% } %>
                     </form>
                 <%} %>

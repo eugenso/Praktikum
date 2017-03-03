@@ -28,7 +28,7 @@
 			@include vendor('transition', (
 				'opacity #{_duration(activation)} ease',
 			));
-			min-height: 100%;
+			min-height: 70%;
 			opacity: 1;
 			width: 100%;
 
@@ -140,6 +140,7 @@
 			top: 0;
 			width: 100%;
 
+
 			> .inner {
 				@include vendor('flex-direction', 'row');
 				@include vendor('align-items', 'stretch');
@@ -177,9 +178,23 @@
 					}
 				}
 			}
+
 		}
 
 		@include breakpoint(small) {
 			display: none;
 		}
 	}
+
+#showpicture {
+	margin: 0 0 0 1.8em;
+	width: 160px;
+	height: 160px;
+	border-radius: 80px;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	background: url(/images/buc_logo.png) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}

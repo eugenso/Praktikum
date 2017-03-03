@@ -12,6 +12,7 @@
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		float:none;
 
 		p {
 			font-size: 1.25em;
@@ -30,4 +31,14 @@
 		@include breakpoint(large) {
 			background-attachment: scroll;
 		}
+		#parameterResult {
+			 float:left;
+			 width:200px;
+			 min-height: 200px;
+			 text-align:center;
+		 }
+		#parameterResult:hover {
+			background-color: _palette(accent1-alt);
+		}
 	}
+

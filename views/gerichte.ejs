@@ -18,23 +18,48 @@
     <link rel="stylesheet" href="/assets/css/ie9.css"/><![endif]-->
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="/assets/css/ie8.css"/><![endif]-->
+    <script src="/assets/js/jquery.min.js"></script>
 </head>
 <body>
 
 <!-- Sidebar -->
 <section id="sidebar">
+    <div id="showpicture"></div>
     <div class="inner">
+
         <nav>
             <ul>
-                <li><a href="/">Textsuche</a></li>
-                <li><a href="/gerichte">Gericht auswählen</a></li>
-                <li><a href="/docSuche">Dokument suchen</a></li>
+                <li><a href="/">Startseite</a></li>
+                <li><a href="/gerichte">Statistiken</a></li>
+                <li><a href="/docSuche">Dokumente suchen</a></li>
 
             </ul>
         </nav>
     </div>
+    <script>
+        var windowWidth = $(window).width();
+        console.log(windowWidth);
+        if($(window).width()<1280){
+            console.log("kleiner");
+            document.getElementById("showpicture").style.display = "none";
+        }
+        else{
+            console.log("größer");
+            document.getElementById("showpicture").style.display = "flex";
+        }
+        $(window).resize(function() {
+            console.log('window was resized'+$(window).width());
+            if($(window).width()<1280){
+                console.log("kleiner");
+                document.getElementById("showpicture").style.display = "none";
+            }
+            else{
+                console.log("größer");
+                document.getElementById("showpicture").style.display = "flex";
+            }
+        });
+    </script>
 </section>
-
 
 
 <!-- Wrapper -->
@@ -149,7 +174,7 @@
 </footer>
 
 <!-- Scripts -->
-<script src="/assets/js/jquery.min.js"></script>
+
 <script src="/assets/js/jquery.scrollex.min.js"></script>
 <script src="/assets/js/jquery.scrolly.min.js"></script>
 <script src="/assets/js/skel.min.js"></script>

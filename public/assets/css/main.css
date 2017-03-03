@@ -2541,6 +2541,9 @@ table {
   margin: 0 auto; }
 
 /* Footer */
+@media screen and (max-width: 736px) {
+  #footer {
+    height: 160px; } }
 #sidebar + #wrapper + #footer {
   margin-left: 18em; }
   @media screen and (max-width: 1280px) {
@@ -2591,7 +2594,7 @@ table {
     -webkit-transition: opacity 1s ease;
     -ms-transition: opacity 1s ease;
     transition: opacity 1s ease;
-    min-height: 100%;
+    min-height: 70%;
     opacity: 1;
     width: 100%; }
     body.is-ie #sidebar > .inner {
@@ -2814,13 +2817,26 @@ table {
     #sidebar {
       display: none; } }
 
+#showpicture {
+  margin: 0 0 0 1.8em;
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  background: url(/images/buc_logo.png) no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
+
 /* Intro */
 #intro {
   background-attachment: fixed;
   background-image: url("images/intro.svg");
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  float: none; }
   #intro p {
     font-size: 1.25em; }
     @media screen and (max-width: 980px) {
@@ -2832,3 +2848,10 @@ table {
   @media screen and (max-width: 1280px) {
     #intro {
       background-attachment: scroll; } }
+  #intro #parameterResult {
+    float: left;
+    width: 200px;
+    min-height: 200px;
+    text-align: center; }
+  #intro #parameterResult:hover {
+    background-color: #1a1a1a; }

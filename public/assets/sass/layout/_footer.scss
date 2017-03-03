@@ -7,6 +7,9 @@
 /* Footer */
 
 	#footer {
+		@include breakpoint(small){
+			height: 160px;
+		}
 		#sidebar + #wrapper + & {
 			margin-left: _size(sidebar-width);
 

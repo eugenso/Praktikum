@@ -5,73 +5,102 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Hyperspace by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]>
-		<script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="/assets/css/main.css" />
-		<!--[if lte IE 9]>
-		<link rel="stylesheet" href="/assets/css/ie9.css"/><![endif]-->
-		<!--[if lte IE 8]>
-		<link rel="stylesheet" href="/assets/css/ie8.css"/><![endif]-->
-	</head>
-	<body>
+<head>
 
-	<section id="sidebar">
+	<title>Hyperspace by HTML5 UP</title>
+	<script src="/assets/js/tablesort.js"></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]>
+	<script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 9]>
+	<link rel="stylesheet" href="/assets/css/ie9.css"/><![endif]-->
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/assets/css/ie8.css"/><![endif]-->
+	<script src="/assets/js/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Sidebar -->
+<section id="sidebar">
+	<div id="showpicture"></div>
+	<div class="inner">
+
+		<nav>
+			<ul>
+				<li><a href="/">Startseite</a></li>
+				<li><a href="/gerichte">Statistiken</a></li>
+				<li><a href="/docSuche">Dokumente suchen</a></li>
+
+			</ul>
+		</nav>
+	</div>
+	<script>
+        var windowWidth = $(window).width();
+        console.log(windowWidth);
+        if($(window).width()<1280){
+            console.log("kleiner");
+            document.getElementById("showpicture").style.display = "none";
+        }
+        else{
+            console.log("größer");
+            document.getElementById("showpicture").style.display = "flex";
+        }
+        $(window).resize(function() {
+            console.log('window was resized'+$(window).width());
+            if($(window).width()<1280){
+                console.log("kleiner");
+                document.getElementById("showpicture").style.display = "none";
+            }
+            else{
+                console.log("größer");
+                document.getElementById("showpicture").style.display = "flex";
+            }
+        });
+	</script>
+</section>
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+	<!-- Intro -->
+
+	<section id="intro" class="wrapper style1 fullscreen fade-up">
 		<div class="inner">
-			<nav>
-				<ul>
-					<li><a href="/">Textsuche</a></li>
-					<li><a href="/gerichte">Gericht auswählen</a></li>
-					<li><a href="/docSuche">Dokument suchen</a></li>
-
-				</ul>
-			</nav>
+			<div style="text-align:center">
+				<img src="/images/UHH_Logo2.png" height="200"><br><br>
+			   <h2><u><i>Praktikum Sprachtechnologien</i></u></h2>
+				<br><i>von  Jonas, Andreas, Otis und Hauke<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Bsc. Informatik Uni Hamburg</i>
+			</div>
 		</div>
 	</section>
-	<!--
-            <!-- Wrapper -->
-			<div id="wrapper2">
-
-				<!-- Intro -->
-						<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Suchergebnisse:</h1>
-								<%= result %>
-								<% for(i=0; i< result.length; i++){ %>
-                                    <b style="color:darkseagreen">Suchwort: <%= result[i].searchString; %></b><br>
-                                	<% for(j=0; j< result[i].files.length; j++){ %>
-										<%= result[i].files[j].filename %> &nbsp   | &nbsp            Treffer in der Datei:
-										<%= result[i].files[j].amount %> &nbsp | &nbsp
-										<a href = "http://my-own-it.de/jonas/pdf/<%= result[i].files[j].filename %>.pdf" target = "_blank">Dokument ansehen</a>
-										<br>
-                                	<% } %><br>
-								<% } %>
-						</div>
-					</section>
-            </div>
+</div>
 
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
 
-		<!-- Scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/jquery.scrollex.min.js"></script>
-			<script src="/assets/js/jquery.scrolly.min.js"></script>
-			<script src="/assets/js/skel.min.js"></script>
-			<script src="/assets/js/util.js"></script>
-			<!--[if lte IE 8]>
-		<script src="/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/assets/js/main.js"></script>
 
-	</body>
+<!-- Footer -->
+<footer id="footer" class="wrapper style1-alt">
+	<div class="inner">
+		<ul class="menu">
+			<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</div>
+</footer>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+
+
+</body>
 </html>

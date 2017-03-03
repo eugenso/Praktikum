@@ -16,21 +16,48 @@
     <link rel="stylesheet" href="/assets/css/ie9.css"/><![endif]-->
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="/assets/css/ie8.css"/><![endif]-->
+    <script src="/assets/js/jquery.min.js"></script>
 </head>
 <body>
 
 <!-- Sidebar -->
+
 <section id="sidebar">
+    <div id="showpicture"></div>
     <div class="inner">
+
         <nav>
             <ul>
-                <li><a href="/index">Gericht auswählen</a></li>
-                <li><a href="/gerichte">Gericht auswählen</a></li>
-                <li><a href="/docSuche">Dokument suchen</a></li>
+                <li><a href="/">Startseite</a></li>
+                <li><a href="/gerichte">Statistiken</a></li>
+                <li><a href="/docSuche">Dokumente suchen</a></li>
 
             </ul>
         </nav>
     </div>
+    <script>
+        var windowWidth = $(window).width();
+        console.log(windowWidth);
+        if($(window).width()<1280){
+            console.log("kleiner");
+            document.getElementById("showpicture").style.display = "none";
+        }
+        else{
+            console.log("größer");
+            document.getElementById("showpicture").style.display = "flex";
+        }
+        $(window).resize(function() {
+            console.log('window was resized'+$(window).width());
+            if($(window).width()<1280){
+                console.log("kleiner");
+                document.getElementById("showpicture").style.display = "none";
+            }
+            else{
+                console.log("größer");
+                document.getElementById("showpicture").style.display = "flex";
+            }
+        });
+    </script>
 </section>
 
 
@@ -47,21 +74,36 @@
                 <input type="submit" name="suchen" id="suchen"/>
             </form>
             <% if(result != undefined){ %>
-            <% if(result.message != "nix" ) { %>
-            <%= result.message %><br>
-            <% } %>
-
-            <% if(result.message == "nix" ){ %>
-            Suchwort: <%= result.searchword %><br><br>
-            Gefunden in den folgenden Dokumenten: <br>
-            <form  id="form1" method="post" action="/singleDoc">
-                <% for(var i = 0; i< result.docs.length; i++){ %>
-                <button style="width:200px; height:30px; line-height: normal; text-transform:none; border-radius: 0em;" name="docid" value="<%= result.docs[i].name %>" type="submit"><%= result.docs[i].name %></button>
+                <% if(result.message != "nix" ) { %>
+                    <%= result.message %><br>
                 <% } %>
-            </form>
-            <%} %>
-            <%} %>
 
+                <% if(result.message == "nix" ){ %>
+                    <% var BGH_Document_ID = result.documentname.replace("_clean",""); %>
+                    BGH Entscheidung: No.<%= BGH_Document_ID %> <a href="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&nr=<%= BGH_Document_ID %>" target="_blank"><img src="/images/pdf-icon.png" height="25" ></a>
+                    <br><br>
+                    <% var documentParameters = Object.getOwnPropertyNames(result.docs[0]);%>
+                    Gefundene Parameter: <br><br>
+                    <% for(var i = 0; i< documentParameters.length; i++){ %>
+
+                        <%  if(documentParameters[i] != "stream_size" && documentParameters[i] != "id" && documentParameters[i] != "x_parsed_by" && documentParameters[i] != "stream_content_type" && documentParameters[i] != "content_encoding"&& documentParameters[i] != "resourcename"&& documentParameters[i] != "content_type"){ %>
+                            <div id="parameterResult" style=" ">
+                            <% var actualParameter = documentParameters[i].replace("_txt","") %>
+                            <u><%= actualParameter %>:</u><br>
+                            <% if(result.docs[0][documentParameters[i]] instanceof Array){ %>
+                                <% for(var j = 0; j< result.docs[0][documentParameters[i]].length; j++){ %>
+                                    <i><%=  result.docs[0][documentParameters[i]][j] %></i><br>
+                                <% } %>
+                            <%}else{ %>
+                                <%=  JSON.stringify(result.docs[0][documentParameters[i]]) %>
+                            <% } %>
+                        <br><br>
+                        </div>
+                        <% } %>
+                    <% } %>
+                <%} %>
+            <%} %>
+        <div style="float:none"><br><br><br><br></div>
         </div>
     </section>
 
@@ -78,7 +120,7 @@
 </footer>
 
 <!-- Scripts -->
-<script src="/assets/js/jquery.min.js"></script>
+
 <script src="/assets/js/jquery.scrollex.min.js"></script>
 <script src="/assets/js/jquery.scrolly.min.js"></script>
 <script src="/assets/js/skel.min.js"></script>

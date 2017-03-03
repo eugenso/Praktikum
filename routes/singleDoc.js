@@ -22,9 +22,10 @@ router.post('/', function(req, res, next) {
 
     function showresult(metaDaten){
         console.log(metaDaten);
-        /*metaDaten = JSON.parse(metaDaten);
+        metaDaten = JSON.parse(metaDaten);
         resultDaten = splitSearchResult(metaDaten);
-        res.render('singleDoc', { result: resultDaten });*/
+        console.log(resultDaten.docs);
+        res.render('singleDoc', { result: resultDaten });
     }
 
 });
@@ -49,15 +50,13 @@ function splitSearchResult(metaDaten){
     else{
         console.log("is here trying");
         result.message = "nix";
-        result.searchword = metaDaten.responseHeader.params.q.replace("_text_:"," ");
+        result.documentname = returnStringBetween(metaDaten.responseHeader.params.q,"data\\\\",".txt");
         result.docs = [];
 
-        for(var i = 0; i <metaDaten.response.docs.length; i++){
-            var foundDocument = {};
-            foundDocument.id = metaDaten.response.docs[i].id;
-            foundDocument.name = returnStringBetween(metaDaten.response.docs[i].id,"data\\",".txt");
-            result.docs.push(foundDocument);
-        }
+
+        var foundDocument = {};
+        foundDocument = metaDaten.response.docs[0];
+        result.docs.push(foundDocument);
     }
     return result;
 }
