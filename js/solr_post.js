@@ -3,7 +3,7 @@
  */
 exports.solrPost = solrPost;
 exports.solrPostDataFromWatson = solrPostDataFromWatson;
-
+var config = require('../js/config');
 var http = require("http");
 
 var resultDataSet = {};
@@ -14,7 +14,7 @@ function solrPostDataFromWatson(docobj){
 }
 
 function solrPost(docobj){
-    var idPrePath = "C:\\\\solr\\\\data\\\\"+docobj.Dateiname+".txt";
+    var idPrePath = config.solrDataPath+docobj.Dateiname+".txt";
     actualLineNumber = 0;
     postData();
 

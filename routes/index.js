@@ -4,21 +4,20 @@ var router = express.Router();
 TestEvents ={};
 
 
-//test = "test2233";
-//API Data one and two
-//GLOBAL_api_key = 'f2bebbda9a39f53c8a9f92b232ee3238f32b164c';
-//GLOBAL_model_id = 'rb:a267d1b0-0fb2-490a-8a30-8c11277be192';
 
-GLOBAL_api_key ='68ed580532a101015a5e689be50ddc966afa1c7f';
-GLOBAL_model_id ='rb:16d8bb4f-757f-4950-8723-5a69ec98348e';
 
 
 var file_reader = require('../js/file_reader');
 var alchemy_request = require('../js/alchemy_request');
 var solar_posts = require('../js/solr_post');
+var config = require('../js/config');
+
+GLOBAL_api_key = config.GLOBAL_api_key;
+GLOBAL_model_id = config.GLOBAL_model_id;
+
 events = require('events');
 
-//alchemy_request.AlchemyOutput();
+alchemy_request.AlchemyOutput();
 
 solr_events = new events.EventEmitter();
 
