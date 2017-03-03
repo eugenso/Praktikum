@@ -25,6 +25,8 @@ function AlchemyOutput() {
         model_id: GLOBAL_model_id
     };
 
+    //ToDo Watson json.datei speichern --> darauf outputcleaner anwenden --> weiter an solr
+
     adressListe2.forEach(function (arrayitem)
     {
         parameters.url = arrayitem;
@@ -134,7 +136,7 @@ function AlchemyOutput() {
         //console.log("highestDate",highestDate.format('YYYY MM DD'));
         //console.log("Normliste",normlist);
         //console.log("Richterliste",richterliste);
-        //console.log(docobj);
+        console.log(docobj);
         solar_posts.solrPostDataFromWatson(docobj);
 
     }
