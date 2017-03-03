@@ -322,8 +322,6 @@ Amtsgericht Kronach
 Amtsgericht Künzelsau
 Amtsgericht Kulmbach
 Amtsgericht Kusel
- 
- 
 Amtsgericht Lampertheim
 Amtsgericht Landau in der Pfalz
 Amtsgericht Landsberg am Lech
@@ -661,3 +659,663 @@ Amtsgericht Zittau
 Amtsgericht Zossen
 Amtsgericht Zweibrücken
 Amtsgericht Zwickau
+AG Aachen
+AG Aalen
+AG Achern
+AG Achim
+AG Adelsheim
+AG Ahaus
+AG Ahlen
+AG Ahrensburg
+AG Aichach
+AG Albstadt
+AG Alfeld
+AG Alsfeld
+AG Altena
+AG Altenburg
+AG Altenkirchen
+AG Altötting
+AG Alzey
+AG Amberg
+AG Andernach
+AG Anklam
+AG Annaberg
+AG Ansbach
+AG Apolda
+AG Arnsberg
+AG Arnstadt
+AG Aschersleben
+AG Aue
+AG Auerbach
+AG Augsburg
+AG Aurich
+AG Backnang
+AG Bad Aibling
+AG Bad Arolsen
+AG Bad Bergzabern
+AG Bad Berleburg
+AG Bad Doberan
+AG Bad Dürkheim
+AG Baden-Baden
+AG Bad Freienwalde
+AG Bad Gandersheim
+AG Bad Hersfeld
+AG Bad Homburg v.d. Höhe
+AG Bad Iburg
+AG Bad Kissingen
+AG Bad Kreuznach
+AG Bad Liebenwerda
+AG Bad Mergentheim
+AG Bad Neuenahr-Ahrweiler
+AG Bad Oeynhausen
+AG Bad Säckingen
+AG Bad Salzungen
+AG Bad Saulgau
+AG Bad Schwalbach
+AG Bad Segeberg
+AG Bad Sobernheim
+AG Bad Urach
+AG Bad Waldsee
+AG Balingen
+AG Bamberg
+AG Bautzen
+AG Bayreuth
+AG Beckum
+AG Bensheim
+AG Bergen
+AG Bergheim
+AG Bergisch Gladbach
+AG Bernau
+AG Bernburg
+AG Bernkastel-Kues
+AG Bersenbrück
+AG Besigheim
+AG Betzdorf
+AG Biberach
+AG Biedenkopf
+AG Bielefeld
+AG Bingen am Rhein
+AG Bitburg
+AG Bitterfeld-Wolfen
+AG Blomberg
+AG Bocholt
+AG Bochum
+AG Böblingen
+AG Bonn
+AG Borken
+AG Borna
+AG Bottrop
+AG Brackenheim
+AG Brake
+AG Brakel
+AG Brandenburg an der Havel
+AG Braunschweig
+AG Breisach
+AG Bremen
+AG Bremen-Blumenthal
+AG Bremerhaven
+AG Bremervörde
+AG Bretten
+AG Brilon
+AG Brühl
+AG Bruchsal
+AG Buchen
+AG Bückeburg
+AG Büdingen
+AG Bühl
+AG Bünde
+AG Burg
+AG Burgdorf
+AG Burgwedel
+AG Buxtehude
+AG Calw
+AG Castop-Rauxel
+AG Celle
+AG Cham
+AG Charlottenburg
+AG Chemnitz
+AG Clausthal-Zellerfeld
+AG Cloppenburg
+AG Coburg
+AG Coburg (Zentrales Mahngericht)
+AG Cochem
+AG Coesfeld
+AG Cottbus
+AG Crailsheim
+AG Cuxhaven
+AG Dachau
+AG Dannenberg
+AG Darmstadt
+AG Daun
+AG Deggendorf
+AG Delbrück
+AG Delmenhorst
+AG Demmin
+AG Dessau-Roßlau
+AG Detmold
+AG Dieburg
+AG Diepholz
+AG Diez
+AG Dillenburg
+AG Dillingen
+AG Dinslaken
+AG Dippoldiswalde
+AG Döbeln
+AG Donaueschingen
+AG Dorsten
+AG Dortmund
+AG Dresden
+AG Duderstadt
+AG Dülmen
+AG Düren
+AG Düsseldorf
+AG Duisburg
+AG Duisburg-Hamborn
+AG Duisburg-Ruhrort
+AG Ebersberg
+AG Eberswalde
+AG Eckernförde
+AG Eggenfelden
+AG Ehingen (Donau)
+AG Eilenburg
+AG Einbeck
+AG Eisenach
+AG Eisenhüttenstadt
+AG Eisleben
+AG Ellwangen/Jagst
+AG Elmshorn
+AG Elze
+AG Emden
+AG Emmendingen
+AG Emmerich
+AG Erding
+AG Erfurt
+AG Erkelenz
+AG Erlangen
+AG Eschwege
+AG Eschweiler
+AG Essen
+AG Essen-Borbeck
+AG Essen-Steele
+AG Esslingen am Neckar
+AG Ettenheim
+AG Ettlingen
+AG Euskirchen
+AG Eutin
+AG Flensburg
+AG Forchheim
+AG Frankenberg (Eder)
+AG Frankenthal (Pfalz)
+AG Frankfurt am Main
+AG Frankfurt (Oder)
+AG Freiberg
+AG Freiburg
+AG Freising
+AG Freudenstadt
+AG Freyung
+AG Friedberg (Hessen)
+AG Fritzlar
+AG Fürstenfeldbruck
+AG Fürstenwalde
+AG Fürth (Bayern)
+AG Fürth (Hessen)
+AG Fulda
+AG Garmisch-Partenkirchen
+AG Gardelegen
+AG Geilenkirchen
+AG Geislingen
+AG Geldern
+AG Gelnhausen
+AG Gelsenkirchen
+AG Gelsenkirchen-Buer
+AG Gemünden a. Main
+AG Gengenbach
+AG Gera
+AG Germersheim
+AG Gernsbach
+AG Gießen
+AG Gifhorn
+AG Gladbeck
+AG Göppingen
+AG Görlitz
+AG Göttingen
+AG Goslar
+AG Gotha
+AG Greifswald
+AG Greiz
+AG Grevenbroich
+AG Grevesmühlen
+AG Grimma
+AG Gronau
+AG Groß-Gerau
+AG Grünstadt
+AG Güstrow
+AG Günzburg
+AG Gütersloh
+AG Guben
+AG Gummersbach
+AG Hagen
+AG Hagenow
+AG Hainichen
+AG Halberstadt
+AG Haldensleben
+AG Halle (Saale)
+AG Halle (Westf.)
+AG Hamburg
+AG Hamburg-Altona
+AG Hamburg-Barmbek
+AG Hamburg-Bergedorf
+AG Hamburg-Blankenese
+AG Hamburg-Harburg
+AG Hamburg-St. Georg
+AG Hamburg-Wandsbek
+AG Hameln
+AG Hamm
+AG Hanau
+AG Hannover
+AG Hann.Münden
+AG Haßfurt
+AG Hattingen
+AG Hechingen
+AG Heidelberg
+AG Heidenheim a.d. Brenz
+AG Heilbronn
+AG Heiligenstadt
+AG Heinsberg
+AG Helmstedt
+AG Herford
+AG Hermeskeil
+AG Herne
+AG Herne-Wanne
+AG Hersbruck
+AG Herzberg
+AG Hildburghausen
+AG Hildesheim
+AG Höxter
+AG Hof
+AG Hohenschönhausen
+AG Hohenstein-Ernstthal
+AG Holzminden
+AG Homburg
+AG Horb am Neckar
+AG Hoyerswerda
+AG Hünfeld
+AG Husum
+AG Ibbenbüren
+AG Idar-Oberstein
+AG Idstein
+AG Ingolstadt
+AG Iserlohn
+AG Itzehoe
+AG Jena
+AG Jever
+AG Jülich
+AG Kaiserslautern
+AG Kamen
+AG Kamenz
+AG Kandel
+AG Karlsruhe
+AG Karlsruhe-Durlach
+AG Kassel
+AG Kehl
+AG Kelheim
+AG Kempen
+AG Kempten
+AG Kenzingen
+AG Kerpen
+AG Kiel
+AG Kirchhain
+AG Kirchheim unter Teck
+AG Kitzingen
+AG Kleve
+AG Koblenz
+AG Köln
+AG Königstein i. Ts.
+AG Königswinter
+AG Königs Wusterhausen
+AG Köpenick
+AG Köthen
+AG Konstanz
+AG Korbach
+AG Krefeld
+AG Kronach
+AG Künzelsau
+AG Kulmbach
+AG Kusel
+AG Lampertheim
+AG Landau in der Pfalz
+AG Landsberg am Lech
+AG Landshut
+AG Landstuhl
+AG Langen (Hessen)
+AG Langen (Niedersachsen)
+AG Langenburg
+AG Langenfeld
+AG Lahnstein
+AG Lahr
+AG Laufen
+AG Lebach
+AG Leer
+AG Lehrte
+AG Lemgo
+AG Lennestadt
+AG Leipzig
+AG Leonberg
+AG Leutkirch im Allgäu
+AG Leverkusen
+AG Lichtenberg
+AG Lichtenfels
+AG Limburg a.d. Lahn
+AG Lindau
+AG Lingen
+AG Linz am Rhein
+AG Lippstadt
+AG Löbau
+AG Lörrach
+AG Luckenwalde
+AG Ludwigsburg
+AG Ludwigshafen am Rhein
+AG Ludwigslust
+AG Lübben
+AG Lübeck
+AG Lübbecke
+AG Lüdenscheid
+AG Lüdinghausen
+AG Lüneburg
+AG Lünen
+AG Magdeburg
+AG Mainz
+AG Mannheim
+AG Marbach am Neckar
+AG Marburg
+AG Marienberg
+AG Marl
+AG Marsberg
+AG Maulbronn
+AG Mayen
+AG Medebach
+AG Meinerzhagen
+AG Meinigen
+AG Meißen
+AG Meldorf
+AG Melsungen
+AG Memmingen
+AG Menden (Sauerland)
+AG Meppen
+AG Merseburg
+AG Merzig
+AG Meschede
+AG Mettmann
+AG Michelstadt
+AG Minden
+AG (Berlin) Mitte
+AG Mönchengladbach
+AG Mönchengladbach-Rheydt
+AG Moers
+AG Monschau
+AG Montabaur
+AG Mosbach
+AG Mühldorf a. Inn
+AG Mühlhausen
+AG Mülheim an der Ruhr
+AG Müllheim
+AG München
+AG Münsingen
+AG Münster
+AG Nagold
+AG Nauen
+AG Naumburg
+AG Neresheim
+AG Nettetal
+AG Neubrandenburg
+AG Neuburg a.d. Donau
+AG Neukölln
+AG Neumarkt i.d.OPf
+AG Neumünster
+AG Neunkirchen
+AG Neuruppin
+AG Neuss
+AG Neustadt a.d. Aisch
+AG Neustadt a. d. Weinstraße
+AG Neustadt a. Rbge
+AG Neustrelitz
+AG Neu-Ulm .
+AG Neuwied
+AG Nidda
+AG Niebüll
+AG Nienburg
+AG Nördlingen
+AG Norden
+AG Nordenham
+AG Norderstedt
+AG Nordhausen
+AG Nordhorn
+AG Northeim
+AG Nürnberg
+AG Nürtingen
+AG Oberhausen
+AG Oberkirch
+AG Oberndorf am Neckar
+AG Öhringen
+AG Offenbach
+AG Offenburg
+AG Oldenburg
+AG Oldenburg in Holstein
+AG Olpe
+AG Oranienburg
+AG Oschatz
+AG Oschersleben
+AG Osnabrück
+AG Osterholz-Scharmbeck
+AG Osterode
+AG Otterndorf
+AG Ottweiler
+AG Paderborn
+AG Pankow/Weißensee
+AG Papenburg
+AG Parchim
+AG Pasewalk
+AG Passau
+AG Pegnitz
+AG Peine
+AG Perleberg
+AG Pfaffenhofen a.d. Ilm
+AG Pforzheim
+AG Philippsburg
+AG Pinneberg
+AG Pirmasens
+AG Pirna
+AG Plauen
+AG Plettenberg
+AG Plön
+AG Pößneck
+AG Potsdam
+AG Prenzlau
+AG Prüm
+AG Quedlinburg
+AG Radolfzell
+AG Rahden
+AG Rastatt
+AG Rathenow
+AG Ratingen
+AG Ratzeburg
+AG Ravensburg
+AG Recklinghausen
+AG Regensburg
+AG Reinbek
+AG Remscheid
+AG Rendsburg
+AG Reutlingen
+AG Rheda-Wiedenbrück
+AG Rheinbach
+AG Rheinberg
+AG Rheine
+AG Ribnitz-Damgarten
+AG Riedlingen
+AG Riesa
+AG Rinteln
+AG Rockenhausen
+AG Rosenheim
+AG Rostock
+AG Rotenburg a.d. F.
+AG Rotenburg (Wümme)
+AG Rottenburg am Neckar
+AG Rottweil
+AG Rudolstadt
+AG Rüdesheim
+AG Rüsselsheim
+AG Saarbrücken
+AG Saarlouis
+AG Salzgitter
+AG Saarburg
+AG Salzwedel
+AG Sangerhausen
+AG Schleiden
+AG Schleswig
+AG Schlüchtern
+AG Schmallenberg
+AG Schönau
+AG Schönebeck
+AG Schöneberg
+AG Schopfheim
+AG Schorndorf
+AG Schwabach
+AG Schwabmünchen
+AG Schwäbisch Gmünd
+AG Schwäbisch Hall
+AG Schwalmstadt
+AG Schwarzenbek
+AG Schwedt
+AG Schweinfurt
+AG Schwelm
+AG Schwerin
+AG Schwerte
+AG Schwetzingen
+AG Seesen
+AG Seligenstadt
+AG Senftenberg
+AG Siegburg
+AG Siegen
+AG Sigmaringen
+AG Simmern (Hunsrück)
+AG Singen
+AG Sinsheim
+AG Sinzig
+AG Sömmerda
+AG Soest
+AG Solingen
+AG Soltau
+AG Sondershausen
+AG Sonneberg
+AG Sonthofen
+AG Spaichingen
+AG Spandau
+AG Speyer
+AG Springe
+AG Stade
+AG Stadthagen
+AG Stadtroda
+AG Starnberg
+AG Staufen
+AG Steinfurt
+AG St. Blasien
+AG Stendal
+AG St. Goar
+AG St. Ingbert
+AG St. Wendel
+AG Stockach
+AG Stollberg
+AG Stolzenau
+AG Stralsund
+AG Strausberg
+AG Stuttgart
+AG Stuttgart-Bad Cannstatt
+AG Suhl
+AG Sulingen
+AG Syke
+AG Tauberbischofsheim
+AG Tecklenburg
+AG Tempelhof-Kreuzberg
+AG Tettnang
+AG Tiergarten
+AG Titisee-Neustadt
+AG Torgau
+AG Tostedt
+AG Tirschenreuth
+AG Traunstein
+AG Trier
+AG Tübingen
+AG Tuttlingen
+AG Überlingen
+AG Ueckermünde
+AG Uelzen
+AG Ulm
+AG Unna
+AG Usingen
+AG Vaihingen a.d. Enz
+AG Varel
+AG Vechta
+AG Velbert
+AG Verden
+AG Viersen
+AG Viechtach
+AG Villingen-Schwenningen
+AG Völklingen
+AG Vohenstrauß
+AG Waiblingen
+AG Waldbröl
+AG Waldkirch
+AG Waldshut-Tiengen
+AG Walsrode
+AG Wangen im Allgäu
+AG Warburg
+AG Waren
+AG Warendorf
+AG Warstein
+AG Wasserburg a. Inn
+AG Wedding
+AG Weiden i.d.OPf.
+AG Weilburg
+AG Weilheim i. OB
+AG Weimar
+AG Weinheim
+AG Weißenburg i. Bay.
+AG Weißenfels
+AG Weißwasser
+AG Wennigsen
+AG Werl
+AG Wermelskirchen
+AG Wernigerode
+AG Wertheim
+AG Wesel
+AG Westerburg
+AG Westerstede
+AG Wetter
+AG Wetzlar
+AG Wiesbaden
+AG Wiesloch
+AG Wildeshausen
+AG Wilhelmshaven
+AG Winsen (Luhe)
+AG Wipperfürth
+AG Wismar
+AG Witten
+AG Wittenberg
+AG Wittlich
+AG Wittmund
+AG Wolfach
+AG Wolfenbüttel
+AG Wolfsburg
+AG Wolgast
+AG Worms
+AG Würzburg
+AG Wunsiedel
+AG Wuppertal
+AG Zehdenick
+AG Zeitz
+AG Zerbst
+AG Zeven
+AG Zittau
+AG Zossen
+AG Zweibrücken
+AG Zwickau
