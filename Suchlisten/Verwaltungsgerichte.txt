@@ -49,6 +49,57 @@ Verwaltungsgericht Trier
 Verwaltungsgericht Weimar
 Verwaltungsgericht Wiesbaden
 Verwaltungsgericht Würzburg
+Schleswig-Holsteinisches VG
+VG Aachen
+VG Arnsberg
+VG Ansbach
+VG Augsburg
+VG Bayreuth
+VG Berlin
+VG Braunschweig
+VG Chemnitz
+VG Cottbus
+VG Darmstadt
+VG der Freien Hansestadt Bremen
+VG des Saarlandes
+VG Dresden
+VG Düsseldorf
+VG Frankfurt am Main
+VG Frankfurt (Oder)
+VG Freiburg
+VG Gelsenkirchen
+VG Gera
+VG Gießen
+VG Göttingen
+VG Greifswald
+VG Halle
+VG Hamburg
+VG Hannover
+VG Karlsruhe
+VG Kassel
+VG Koblenz
+VG Köln
+VG Leipzig
+VG Lüneburg
+VG Magdeburg
+VG Mainz
+VG Meinigen
+VG Minden
+VG München
+VG Münster
+VG Neustadt an der Weinstraße
+VG Oldenburg
+VG Osnabrück
+VG Potsdam
+VG Regensburg
+VG Schwerin
+VG Sigmaringen
+VG Stade
+VG Stuttgart
+VG Trier
+VG Weimar
+VG Wiesbaden
+VG Würzburg
 
 
 
