@@ -26,36 +26,42 @@ function AlchemyOutput() {
     };
 
     //ToDo Watson json.datei speichern --> darauf outputcleaner anwenden --> weiter an solr
-
-    adressListe2.forEach(function (arrayitem)
+    var callcount = 0;
+    callWatson();
+    console.log(callcount);
+    function callWatson() {
+        console.log(adressListe.length, callcount);
+        if (callcount < adressListe.length) {
+            parameters.url = adressListe[callcount];
+            console.log(parameters.url);
+            alchemy_language.combined(parameters, function (err, response) {
+                if (err)
+                    console.log('error:', err);
+                else
+                    var jsonFile = JSON.stringify(response, null, 2);
+                console.log(response);
+                outputcleaner(response,callWatson);
+            });
+        }
+        callcount++;
+    }
+/*
+    adressListe.forEach(function (arrayitem)
     {
         parameters.url = arrayitem;
-
+        console.log(parameters.url);
     alchemy_language.combined(parameters, function (err, response) {
         if (err)
             console.log('error:', err);
         else
             var jsonFile = JSON.stringify(response, null, 2)
+        console.log(response);
         outputcleaner(response);
-
-        //RawSavingFunction
-        var fileName = 'test_urteile\\'+arrayitem.substring(34,arrayitem.length)+'.json';
-        fileSaver(fileName,jsonFile);
-
     });
-});
-
-    function fileSaver(nameString, jsonFile) {
-        fs.writeFile(nameString, jsonFile, function(err) {
-            if(err) {
-                return console.log(err);
-            }
-        });
-        console.log(nameString);
-    }
+    });*/
 
      //outputcleaner - get max date
-    function outputcleaner(response) {
+    function outputcleaner(response,callWatson) {
 
         var docobj = {};
         var  Dates = [];
@@ -151,7 +157,7 @@ function AlchemyOutput() {
         //console.log("highestDate",highestDate.format('YYYY MM DD'));
         //console.log("Normliste",normlist);
         //console.log("Richterliste",richterliste);
-
+        callWatson();
         console.log(docobj);
         solar_posts.solrPostDataFromWatson(docobj);
 
@@ -173,11 +179,11 @@ function counter()
     })
 }
 
-var adressListe2 = ['http://my-own-it.de/test_urteile/17776_clean.txt',
+var adressListe2 = ['http://my-own-it.de/test_urteile/17927_clean.txt',
+'http://my-own-it.de/test_urteile/18057_clean.txt',
     'http://my-own-it.de/test_urteile/18181_clean.txt',
-    'http://my-own-it.de/test_urteile/17917_clean.txt',
-    'http://my-own-it.de/test_urteile/17927_clean.txt',
-    'http://my-own-it.de/test_urteile/18057_clean.txt'];
+    'http://my-own-it.de/test_urteile/18211_clean.txt',
+    'http://my-own-it.de/test_urteile/18220_clean.txt'];
 
 var adressListe = ['http://my-own-it.de/test_urteile/17776_clean.txt',
     'http://my-own-it.de/test_urteile/17907_clean.txt',

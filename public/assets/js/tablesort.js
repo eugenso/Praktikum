@@ -7,7 +7,7 @@
 	"use strict";
 
 	var JB_sortbutStyle = document.createElement('style'); // Stylesheet fÃ¼r Button im TH
-	JB_sortbutStyle.innerText = 'button.sortbut { width:100%; height:100%; border: none; background-color: transparent; font: inherit; color: inherit; text-align: inherit; padding: 0; cursor: pointer; } button.sortbut::-moz-focus-inner { margin: -1px; border-width: 1px; padding: 0; }';
+
 	document.head.appendChild(JB_sortbutStyle);
 
 		var JB_Table = function(tab) {
@@ -47,6 +47,7 @@
 			b.className = "sortbut"
 			b.innerHTML = t.innerHTML;
 			t.innerHTML = "";
+           b.style= 'height:100%; border: none; background-color: transparent; font: inherit; color: inherit; text-align: center; padding: 0; cursor: pointer; ';
 			if(window.addEventListener) b.addEventListener("click",function() { dieses.sort(nr); },false);
 			b.title = 'Die Tabelle nach "'+b.textContent+'" sortieren.';
 			t.appendChild(b);
@@ -263,5 +264,3 @@
 	if(window.addEventListener) window.addEventListener("DOMContentLoaded",JB_initTableSort,false);
 
 })();
-
-module.exports = tablesort;

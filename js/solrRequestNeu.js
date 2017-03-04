@@ -20,7 +20,7 @@ function solrSearchWords(searchCategorys){
             console.log("finished");
             var objectParameters = Object.getOwnPropertyNames(Documents);
             for(var i = 0; i<objectParameters.length; i++){
-                console.log(Documents[objectParameters[i]]);
+                //console.log(Documents[objectParameters[i]]);
                solar_posts.solrPost(Documents[objectParameters[i]]);
             }
             //console.log(Documents);
@@ -56,9 +56,8 @@ function solrSearchWords(searchCategorys){
                 'Content-Type': 'application/json',
             }
         };
-        if(searchWord == "﻿Verurteilung zur"){
-            console.log(options.path);
-        }
+        console.log(options.path);
+
         http.get(options, function (antwort) {
             var resultString = "";
             antwort.setEncoding('utf8')

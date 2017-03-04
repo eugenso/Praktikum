@@ -13,12 +13,14 @@ function requestData(searchWord,callback) {
         hostname: 'localhost',
         port: 8983,
         //path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json&rows=52000',
-        path: '/solr/testcore/select?&q=_text_:'+ encodeURIComponent(searchWord) + '&indent=on&wt=json&rows=52000',
+        path: '/solr/testcore/select?&q='+ encodeURIComponent(searchWord) + '&indent=on&wt=json&rows=52000',
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
         }
     };
+
+    //_text_:
     if(searchWord == "﻿Verurteilung zur"){
         console.log(options.path);
     }

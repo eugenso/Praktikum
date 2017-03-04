@@ -241,6 +241,7 @@ Amtsgericht Halberstadt
 Amtsgericht Haldensleben
 Amtsgericht Halle (Saale)
 Amtsgericht Halle (Westf.)
+Amtsgericht Halle
 Amtsgericht Hamburg
 Amtsgericht Hamburg-Altona
 Amtsgericht Hamburg-Barmbek
@@ -593,6 +594,7 @@ Amtsgericht Ulm
 Amtsgericht Unna
 Amtsgericht Usingen
 Amtsgericht Vaihingen a.d. Enz
+Amtsgericht Vaihingen
 Amtsgericht Varel
 Amtsgericht Vechta
 Amtsgericht Velbert
@@ -615,11 +617,14 @@ Amtsgericht Warstein
 Amtsgericht Wasserburg a. Inn
 Amtsgericht Wedding
 Amtsgericht Weiden i.d.OPf.
+Amtsgericht Weiden
 Amtsgericht Weilburg
 Amtsgericht Weilheim i. OB
+Amtsgericht Weilheim
 Amtsgericht Weimar
 Amtsgericht Weinheim
 Amtsgericht Weißenburg i. Bay.
+Amtsgericht Weißenburg
 Amtsgericht Weißenfels
 Amtsgericht Weißwasser
 Amtsgericht Wennigsen
@@ -637,6 +642,7 @@ Amtsgericht Wiesloch
 Amtsgericht Wildeshausen
 Amtsgericht Wilhelmshaven
 Amtsgericht Winsen (Luhe)
+Amtsgericht Winsen
 Amtsgericht Wipperfürth
 Amtsgericht Wismar
 Amtsgericht Witten
@@ -748,6 +754,7 @@ AG Bottrop
 AG Brackenheim
 AG Brake
 AG Brakel
+AG Brandenburg
 AG Brandenburg an der Havel
 AG Braunschweig
 AG Breisach
@@ -817,6 +824,7 @@ AG Eberswalde
 AG Eckernförde
 AG Eggenfelden
 AG Ehingen (Donau)
+AG Ehingen
 AG Eilenburg
 AG Einbeck
 AG Eisenach
@@ -859,6 +867,7 @@ AG Fürstenfeldbruck
 AG Fürstenwalde
 AG Fürth (Bayern)
 AG Fürth (Hessen)
+AG Fürth
 AG Fulda
 AG Garmisch-Partenkirchen
 AG Gardelegen
@@ -901,6 +910,7 @@ AG Halberstadt
 AG Haldensleben
 AG Halle (Saale)
 AG Halle (Westf.)
+AG Halle
 AG Hamburg
 AG Hamburg-Altona
 AG Hamburg-Barmbek
@@ -1069,6 +1079,7 @@ AG Neresheim
 AG Nettetal
 AG Neubrandenburg
 AG Neuburg a.d. Donau
+AG Neuburg
 AG Neukölln
 AG Neumarkt i.d.OPf
 AG Neumünster
@@ -1078,6 +1089,7 @@ AG Neuss
 AG Neustadt a.d. Aisch
 AG Neustadt a. d. Weinstraße
 AG Neustadt a. Rbge
+AG Neustadt
 AG Neustrelitz
 AG Neu-Ulm .
 AG Neuwied
@@ -1119,6 +1131,7 @@ AG Passau
 AG Pegnitz
 AG Peine
 AG Perleberg
+AG Pfaffenhofen
 AG Pfaffenhofen a.d. Ilm
 AG Pforzheim
 AG Philippsburg
@@ -1159,6 +1172,7 @@ AG Rosenheim
 AG Rostock
 AG Rotenburg a.d. F.
 AG Rotenburg (Wümme)
+AG Rotenburg
 AG Rottenburg am Neckar
 AG Rottweil
 AG Rudolstadt

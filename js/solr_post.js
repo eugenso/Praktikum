@@ -29,9 +29,9 @@ function solrPost(docobj){
         }
         post_data = post_data+'"'+objectParameters[objectParameters.length-1]+'_txt" : {"set":'+JSON.stringify(docobj[objectParameters[objectParameters.length-1]])+'} ';
 
-        console.log(objectParameters[objectParameters.length-1]+'_txt" : {"set":'+JSON.stringify(docobj[objectParameters[objectParameters.length-1]]))
+        //console.log(objectParameters[objectParameters.length-1]+'_txt" : {"set":'+JSON.stringify(docobj[objectParameters[objectParameters.length-1]]))
         post_data = post_data+'}]';
-        console.log(post_data);
+        //console.log(post_data);
         var options = {
             hostname: 'localhost',
             port: 8983,

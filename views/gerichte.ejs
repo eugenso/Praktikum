@@ -19,6 +19,45 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="/assets/css/ie8.css"/><![endif]-->
     <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', {'packages':['corechart']});
+
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Callback that creates and populates a data table,
+        // instantiates the pie chart, passes in the data and
+        // draws it.
+        function drawChart() {
+
+            // Create the data table.
+            var data = google.visualization.arrayToDataTable([
+
+                ['Landgerichte', 'Gesamt Anzahl', 'Rev. erfolgreich', 'Rev. n. erfolgreich', 'unklar', { role: 'annotation' } ],
+                <% for(var i = 0; i < result.length; i++) { %>
+                ['<%= result[i].name %>',<%=  result[i].amount[0]%>,<%=  result[i].amount[1]%>,<%=  result[i].amount[2]%>,
+                    <% var unsure = result[i].amount[0]-result[i].amount[1]-result[i].amount[2]%>
+                    <%= unsure %>, ''],
+                <% } %>
+            ]);
+
+            var options = {
+                width: 1000,
+                height: 200,
+                legend: { position: 'top', maxLines: 3 },
+                bar: { groupWidth: '75%' },
+                isStacked: true,
+            };
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
 </head>
 <body>
 
@@ -58,6 +97,7 @@
                 document.getElementById("showpicture").style.display = "flex";
             }
         });
+
     </script>
 </section>
 
@@ -67,101 +107,44 @@
 
     <!-- Intro -->
 
-    <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
-            <% if (result.length > 0){ %>
-            <table class="sortierbar" style="width:100%;" border = "1" bordercolor = "black">
-                <thead align = "center">
-                    <tr>
-                        <th class="sortierbar vorsortiert+" ><b>Gericht</b></th>
-                        <th class="sortierbar"><b>Anzahl Revisionen</b></th>
-                        <th class="sortierbar"><b>erfolgreiche Revisionen</b></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <% for(i=0; i< result.length; i++){ %>
-                    <tr align = "center" bordercolor = "black">
-                            <td >ausgabe</td>
-                            <td >ausgabe</td>
-                           <td >ausgabe</td>
-                    </tr>
-                </tbody>
-                <%}}else {%>
-                <p>keine Treffer</p>
-                <% } %>
-            </table>
-
-            <table class="sortierbar" border = "1">
+            <div id="chart_div"></div>
+            <table id="simpleTable" class="simpleTable" style="width:500px;" border = "1" bordercolor = "black">
                 <thead>
-                <tr>
-                    <th class="sortierbar vorsortiert+">1. Spalte</th>
-                    <th class="sortierbar">2. Spalte</th>
-                    <th class="sortierbar">3. Spalte</th>
+                    <tr>
+                        <th data-sort="string"><b>Landgerichte</b></th>
+                        <th data-sort="string"><b>Gesamt Anzahl</b></th>
+                        <th data-sort="string"><b>Rev. erfolgreich</b></th>
+                        <th data-sort="string"><b>Rev. n.erfolgreich</b></th>
+                        <th data-sort="string"><b>unklar</b></th>
 
-                    <!-- usw. -->
-
-                </tr>
+                    </tr>
                 </thead>
-                <tfoot>
-                <tr>
-                    <td>Fuß 1</td>
-                    <td>Fuß 2</td>
-                    <td>Fuß 3</td>
-
-                    <!-- usw. -->
-
-                </tr>
-                </tfoot>
                 <tbody>
-                <tr>
-                    <td>hallo</td>
-                    <td>manfred</td>
-                    <td>sprachtikum</td>
+                <% for(var i = 0; i < result.length; i++) { %>
+                        <tr align = "center" bordercolor = "black">
+                            <td><%= result[i].name %></td>
+                            <td><%= result[i].amount[0] %></td>
+                            <td><%= result[i].amount[1]%></td>
+                            <td><%= result[i].amount[2]%></td>
+                        <% var unsure = result[i].amount[0]-result[i].amount[1]-result[i].amount[2]%>
+                        <td><%= unsure %></td>
 
-                    <!-- usw. -->
-
-                </tr>
-
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-
-                    <!-- usw. -->
-
-                </tr>
-                <!-- usw. -->
-
-                </tr>
-
-                <tr>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>3</td>
-
-                    <!-- usw. -->
-
-                </tr>
-
-                <tr>
-                    <td>77</td>
-                    <td>28</td>
-                    <td>33</td>
-
-                    <!-- usw. -->
-
-                </tr>
+                    </tr>
+                <% } %>
                 </tbody>
             </table>
-
-
-
+            <script>
+            $(document).ready(function()
+            {
+            $("#simpleTable").tablesorter();
+            }
+            );
+            </script>
         </div>
     </section>
 </div>
-
-
 
 
 <!-- Footer -->

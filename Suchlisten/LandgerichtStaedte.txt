@@ -1,29 +1,4 @@
-﻿Aachen
-Amberg
-Arnsberg
-Aachen
-Amberg
-Arnsberg
-Ansbach
-Aschaffenburg
-Augsburg
-Aurich
-Baden.Baden
-Bad Kreuznach
-Bamberg
-Bautzen
-Bayreuth
-Berlin
-Bielefeld
-Bochum
-Bonn
-Braunschweig
-Bremen
-Bückeburg
-Chemnitz
-Coburg
-Cottbus
-Darmstadt
+﻿Darmstadt
 Deggendorf
 Dessau-Roßlau
 Detmold
@@ -31,13 +6,13 @@ Dortmund
 Dresden
 Düsseldorf
 Duisburg
-Ellwangen (Jagst)
+Ellwangen
 Erfurt
 Essen
 Flensburg
-Frankenthal (Pfalz)
+Frankenthal
 Frankfurt am Main
-Frankfurt (Oder)
+Frankfurt
 Freiburg
 Fulda
 Gera
@@ -83,6 +58,7 @@ Mosbach
 Mühlhausen
 München I
 München II
+München
 Münster
 Neubrandenburg
 Neuruppin
@@ -111,9 +87,9 @@ Tübingen
 Ulm
 Verden
 Waldshut-Tiengen
-Weiden i.d. OPf.
+Weiden
 Wiesbaden
 Würzburg
 Wuppertal
 Zweibrücken
-ZwickauAnsbach
+Zwickau

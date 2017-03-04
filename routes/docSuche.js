@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
     metaDaten = req.body.suchfeld;
     console.log(req.body);
-    docSuche.findDoc(req.body.suchfeld,showresult);
+    docSuche.findDoc('"'+req.body.suchfeld+'"',showresult);
 
     function showresult(metaDaten){
         console.log(metaDaten);
