@@ -7,8 +7,12 @@ var gerichte = require('../routes/gerichte.js');
 var res = undefined;
 var townNameArray =[];
 var result = [];
+
 function readfile(ressource) {
     //console.log(txtname);
+    result = [];
+    townNameArray =[];
+    //console.log(result);
     res = ressource;
     var LineByLineReader = require('line-by-line'),
         lr = new LineByLineReader("./Suchlisten/LandgerichtStaedte.txt",{ encoding: 'utf8', skipEmptyLines: true});
@@ -25,14 +29,13 @@ function readfile(ressource) {
 
     lr.on('end', function () {
         // All lines are read, file is closed now.
-        //console.log(linearray);
+        //console.log(townNameArray);
         startCreateIngQuerys();
     });
 
 var createdQuerys = -1;
-
+var town ={};
 var activeTownName = "";
-town  = {};
 function startCreateIngQuerys(){
     createdQuerys++;
     //console.log(createdQuerys);
@@ -45,8 +48,9 @@ function startCreateIngQuerys(){
         startRequests("",startCreateIngQuerys);
     }
     else{
-           // console.log(result);
+        //console.log(result);
         gerichte.start_rendering(res,result);
+
     }
 }
 

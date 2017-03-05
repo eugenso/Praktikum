@@ -14,10 +14,11 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
     metaDaten = req.body.suchfeld;
     console.log(req.body);
-    docSuche.findDoc('"'+req.body.suchfeld+'"',showresult);
+
+    docSuche.findDoc(req.body.suchfeld,showresult,req.body.searchModus);
 
     function showresult(metaDaten){
-        console.log(metaDaten);
+        //console.log(metaDaten);
         metaDaten = JSON.parse(metaDaten);
         resultDaten = splitSearchResult(metaDaten);
         res.render('docSuche', { result: resultDaten });
@@ -46,6 +47,8 @@ function splitSearchResult(metaDaten){
         console.log("is here trying");
         result.message = "nix";
         result.searchword = metaDaten.responseHeader.params.q.replace("_text_:"," ");
+        result.amount = metaDaten.response.numFound;
+        console.log("Anzahl gefunden"+metaDaten.response.numFound);
         result.docs = [];
 
         for(var i = 0; i <metaDaten.response.docs.length; i++){

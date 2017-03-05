@@ -4,11 +4,11 @@
 exports.findDoc = findDoc;
 var http = require("http");
 
-function findDoc(searchWord,callback){
-    requestData(searchWord,callback);
+function findDoc(searchWord,callback,searchModus){
+    requestData(searchWord,callback,searchModus);
 }
 
-function requestData(searchWord,callback) {
+function requestData(searchWord,callback,searchModus) {
     var options = {
         hostname: 'localhost',
         port: 8983,
@@ -19,11 +19,20 @@ function requestData(searchWord,callback) {
             'Content-Type': 'application/json',
         }
     };
+    if(searchModus == "_ID_"){
+        options.path = '/solr/testcore/select?&q=id:*'+ encodeURIComponent(searchWord) + '*&indent=on&wt=json&rows=52000';
+    }
+    if(searchModus == "_text_"){
+        options.path = '/solr/testcore/select?&q=_text_:"'+ encodeURIComponent(searchWord) + '"&indent=on&wt=json&rows=52000';
+    }
+    if(searchModus == "AllFields"){
+        options.path = '/solr/testcore/select?&q="'+ encodeURIComponent(searchWord) + '"&indent=on&wt=json&rows=52000';
+    }
 
     //_text_:
-    if(searchWord == "﻿Verurteilung zur"){
+
         console.log(options.path);
-    }
+
     http.get(options, function (antwort) {
         var resultString = "";
         antwort.setEncoding('utf8')
