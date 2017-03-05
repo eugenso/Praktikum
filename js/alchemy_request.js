@@ -18,7 +18,7 @@ function AlchemyOutput() {
     });
 
     var parameters = {
-        extract: 'entities, keywords',
+        extract: 'entities',
         sentiment: 1,
         maxRetrieve: 1,
         url: '',
