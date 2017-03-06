@@ -10,6 +10,7 @@ var users = require('./routes/users');
 var gerichte = require('./routes/gerichte');
 var docSuche = require('./routes/docSuche');
 var singleDoc = require('./routes/singleDoc');
+var pieCreator = require('./routes/pieCreator');
 
 var app = express();
 
@@ -30,7 +31,7 @@ app.use('/docSuche', docSuche);
 app.use('/users', users);
 app.use('/gerichte', gerichte);
 app.use('/singleDoc', singleDoc);
-
+app.use('/pieCreator', pieCreator);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

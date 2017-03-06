@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Suche</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]>
+    <script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="/assets/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/assets/css/ie8.css"/><![endif]-->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', {'packages':['corechart']});
+
+
+        // Set a callback to run when the Google Visualization API is loaded.
+
+
+        // Callback that creates and populates a data table,
+        // instantiates the pie chart, passes in the data and
+        // draws it.
+        console.log("result"+<%= result.length %>);
+        if(<%= result.length %> > 0){
+
+            google.charts.setOnLoadCallback(drawChart);
+        }
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Found Amount'],
+                <% for(var i = 0; i < result.length; i++){ %>
+                ['<%= result[i].search_string %>', <%= result[i].amount %>],
+                <% }%>
+            ]);
+
+            var options = {
+                backgroundColor:'transparent',
+                title: 'Gesamt Analyse',
+                width: '100%',
+                height: '100%',
+                is3D: true,
+                chartArea:{left:20,top:20,width:'100%',height:'100%'},
+                titleTextStyle:{color: 'white'},
+                legend:{ textStyle: {color: 'white', fontSize: 11}}
+            };
+
+            draw_firstTime(data,options);
+            chart.draw(data, options);
+        }
+
+        function draw_firstTime(data,options){
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
+        function draw_again(data,options) {
+            chart.draw(data, options);
+        }
+        </script>
+</head>
+<body>
+
+<!-- Sidebar -->
+<section id="sidebar">
+    <div id="showpicture"></div>
+    <div class="inner">
+
+        <nav>
+            <ul>
+                <li><a href="/">Startseite</a></li>
+                <li><a href="/gerichte">Statistiken</a></li>
+                <li><a href="/docSuche">Dokumente suchen</a></li>
+                <li><a href="/pieCreator">Kuchen generator</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <script>
+        var windowWidth = $(window).width();
+        console.log(windowWidth);
+        if($(window).width()<1280){
+            console.log("kleiner");
+            document.getElementById("showpicture").style.display = "none";
+        }
+        else{
+            console.log("größer");
+            document.getElementById("showpicture").style.display = "flex";
+        }
+        $(window).resize(function() {
+            console.log('window was resized'+$(window).width());
+            if($(window).width()<1280){
+                console.log("kleiner");
+                document.getElementById("showpicture").style.display = "none";
+            }
+            else{
+                console.log("größer");
+                document.getElementById("showpicture").style.display = "flex";
+            }
+        });
+    </script>
+</section>
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Intro -->
+
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+            <img src="/images/solr.png" height="100"><br>
+            <br>
+
+            <form  id="form1" method="post" action="/pieCreator">
+
+
+            </form>
+
+            <script>
+
+                amount_of_input = 0;
+                addInputfields();
+                function addInputfields(){
+                    amount_of_input = amount_of_input +1;
+                    var form_content=document.getElementById("form1").innerHTML
+                    form_content = "";
+
+                    for(var i = 0; i<amount_of_input; i++){
+                        console.log("runs here");
+                        var input_content = "";
+                        if(document.getElementById("suchfeld"+i) != null){
+                            var input_content= document.getElementById("suchfeld"+i).value;
+                        }
+                        form_content = form_content + 'SearchString '+i+'<input style="width:60%;" type="text" name="suchfeld" id="suchfeld'+i+'" value="'+input_content+'"/><br>';
+                    }
+                    form_content = form_content + '<input id="clickMe" type="button" value="add Searchfield" onclick="addInputfields();"/>';
+                    form_content = form_content + '<input type="submit" name="suchen" id="suchen"/>';
+
+                    document.getElementById("form1").innerHTML = form_content;
+                }
+            </script>
+            <div style="height:100%; width:100%;" id="piechart_3d" style="float: left"></div>
+        </div>
+    </section>
+
+</div>
+
+
+<!-- Footer -->
+<footer id="footer" class="wrapper style1-alt">
+    <div class="inner">
+        <ul class="menu">
+            <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>
