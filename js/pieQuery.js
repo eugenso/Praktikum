@@ -30,7 +30,7 @@ function requestData(actual_SearchString,callback) {
     console.log(actual_SearchString);
 
     var options = {
-        hostname: 'localhost',
+        hostname: 'solr',
         port: 8983,
         //path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json&rows=52000',
         path: '/solr/testcore/select?&q='+ encodeURIComponent(actual_SearchString) + '&indent=on&wt=json&rows=52000',
