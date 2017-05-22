@@ -13,6 +13,6 @@ used during implementation:  exports.GLOBAL_model_id = 'b222139d-b256-4640-8397-
 exports.GLOBAL_api_key ='';
 exports.GLOBAL_model_id ='';
 
-exports.solrDataPath = "C:\\\\solr\\\\data\\\\";
+exports.solrDataPath = "";
 exports.runWatson = false;
 exports.updateSolrSearchWordResults = false;
