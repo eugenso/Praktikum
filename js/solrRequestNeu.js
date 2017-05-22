@@ -47,7 +47,7 @@ function solrSearchWords(searchCategorys){
     function requestData(searchWord) {
 
         var options = {
-            hostname: 'localhost',
+            hostname: 'solr',
             port: 8983,
             //path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json&rows=52000',
             path: '/solr/testcore/select?&q=_text_:'+ encodeURIComponent('"'+searchWord+'"') + '&indent=on&wt=json&rows=52000',
