@@ -98,7 +98,7 @@ function startRequests(resultString,startCreateIngQuerys){
 function requestNumResult(query_string,startRequests,startCreateIngQuerys) {
 
     var options = {
-        hostname: 'localhost',
+        hostname: 'solr',
         port: 8983,
         //path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json&rows=52000',
         path: '/solr/testcore/select?&q='+query_string+'&indent=on&wt=json&rows=52000',
