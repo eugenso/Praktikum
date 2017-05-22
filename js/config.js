@@ -15,4 +15,4 @@ exports.GLOBAL_model_id ='';
 
 exports.solrDataPath = "";
 exports.runWatson = false;
-exports.updateSolrSearchWordResults = false;
+exports.updateSolrSearchWordResults = true;
