@@ -12,10 +12,10 @@ exports.AlchemyOutput = AlchemyOutput;
 function AlchemyOutput() {
 
 
-    var watson = require('watson-developer-cloud');
-    var alchemy_language = watson.alchemy_language({
-        api_key: GLOBAL_api_key
-    });
+    //var watson = require('watson-developer-cloud');
+    //var alchemy_language = watson.alchemy_language({
+    //    api_key: GLOBAL_api_key
+    //});
 
     var parameters = {
         extract: 'entities',
@@ -26,16 +26,24 @@ function AlchemyOutput() {
     };
 
     //ToDo Watson json.datei speichern --> darauf outputcleaner anwenden --> weiter an solr
+    var adressListe = [];
+
+    fs.readdirSync("/home/app/data/json/").forEach(file => {
+      adressListe.push(file);
+      //console.log(file);
+    });
+
     var callcount = 0;
     callWatson();
     console.log(callcount);
     function callWatson() {
         console.log(adressListe.length, callcount);
-        if (callcount < adressListe.length) {
+        while (callcount < adressListe.length) {
             parameters.url = adressListe[callcount];
-            console.log(parameters.url);
-            var response = JSON.parse(fs.readFileSync(adressListe[callcount], 'utf8'));
-            outputcleaner(response,callWatson);
+            //console.log(parameters.url);
+            var response = JSON.parse(fs.readFileSync("/home/app/data/json/"+adressListe[callcount], 'utf8'));
+            response.url= adressListe[callcount];
+            outputcleaner(response);
             //alchemy_language.combined(parameters, function (err, response) {
             //   if (err)
             //        console.log('error:', err);
@@ -44,8 +52,9 @@ function AlchemyOutput() {
             //    console.log(response);
             //    outputcleaner(response,callWatson);
             // });
-        }
         callcount++;
+        }
+        
     }
 /*
     adressListe.forEach(function (arrayitem)
@@ -63,7 +72,7 @@ function AlchemyOutput() {
     });*/
 
      //outputcleaner - get max date
-    function outputcleaner(response,callWatson) {
+    function outputcleaner(response) {
 
         var docobj = {};
         var  Dates = [];
@@ -78,7 +87,7 @@ function AlchemyOutput() {
         var  Geldliste = [];
         var  Verweisliste = [];
         var  Gerichtliste = [];
-        var  Dateiname = returnStringBetween(response.url, "/", ".txt");
+        var  Dateiname = returnStringBetween(response.url, "/data/", ".txt");
         console.log(Dateiname);
 
 
@@ -119,6 +128,7 @@ function AlchemyOutput() {
             else if (response.entities[i].type == "ECLI"){
                 var ecu = response.entities[i].text;
                 ECLI.push(ecu);
+                console.log(ecu);
             }
             else if (response.entities[i].type == "Geld"){
                 var money = response.entities[i].text;
@@ -139,10 +149,13 @@ function AlchemyOutput() {
         for( var i = 1; i<Dates.length; i++){
             if(Dates[i] > HighestDate){
                 HighestDate = Dates[i];
+                docobj.Highestdate = HighestDate.format('YYYY MM DD');
+    
             }
+        }
 
             docobj.Dateiname = Dateiname;
-            docobj.Highestdate = HighestDate.format('YYYY MM DD');
+            
             docobj.Normlist = Normlist;
             docobj.Richterliste = Richterliste;
             docobj.BGHAktenzeichenliste = BGHAktenzeichenliste;
@@ -155,11 +168,10 @@ function AlchemyOutput() {
             docobj.Verweisliste = Verweisliste;
             docobj.Gerichtliste = Gerichtliste;
 
-        }
         //console.log("highestDate",highestDate.format('YYYY MM DD'));
         //console.log("Normliste",normlist);
         //console.log("Richterliste",richterliste);
-        callWatson();
+        //callWatson();
         console.log(docobj);
         solar_posts.solrPostDataFromWatson(docobj);
 
@@ -187,10 +199,4 @@ var adressListe2 = ['http://my-own-it.de/test_urteile/17927_clean.txt',
     'http://my-own-it.de/test_urteile/18211_clean.txt',
     'http://my-own-it.de/test_urteile/18220_clean.txt'];
 
-var adressListe = [];
-
-fs.readdirSync("/home/app/data/json").forEach(file => {
-  adressListe.push(file);
-  console.log(file);
-})
 
