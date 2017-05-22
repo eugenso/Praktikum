@@ -16,7 +16,7 @@ function requestData(searchWord,callback) {
     console.log(searchWord);
 
     var options = {
-        hostname: 'localhost',
+        hostname: 'solr',
         port: 8983,
         //path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json&rows=52000',
         path: '/solr/testcore/select?&q=id:"'+config.solrDataPath+ encodeURIComponent(searchWord) + '.txt"&indent=on&wt=json&rows=52000',
