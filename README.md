@@ -7,6 +7,8 @@ This project contains a nodejs web server application that creates a web app usi
 We first need a folder "data/" where we store the preprocessed .txt documents. The file names should follow this format:
 *NUMBER_clean.txt*. These files will be loaded by Solr.
 
+Additionally, the "data/" folder needs a subfolder with JSON documents that contain the entities extracted by the Watson API. These documents reside in the subfolder "json/". For an easy mapping the file format is very similar to before: *NUMBER_clean.txt.json*. 
+
 ## Execution
 
 ### Solr Container
