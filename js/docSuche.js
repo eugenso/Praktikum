@@ -10,7 +10,7 @@ function findDoc(searchWord,callback,searchModus){
 
 function requestData(searchWord,callback,searchModus) {
     var options = {
-        hostname: 'localhost',
+        hostname: 'solr',
         port: 8983,
         //path: '/solr/testcore/select?fl=' + encodeURIComponent('*,termfreq(_text_,"'+searchWord+'")') + '&indent=on&q=*:*&wt=json&rows=52000',
         path: '/solr/testcore/select?&q='+ encodeURIComponent(searchWord) + '&indent=on&wt=json&rows=52000',
