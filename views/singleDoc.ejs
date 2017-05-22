@@ -89,13 +89,13 @@
                     Gefundene Parameter: <br><br>
                     <% for(var i = 0; i< documentParameters.length; i++){ %>
 
-                        <%  if(documentParameters[i] != "stream_size"&& documentParameters[i] != "_text_"  && documentParameters[i] != "id" && documentParameters[i] != "x_parsed_by" && documentParameters[i] != "stream_content_type" && documentParameters[i] != "content_encoding"&& documentParameters[i] != "resourcename"&& documentParameters[i] != "content_type"){ %>
+                        <%  if(documentParameters[i] != "stream_size"&& documentParameters[i] != "_text_"  && documentParameters[i] != "id" && documentParameters[i] != "x_parsed_by" && documentParameters[i] != "stream_content_type" && documentParameters[i] != "_version_" && documentParameters[i] != "content_encoding"&& documentParameters[i] != "resourcename"&& documentParameters[i] != "content_type"){ %>
                             <div id="parameterResult" style=" ">
                             <% var actualParameter = documentParameters[i].replace("_txt","") %>
                             <u><%= actualParameter %>:</u><br>
                             <% if(result.docs[0][documentParameters[i]] instanceof Array){ %>
                                 <% for(var j = 0; j< result.docs[0][documentParameters[i]].length; j++){ %>
-                                    <i><%=  result.docs[0][documentParameters[i]][j] %></i><br>
+                                    <i><%= result.docs[0][documentParameters[i]][j] %></i><br>
                                 <% } %>
                             <%}else{ %>
                                 <%=  JSON.stringify(result.docs[0][documentParameters[i]]) %>
