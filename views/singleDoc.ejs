@@ -80,7 +80,7 @@
                 <% } %>
 
                 <% if(result.message == "nix" ){ %>
-                    <% var BGH_Document_ID = result.documentname.replace("_clean","").replace("id:\"/data/,""); %>
+                    <% var BGH_Document_ID = result.documentname.replace("_clean",""); %>
                     BGH Entscheidung: No.<%= BGH_Document_ID %> 
 		    <a href=://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&Datum=Aktuell&Sort=3&nr=<%= BGH_Document_ID %>"&pos=3&anz=547" target="_blank"><img src="/images/pdf-icon.png" height="25" ></a>
 
