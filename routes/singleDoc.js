@@ -50,7 +50,7 @@ function splitSearchResult(metaDaten){
     else{
         console.log("is here trying");
         result.message = "nix";
-        result.documentname = returnStringBetween(metaDaten.responseHeader.params.q,"data\\\\",".txt");
+        result.documentname = returnStringBetween(metaDaten.responseHeader.params.q,"data/",".txt");
         result.docs = [];
 
 
