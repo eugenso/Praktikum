@@ -33,7 +33,7 @@ function solrPost(docobj){
         post_data = post_data+'}]';
         //console.log(post_data);
         var options = {
-            hostname: 'localhost',
+            hostname: 'solr',
             port: 8983,
             path: '/solr/testcore/update?commit=true',
             method: 'POST',
