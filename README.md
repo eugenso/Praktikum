@@ -42,7 +42,7 @@ In the last step, we make a final update to the schema:
 
 ### Webapp container
 
-To build the webapp container, we need the Dockerfile from this project: https://github.com/eugenso/Praktikum/blob/master/Dockerfile
+To build the webapp container, we need the Dockerfile from this project: https://git.io/vHI6p
 
 Save this file into the project folder which contains the "data" folder.
 
