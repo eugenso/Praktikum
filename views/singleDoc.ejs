@@ -10,13 +10,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]>
-    <script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 9]>
-    <link rel="stylesheet" href="/assets/css/ie9.css"/><![endif]-->
+    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="/assets/css/ie8.css"/><![endif]-->
-    <script src="/assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+    <script src="assets/js/jquery.min.js"></script>
 </head>
 <body>
 
@@ -28,10 +28,10 @@
 
         <nav>
             <ul>
-                <li><a href="/">Startseite</a></li>
-                <li><a href="/gerichte">Statistiken</a></li>
-                <li><a href="/docSuche">Dokumente suchen</a></li>
-                <li><a href="/pieCreator">Kuchen generator</a></li>
+                <li><a href="./">Startseite</a></li>
+                <li><a href="gerichte">Statistiken</a></li>
+                <li><a href="docSuche">Dokumente suchen</a></li>
+                <li><a href="pieCreator">Kuchen generator</a></li>
 
             </ul>
         </nav>
@@ -70,7 +70,7 @@
 
     <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
-            <form  id="form1" method="post" action="/docSuche">
+            <form  id="form1" method="post" action="docSuche">
                 <input style="width:300px;" type="text" name="suchfeld" id="suchfeld" />
                 <input type="submit" name="suchen" id="suchen"/>
             </form>
@@ -82,7 +82,7 @@
                 <% if(result.message == "nix" ){ %>
                     <% var BGH_Document_ID = result.documentname.replace("_clean",""); %>
                     BGH Entscheidung: No.<%= BGH_Document_ID %> 
-		    <a href="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&Datum=Aktuell&Sort=3&nr=<%= BGH_Document_ID %>&pos=3&anz=547" target="_blank"><img src="/images/pdf-icon.png" height="25" ></a>
+		    <a href="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&Datum=Aktuell&Sort=3&nr=<%= BGH_Document_ID %>&pos=3&anz=547" target="_blank"><img src="images/pdf-icon.png" height="25" ></a>
 
                     <br><br>
                     <% var documentParameters = Object.getOwnPropertyNames(result.docs[0]);%>
@@ -124,13 +124,13 @@
 
 <!-- Scripts -->
 
-<script src="/assets/js/jquery.scrollex.min.js"></script>
-<script src="/assets/js/jquery.scrolly.min.js"></script>
-<script src="/assets/js/skel.min.js"></script>
-<script src="/assets/js/util.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
 <!--[if lte IE 8]>
-<script src="/assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="/assets/js/main.js"></script>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
