@@ -2822,7 +2822,7 @@ table {
   border-radius: 80px;
   -webkit-border-radius: 80px;
   -moz-border-radius: 80px;
-  background: url(/images/buc_logo.png) no-repeat;
+  background: url(./images/buc_logo.png) no-repeat;
   box-shadow: 0 0 30px black;
   -webkit-box-shadow: 0 0 30px black;
   -moz-box-shadow: 0 0 30px black; }

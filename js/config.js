@@ -14,5 +14,5 @@ exports.GLOBAL_api_key ='';
 exports.GLOBAL_model_id ='';
 
 exports.solrDataPath = "";
-exports.runWatson = false;
-exports.updateSolrSearchWordResults = false;
+exports.runWatson = true;
+exports.updateSolrSearchWordResults = true;
